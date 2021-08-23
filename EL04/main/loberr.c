@@ -73,6 +73,7 @@ extern ushort CurShotState;
 		const char* overcur_msg	= "  Over-Current  ";
 		const char* feedbk_msg	= "    Feedback    ";
 		const char* period_msg	= "  Invalid Data  ";
+		const char* overcur_h_msg = "Hrd Over-Current";
 //  C18 to XC8 Compiler Changes
 
 //  C18 to XC8 Compiler Changes
@@ -118,6 +119,8 @@ void lob_error(void)
 		code = 0x23;
 	} else if (ErrorStat.ElevCnt) {					// 14 - set if elevation motor is not getting decoder counts
 		code = 0x24;
+	} else if (ErrorStat.ElevCurSense_H) {			// 15 - set if elevation motor hard over current
+		code = 0x44;
 	}
 	if (code >= 0) {
 		PUTRSDIAG("loberr:");
@@ -149,6 +152,13 @@ void lob_error(void)
 	case 3: //feedback
 		strcpy(&lcd_line[0][0],error_msg);
 		strcpy(&lcd_line[2][0],period_msg);
+		strcpy(&lcd_line[3][0],motormsg[code&15]);
+		clear_lcd(0x2);
+		lcd_updated = 1;
+		break;
+	case 4: //hard over-current
+		strcpy(&lcd_line[0][0],error_msg);
+		strcpy(&lcd_line[2][0],overcur_h_msg);
 		strcpy(&lcd_line[3][0],motormsg[code&15]);
 		clear_lcd(0x2);
 		lcd_updated = 1;

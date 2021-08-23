@@ -34,14 +34,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 "553 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
 [s S9 `uc 1 `us 1 `us 1 `us 1 `s 1 `c 1 ]
 [n S9 el04_loc speed top bottom elev sweep spin ]
-[v F6786 `CS9 ~T0 @X0 -> 50 `i t ]
+[v F6787 `CS9 ~T0 @X0 -> 50 `i t ]
 "43 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lobeeprom.c
-[v _court_locs `F6786 ~T0 @X0 -> 0 `x e ]
+[v _court_locs `F6787 ~T0 @X0 -> 0 `x e ]
 "30
 [v _prog_chgd `uc ~T0 @X0 0 e ]
-[v F6783 `Cus ~T0 @X0 -> 2 `i t ]
+[v F6784 `Cus ~T0 @X0 -> 2 `i t ]
 "41
-[v _base_speeds `F6783 ~T0 @X0 -> 0 `x e ]
+[v _base_speeds `F6784 ~T0 @X0 -> 0 `x e ]
 "33
 [v _FlashBuf `uc ~T0 @X0 -> 0 `x e ]
 [; ;types.h: 8: typedef unsigned char uchar;
@@ -268,7 +268,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lob.h: 788: unsigned Reserved:1;
 [; ;lob.h: 789: unsigned SweepCnt:1;
 [; ;lob.h: 790: unsigned ElevCnt:1;
-[; ;lob.h: 791: };
+[; ;lob.h: 791: unsigned ElevCurSense_H:1;
+[; ;lob.h: 792: };
 [; ;ringbuf.h: 11: struct rbuf {
 [; ;ringbuf.h: 25: char dat[32];
 [; ;ringbuf.h: 28: volatile short rix, wix;
@@ -297,7 +298,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18f6722.h: 47: extern volatile unsigned char SSP2CON2 @ 0xF62;
-"49 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [; ;pic18f6722.h: 49: asm("SSP2CON2 equ 0F62h");
 [; <" SSP2CON2 equ 0F62h ;# ">
 [; ;pic18f6722.h: 52: typedef union {

@@ -106,13 +106,13 @@ char feed[30];
 char reserved;
 };
 
-# 21 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\htc.h"
+# 21 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 47 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h"
+# 47 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h"
 extern volatile unsigned char SSP2CON2 @ 0xF62;
 
 asm("SSP2CON2 equ 0F62h");
@@ -6733,7 +6733,7 @@ extern volatile __bit nWR @ (((unsigned) &PORTE)*8) + 1;
 
 extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
-# 2008 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\adc.h"
+# 2008 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\adc.h"
 union ADCResult
 {
 int lr;
@@ -6760,11 +6760,11 @@ void SetChanADC(unsigned char );
 # 2100
 void SelChanConvADC( unsigned char );
 
-# 38 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\ancomp.h"
+# 38 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\ancomp.h"
 void Close_ancomp( void );
 void Open_ancomp(unsigned char config);
 
-# 236 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\spi.h"
+# 236 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\spi.h"
 void OpenSPI1( unsigned char sync_mode,
 unsigned char bus_mode,
 unsigned char smp_phase );
@@ -6790,7 +6790,7 @@ void putsSPI2( unsigned char *wrptr );
 
 unsigned char ReadSPI2( void );
 
-# 414 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\can2510.h"
+# 414 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\can2510.h"
 void CAN2510Initialize(  unsigned int configuration,
  unsigned char brp,
  unsigned char interruptFlags,
@@ -6897,7 +6897,7 @@ unsigned char CAN2510DataRead(  unsigned char bufferNum,
  unsigned char *numBytes,
  unsigned char *data );
 
-# 64 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\capture.h"
+# 64 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\capture.h"
 union capstatus
 {
 
@@ -6958,7 +6958,7 @@ void OpenCapture5 ( unsigned char config);
 unsigned int ReadCapture5 (void);
 void CloseCapture5 (void);
 
-# 385 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\compare.h"
+# 385 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\compare.h"
 void OpenCompare1(unsigned char config,unsigned int period);
 void CloseCompare1(void);
 
@@ -6978,12 +6978,12 @@ void CloseCompare4(void);
 void OpenCompare5(unsigned char config,unsigned int period);
 void CloseCompare5(void);
 
-# 36 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\EEP.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\EEP.h"
 void Busy_eep ( void );
 unsigned char Read_b_eep( unsigned int badd );
 void Write_b_eep( unsigned int badd, unsigned char bdat );
 
-# 2 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\stddef.h"
+# 2 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\stddef.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;
@@ -6991,7 +6991,7 @@ typedef unsigned short wchar_t;
 # 13
 extern int errno;
 
-# 65 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\GenericTypeDefs.h"
+# 65 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\GenericTypeDefs.h"
 typedef enum _BOOL { FALSE = 0, TRUE } BOOL;
 
 
@@ -7426,7 +7426,7 @@ struct
 } bits;
 } QWORD_VAL;
 
-# 113 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\flash.h"
+# 113 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\flash.h"
 extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
 # 120
@@ -7436,7 +7436,7 @@ extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, u
 
 extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
-# 244 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\i2c.h"
+# 244 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\i2c.h"
 void OpenI2C1( unsigned char sync_mode, unsigned char slew );
 
 # 264
@@ -7510,7 +7510,7 @@ unsigned char address,
 unsigned char *rdptr,
 unsigned char length );
 
-# 200 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\mwire.h"
+# 200 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\mwire.h"
 void OpenMwire1( unsigned char sync_mode );
 
 
@@ -7535,7 +7535,7 @@ signed char WriteMwire2( unsigned char data_out );
 # 286
 void getsMwire2( unsigned char *rdptr, unsigned char length );
 
-# 126 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\portb.h"
+# 126 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\portb.h"
 void OpenPORTB( unsigned char config);
 
 # 176
@@ -7550,7 +7550,7 @@ void OpenRB2INT( unsigned char config);
 # 230
 void OpenRB3INT( unsigned char config);
 
-# 85 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\pwm.h"
+# 85 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\pwm.h"
 union PWMDC
 {
 unsigned int lpwm;
@@ -7595,7 +7595,7 @@ void OpenPWM5 ( char period);
 void SetDCPWM5 ( unsigned int duty_cycle);
 void ClosePWM5 (void);
 
-# 16 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\reset.h"
+# 16 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\reset.h"
 char isMCLR(void);
 void StatusReset(void);
 char isPOR(void);
@@ -7613,12 +7613,12 @@ char isWDTWU(void);
 
 char isLVD(void);
 
-# 687 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\rtcc.h"
+# 687 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\rtcc.h"
 void Open_RTCC(void);
 void Close_RTCC(void);
 unsigned char update_RTCC(void);
 
-# 97 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\sw_i2c.h"
+# 97 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\sw_i2c.h"
 void SWStopI2C ( void );
 void SWStartI2C ( void );
 void SWRestartI2C ( void );
@@ -7631,7 +7631,7 @@ signed char SWWriteI2C(  unsigned char data_out );
 signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
 signed char SWPutsI2C(  unsigned char *wrptr );
 
-# 84 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\sw_spi.h"
+# 84 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\sw_spi.h"
 void OpenSWSPI(void);
 
 
@@ -7643,7 +7643,7 @@ void SetCSSWSPI(void);
 
 void ClearCSSWSPI(void);
 
-# 47 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\sw_uart.h"
+# 47 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\sw_uart.h"
 void OpenUART(void);
 
 unsigned char ReadUART(void);
@@ -7659,7 +7659,7 @@ extern void DelayRXBitUART (void);
 extern void DelayRXHalfBitUART(void);
 extern void DelayTXBitUART (void);
 
-# 36 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h"
 union Timers
 {
 unsigned int lt;
@@ -7695,7 +7695,7 @@ void CloseTimer4 (void);
 # 1179
 void SetTmrCCPSrc( unsigned char );
 
-# 200 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\usart.h"
+# 200 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h"
 union USART1
 {
 unsigned char val;
@@ -7783,7 +7783,7 @@ extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\delays.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\delays.h"
 void Delay1TCYx(unsigned char);
 
 # 19
@@ -7798,7 +7798,7 @@ void Delay1KTCYx(unsigned char);
 # 37
 void Delay10KTCYx(unsigned char);
 
-# 18 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18.h"
 __attribute__((__unsupported__("The flash_write routine is no longer supported. Please use the peripheral library functions: WriteBytesFlash, WriteBlockFlash or WriteWordFlash"))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 
 
@@ -7815,7 +7815,7 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 27 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\stdlib.h"
+# 27 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\stdlib.h"
 typedef struct {
 int rem;
 int quot;
@@ -7883,12 +7883,12 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
 
-# 22 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h"
+# 22 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h"
 extern void * memcpy(void *, const void *, size_t);
 extern void * memmove(void *, const void *, size_t);
 extern void * memset(void *, int, size_t);
 
-# 35
+# 42
 extern char * strcat(char *, const char *);
 extern char * strcpy(char *, const char *);
 extern char * strncat(char *, const char *, size_t);
@@ -7915,7 +7915,7 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 4 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\ctype.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\ctype.h"
 extern __bit isalpha(char);
 extern __bit isupper(char);
 extern __bit islower(char);
@@ -8071,6 +8071,7 @@ unsigned BotCnt:1;
 unsigned Reserved:1;
 unsigned SweepCnt:1;
 unsigned ElevCnt:1;
+unsigned ElevCurSense_H:1;
 };
 
 # 15 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\state_mach.h"
@@ -8546,10 +8547,10 @@ extern char prev_st;
 char a2dChan;
 char a2dChan2Dump;
 
-# 688
-const char a2dGain[] = {0,6,6,6,6,4,0};
+# 689
+const char a2dGain[] = {0,6,6,6,5,4,0};
 
-# 694
+# 695
 char power_on;
 char power_state;
 
@@ -8639,7 +8640,7 @@ struct shot CurShot,NextShot,LastShot;
 unsigned char model_type;
 unsigned char pp_maxloc;
 
-# 787
+# 788
 const int accel_low[8][2] = {
 
 0x10, 0x10,
@@ -8748,7 +8749,7 @@ int accel_range_bot[8][2];
 int a2dValue[7];
 char a2dtest;
 
-# 936
+# 937
 const unsigned int CurSense[25-4+2][2] = {
 
 104,110,
@@ -8789,12 +8790,15 @@ unsigned char CurSenseCt[2][23];
 unsigned char BDM_CurSenseCt[3];
 unsigned int BDM_TripPoint[3];
 unsigned int BDM_TripTime[3];
+unsigned char BDM_CurSenseCt_H[3];
+unsigned int BDM_TripPoint_H[3];
+unsigned int BDM_TripTime_H[3];
 unsigned char BAT_CurSenseCt;
 unsigned int BAT_TripPoint;
 unsigned int BAT_TripTime;
 unsigned int BAT_lastval;
 
-# 993
+# 997
 const ulong FeedStartTbl[][3] = {
 
 0x6000, 0x6750, 0x5250,
@@ -8829,7 +8833,7 @@ int ball_feed_bottom;
 char RemoteStringVar[10];
 char RemoteString[68];
 
-# 1031
+# 1035
 unsigned char LargeSpdDropCnt = 0;
 
 
@@ -8868,15 +8872,15 @@ unsigned char PlayLEDTmr;
 unsigned char PlayLEDPass;
 extern long PlayModeBlink;
 
-# 1078
+# 1082
 struct rbuf di_inbuf;
 struct rbuf di_outbuf;
 
-# 1088
+# 1092
 struct rbuf rm_inbuf;
 struct rbuf rm_outbuf;
 
-# 1131
+# 1135
 void interrupt isr(void)
 
 {
@@ -8910,7 +8914,7 @@ m_bot_per = bot_t2 - bot_t1;
 PIR2bits.CCP2IF = 0;
 }
 
-# 1184
+# 1188
 if (PIR3bits.TMR4IF) {
 if (!timer4_cnt) {
 ++timer4_cnt;
@@ -8946,7 +8950,7 @@ void UpdTopPer(void)
 {
 int top_delta1;
 
-# 1224
+# 1228
 INTCONbits.GIE = 0;
 if ((top_delta == 0) && (m_top_per != d_top_per)) {
 } else {
@@ -8962,13 +8966,13 @@ top_last_delta = top_delta1;
 top_stat.tick = 1;
 top_timer_cnt = 0;
 
-# 1244
+# 1248
 if ((feed_stat.Run) || (feed_stat.Hold && ((feed_pwm >= (long)last_feed_pwm)||(feed_pwm > 0x2800000)))
 || ((feed_stat.Cont) && (play_mode & 8) && (play_mode & 1))
 || ((feed_stat.Cont) && (preset_type <= 1U) && (play_mode & 2) && (play_mode & 1)
 && (preset[preset_type].feed == 1))) {
 
-# 1265
+# 1269
 if (((play_mode & 2) && (preset_type == 2) && (LargeSpdDrop == 0))
 && (((top_last_delta1 - top_last_delta) > 0x080) || ((bot_last_delta1 - bot_last_delta) > 0x080))) {
 
@@ -8991,7 +8995,7 @@ LargeSpdDrop = 1;
 putrsDIAG("\n\rLargeSpdDrop_Top (unfiltered)");
 }
 
-# 1291
+# 1295
 if ((play_mode & 2) && (preset_type == 2)) {
 if ((bot_last_delta1 - bot_last_delta) > ball_feed_bottom) {
 LargeSpdDrop = 1;
@@ -9003,7 +9007,7 @@ putrsDIAG("\n\rLargeSpdDrop_Bot (unfiltered)");
 }
 INTCONbits.GIE = 1;
 
-# 1325
+# 1329
 }
 
 
@@ -9034,7 +9038,7 @@ int rtop_last_delta, rtop_last_delta1;
 int TooFast;
 int SpdDir;
 
-# 1361
+# 1365
 if ((top_pwm > 0x2000000L) && (m_top_per >= 60000U)) {
 ErrorStat.TopCnt = 1;
 if (ErrorShutDown == 0) {
@@ -9087,7 +9091,7 @@ top_stat.phase2 = 1;
 top_stat.tick = 0;
 incr = 0 - accel_top;
 
-# 1415
+# 1419
 } else {
 incr = accel_top;
 if ((top_pwm & 0x3ff0000) == 0x3ff0000) {
@@ -9095,7 +9099,7 @@ top_stat.phase1 = 0;
 top_stat.phase3 = 1;
 top_stat.tick = 0;
 
-# 1424
+# 1428
 }
 }
 } else if (top_stat.phase3 || top_stat.phase5) {
@@ -9107,7 +9111,7 @@ top_stat.phase3 = 0;
 top_stat.phase5 = 0;
 top_stat.Run = 0;
 
-# 1437
+# 1441
 return;
 }
 } else
@@ -9119,7 +9123,7 @@ top_stat.phase5 = 0;
 top_stat.phase4 = 1;
 incr = 0 - (accel_top >> 1);
 
-# 1450
+# 1454
 } else incr = (SpdDir)?(accel_top >> ((top_stat.phase3)?1:2)):accel_top;
 } else if (top_stat.phase2) {
 if (top_stat.tick) {
@@ -9131,7 +9135,7 @@ top_stat.phase2 = 0;
 top_stat.phase6 = 1;
 top_phase6_cnt = 0;
 
-# 1463
+# 1467
 return;
 }
 }
@@ -9148,14 +9152,14 @@ incr = 0;
 top_stat.phase2 = 0;
 top_stat.Run = 0;
 
-# 1481
+# 1485
 }
 } else if ((rtop_last_delta1 - delta) < (int)drift1) {
 top_stat.phase2 = 0;
 top_stat.phase6 = 1;
 top_phase6_cnt = 0;
 
-# 1489
+# 1493
 } else {
 incr = 0 - (accel_top >> 1);
 }
@@ -9166,13 +9170,13 @@ incr = 0;
 top_stat.phase2 = 0;
 top_stat.Run = 0;
 
-# 1501
+# 1505
 } else {
 top_stat.phase2 = 0;
 top_stat.phase6 = 1;
 top_phase6_cnt = 0;
 
-# 1508
+# 1512
 }
 } else if (!SpdDir) {
 
@@ -9181,7 +9185,7 @@ top_stat.phase2 = 0;
 if (abs_delta > (drift << 5)) top_stat.phase3 = 1;
 else top_stat.phase5 = 1;
 
-# 1518
+# 1522
 incr = accel_top >> 1;
 } else if (abs_delta1 < drift) {
 top_stat.phase2 = 0;
@@ -9190,12 +9194,12 @@ incr = 0;
 top_stat.phase2 = 0;
 top_stat.Run = 0;
 
-# 1528
+# 1532
 } else {
 top_mid = d_top_per + (delta >> 1);
 top_stat.phase3 = 1;
 
-# 1534
+# 1538
 incr = accel_top >> 1;
 }
 } else {
@@ -9217,7 +9221,7 @@ top_stat.phase4 = 0;
 top_stat.phase6 = 1;
 top_phase6_cnt = 0;
 
-# 1557
+# 1561
 return;
 }
 }
@@ -9228,7 +9232,7 @@ incr = 0;
 top_stat.phase4 = 0;
 top_stat.Run = 0;
 
-# 1569
+# 1573
 } else {
 if (abs_delta1 > drift)
 incr = 0 - (accel_top >> 1);
@@ -9249,7 +9253,7 @@ top_stat.phase4 = 0;
 top_stat.phase6 = 1;
 top_phase6_cnt = 0;
 
-# 1591
+# 1595
 } else {
 incr = 0 - (accel_top >> 2);
 }
@@ -9263,7 +9267,7 @@ top_stat.phase4 = 0;
 top_stat.phase6 = 1;
 top_phase6_cnt = 0;
 
-# 1606
+# 1610
 return;
 } else if ((abs_delta1 < drift) || (abs_delta < drift1)) {
 
@@ -9271,7 +9275,7 @@ top_stat.phase4 = 0;
 top_stat.phase6 = 1;
 top_phase6_cnt = 0;
 
-# 1615
+# 1619
 return;
 } else {
 incr = 0 - ((delta > (int)(drift1 >> 1))?accel_top:(accel_top>>1));
@@ -9285,7 +9289,7 @@ if ((TooFast==1) && !SpdDir) {
 top_stat.phase6 = 0;
 top_stat.Run = 0;
 
-# 1631
+# 1635
 return;
 }
 if (TooFast) {
@@ -9298,7 +9302,7 @@ if ((abs_delta < (drift >> 2)) && (abs_delta1 < (drift >> 22))) {
 top_stat.phase6 = 0;
 top_stat.Run = 0;
 
-# 1645
+# 1649
 return;
 } else {
 
@@ -9306,14 +9310,14 @@ top_stat.phase6 = 0;
 top_stat.phase4 = 1;
 incr = 0 - accel_top;
 
-# 1654
+# 1658
 }
 } else {
 if (abs_delta < (drift << 5)) {
 top_stat.phase6 = 0;
 top_stat.Run = 0;
 
-# 1662
+# 1666
 return;
 } else {
 
@@ -9321,7 +9325,7 @@ top_stat.phase6 = 0;
 top_stat.phase4 = 1;
 incr = 0 - accel_top;
 
-# 1671
+# 1675
 }
 }
 } else {
@@ -9330,7 +9334,7 @@ if (SpdDir && (abs_delta < (drift << 5)) && (abs_delta1 < (drift >> 1))) {
 top_stat.phase6 = 0;
 top_stat.Run = 0;
 
-# 1681
+# 1685
 return;
 } else {
 top_mid = d_top_per + delta - (delta >> 2);
@@ -9338,7 +9342,7 @@ top_stat.phase6 = 0;
 top_stat.phase5 = 1;
 incr = accel_top;
 
-# 1690
+# 1694
 }
 }
 }
@@ -9352,7 +9356,7 @@ top_stat.phase7 = 0;
 top_stat.phase6 = 1;
 top_phase6_cnt = 0;
 
-# 1705
+# 1709
 } else {
 incr = accel_top >> 2;
 if (TooFast)
@@ -9410,7 +9414,7 @@ delta = delta >> 2;
 if (delta > 500) delta = 500;
 top_mid = d_top_per - delta;
 
-# 1764
+# 1768
 } else {
 incr = accel_top;
 }
@@ -9423,7 +9427,7 @@ if (m_top_per > top_mid) {
 top_stat.phase2 = 0;
 top_stat.phase3 = 1;
 
-# 1778
+# 1782
 }
 
 
@@ -9433,14 +9437,14 @@ if (delta < 0) {
 top_stat.Run = 0;
 top_stat.phase3 = 0;
 
-# 1789
+# 1793
 } else if (top_last_delta > top_last_delta1) {
 incr = accel_top;
 if (delta < (int)(drift1 << 1)) {
 top_stat.Run = 0;
 top_stat.phase3 = 0;
 
-# 1797
+# 1801
 }
 } else if ((top_last_delta1 - top_last_delta) < (int)(drift >> 1)) {
 if (delta > (int)(drift << 5)) {
@@ -9449,18 +9453,18 @@ top_stat.phase3 = 0;
 top_stat.phase1 = 1;
 incr = accel_top;
 
-# 1807
+# 1811
 } else {
 top_stat.Run = 0;
 top_stat.phase3 = 0;
 
-# 1813
+# 1817
 }
 } else if (delta < (int)drift1) {
 top_stat.Run = 0;
 top_stat.phase3 = 0;
 
-# 1820
+# 1824
 } else if (delta < (int)(drift << 5)) {
 incr = 0 - (accel_top >> 2);
 } else incr = 0 - (accel_top >> 2) - (accel_top >> 1);
@@ -9520,7 +9524,7 @@ int rbot_last_delta, rbot_last_delta1;
 int TooFast;
 int SpdDir;
 
-# 1884
+# 1888
 if ((bot_pwm > 0x2000000L) && (m_bot_per >= 60000U)) {
 ErrorStat.BotCnt = 1;
 if (ErrorShutDown == 0) {
@@ -9576,7 +9580,7 @@ bot_stat.phase2 = 1;
 bot_stat.tick = 0;
 incr = 0 - accel_bot;
 
-# 1941
+# 1945
 } else {
 incr = accel_bot;
 if ((bot_pwm & 0x3ff0000L) == 0x3ff0000L) {
@@ -9584,7 +9588,7 @@ bot_stat.phase1 = 0;
 bot_stat.phase3 = 1;
 bot_stat.tick = 0;
 
-# 1950
+# 1954
 }
 }
 } else if (bot_stat.phase3 || bot_stat.phase5) {
@@ -9596,7 +9600,7 @@ bot_stat.phase3 = 0;
 bot_stat.phase5 = 0;
 bot_stat.Run = 0;
 
-# 1963
+# 1967
 return;
 }
 } else
@@ -9608,7 +9612,7 @@ bot_stat.phase5 = 0;
 bot_stat.phase4 = 1;
 incr = 0 - (accel_bot >> 1);
 
-# 1976
+# 1980
 } else incr = (SpdDir)?(accel_bot >> ((bot_stat.phase3)?1:2)):accel_bot;
 } else if (bot_stat.phase2) {
 if (bot_stat.tick) {
@@ -9620,7 +9624,7 @@ bot_stat.phase2 = 0;
 bot_stat.phase6 = 1;
 bot_phase6_cnt = 0;
 
-# 1989
+# 1993
 return;
 }
 }
@@ -9637,14 +9641,14 @@ incr = 0;
 bot_stat.phase2 = 0;
 bot_stat.Run = 0;
 
-# 2007
+# 2011
 }
 } else if ((rbot_last_delta1 - delta) < (int)drift1) {
 bot_stat.phase2 = 0;
 bot_stat.phase6 = 1;
 bot_phase6_cnt = 0;
 
-# 2015
+# 2019
 } else {
 incr = 0 - (accel_bot >> 1);
 }
@@ -9655,13 +9659,13 @@ incr = 0;
 bot_stat.phase2 = 0;
 bot_stat.Run = 0;
 
-# 2027
+# 2031
 } else {
 bot_stat.phase2 = 0;
 bot_stat.phase6 = 1;
 bot_phase6_cnt = 0;
 
-# 2034
+# 2038
 }
 } else if (!SpdDir) {
 
@@ -9670,7 +9674,7 @@ bot_stat.phase2 = 0;
 if (abs_delta > (drift << 5)) bot_stat.phase3 = 1;
 else bot_stat.phase5 = 1;
 
-# 2044
+# 2048
 incr = accel_bot >> 1;
 } else if (abs_delta1 < drift) {
 bot_stat.phase2 = 0;
@@ -9679,12 +9683,12 @@ incr = 0;
 bot_stat.phase2 = 0;
 bot_stat.Run = 0;
 
-# 2054
+# 2058
 } else {
 bot_mid = d_bot_per + (delta >> 1);
 bot_stat.phase3 = 1;
 
-# 2060
+# 2064
 incr = accel_bot >> 1;
 }
 } else {
@@ -9706,7 +9710,7 @@ bot_stat.phase4 = 0;
 bot_stat.phase6 = 1;
 bot_phase6_cnt = 0;
 
-# 2083
+# 2087
 return;
 }
 }
@@ -9717,7 +9721,7 @@ incr = 0;
 bot_stat.phase4 = 0;
 bot_stat.Run = 0;
 
-# 2095
+# 2099
 } else {
 if (abs_delta1 > drift)
 incr = 0 - (accel_bot >> 1);
@@ -9738,7 +9742,7 @@ bot_stat.phase4 = 0;
 bot_stat.phase6 = 1;
 bot_phase6_cnt = 0;
 
-# 2117
+# 2121
 } else {
 incr = 0 - (accel_bot >> 2);
 }
@@ -9752,7 +9756,7 @@ bot_stat.phase4 = 0;
 bot_stat.phase6 = 1;
 bot_phase6_cnt = 0;
 
-# 2132
+# 2136
 return;
 } else if ((abs_delta1 < drift) || (abs_delta < drift1)) {
 
@@ -9760,7 +9764,7 @@ bot_stat.phase4 = 0;
 bot_stat.phase6 = 1;
 bot_phase6_cnt = 0;
 
-# 2141
+# 2145
 return;
 } else {
 incr = 0 - ((delta > (int)(drift1 >> 1))?accel_bot:(accel_bot>>1));
@@ -9774,7 +9778,7 @@ if ((TooFast==1) && !SpdDir) {
 bot_stat.phase6 = 0;
 bot_stat.Run = 0;
 
-# 2157
+# 2161
 return;
 }
 if (TooFast) {
@@ -9784,7 +9788,7 @@ if ((abs_delta < (drift >> 2)) && (abs_delta1 < (drift >> 22))) {
 bot_stat.phase6 = 0;
 bot_stat.Run = 0;
 
-# 2168
+# 2172
 return;
 } else {
 
@@ -9792,14 +9796,14 @@ bot_stat.phase6 = 0;
 bot_stat.phase4 = 1;
 incr = 0 - accel_bot;
 
-# 2177
+# 2181
 }
 } else {
 if (abs_delta < (drift << 5)) {
 bot_stat.phase6 = 0;
 bot_stat.Run = 0;
 
-# 2185
+# 2189
 return;
 } else {
 
@@ -9807,7 +9811,7 @@ bot_stat.phase6 = 0;
 bot_stat.phase4 = 1;
 incr = 0 - accel_bot;
 
-# 2194
+# 2198
 }
 }
 } else {
@@ -9816,7 +9820,7 @@ if (SpdDir && (abs_delta < (drift << 5)) && (abs_delta1 < (drift >> 1))) {
 bot_stat.phase6 = 0;
 bot_stat.Run = 0;
 
-# 2204
+# 2208
 return;
 } else {
 bot_mid = d_bot_per + delta - (delta >> 2);
@@ -9824,7 +9828,7 @@ bot_stat.phase6 = 0;
 bot_stat.phase5 = 1;
 incr = accel_bot;
 
-# 2213
+# 2217
 }
 }
 }
@@ -9838,7 +9842,7 @@ bot_stat.phase7 = 0;
 bot_stat.phase6 = 1;
 bot_phase6_cnt = 0;
 
-# 2228
+# 2232
 } else {
 incr = accel_bot >> 2;
 if (TooFast)
@@ -9896,7 +9900,7 @@ delta = delta >> 2;
 if (delta > 500) delta = 500;
 bot_mid = d_bot_per - delta;
 
-# 2287
+# 2291
 } else {
 incr = accel_bot;
 }
@@ -9909,7 +9913,7 @@ if (m_bot_per > bot_mid) {
 bot_stat.phase2 = 0;
 bot_stat.phase3 = 1;
 
-# 2301
+# 2305
 }
 
 
@@ -9919,14 +9923,14 @@ if (delta < 0) {
 bot_stat.Run = 0;
 bot_stat.phase3 = 0;
 
-# 2312
+# 2316
 } else if (bot_last_delta > bot_last_delta1) {
 incr = accel_bot;
 if (delta < (int)(drift1 << 1)) {
 bot_stat.Run = 0;
 bot_stat.phase3 = 0;
 
-# 2320
+# 2324
 }
 } else if ((bot_last_delta1 - bot_last_delta) < (int)(drift >> 1)) {
 if (delta > (int)(drift << 5)) {
@@ -9935,18 +9939,18 @@ bot_stat.phase3 = 0;
 bot_stat.phase1 = 1;
 incr = accel_bot;
 
-# 2330
+# 2334
 } else {
 bot_stat.Run = 0;
 bot_stat.phase3 = 0;
 
-# 2336
+# 2340
 }
 } else if (delta < (int)drift1) {
 bot_stat.Run = 0;
 bot_stat.phase3 = 0;
 
-# 2343
+# 2347
 } else if (delta < (int)(drift << 5)) {
 incr = 0 - (accel_bot >> 2);
 } else incr = 0 - (accel_bot >> 2) - (accel_bot >> 1);
@@ -10042,7 +10046,7 @@ FeedTimeoutOn = 0;
 FeedEarlyOn = 0;
 StartXTime = 0;
 
-# 2451
+# 2455
 if (FirstShot) *(unsigned int *)&feed_stat = 0;
 if (top_stat.Run || bot_stat.Run || feed_stat.Run || feed_stat.Hold) {
 
@@ -10134,7 +10138,7 @@ BuildCmd('a', 1, &arg);
 break;
 case 3:
 
-# 2546
+# 2550
 putrsDIAG("\n\rSHOT_STRTTOP:");
 if ((play_mode & 2) && (preset_type == 2)) {
 if (LargeSpdDrop == 1) {
@@ -10161,7 +10165,7 @@ DbgSweepTime = BallElapsedHalfSec;
 break;
 case 4:
 
-# 2577
+# 2581
 if (!bot_stat.Hold) {
 StartBot(CurShot.bot);
 }
@@ -10185,7 +10189,7 @@ SlvCmdDelay = 10U;
 DbgSweepTime = BallElapsedHalfSec;
 } else {
 
-# 2604
+# 2608
 CurShotState = 10;
 }
 } else {
@@ -10294,7 +10298,7 @@ if (d_feed_per == 0 && last_feed_pwm == 0)
 CurShotState = 0;
 if (feed_stat.Slow || (feed_stat.Cont && !feed_stat.Hold && !feed_stat.Run)) {
 
-# 2721
+# 2725
 CurShotState = 9;
 
 
@@ -10306,7 +10310,7 @@ case 9:
 
 putrsDIAG("\n\rSHOT_DONE:");
 
-# 2756
+# 2760
 CurShotState = 0U;
 LastShot.x = CurShot.x;
 LastShot.y = CurShot.y;
@@ -10333,20 +10337,20 @@ BuildCmd('f',1,&arg);
 break;
 case 31:
 
-# 2787
+# 2791
 arg = home_loc.sweep;
 
-# 2792
+# 2796
 BuildCmd('E', 1, &arg);
 ++CurShotState;
 break;
 
 case 32:
 
-# 2803
+# 2807
 arg = home_loc.elev;
 
-# 2808
+# 2812
 BuildCmd('e', 1, &arg);
 ++CurShotState;
 break;
@@ -10414,7 +10418,7 @@ break;
 
 case 17:
 
-# 2889
+# 2893
 if (FirstShot || top_stat.Run || bot_stat.Run || feed_stat.Run || feed_stat.Hold) {
 *(unsigned int*)&top_stat = 0;
 *(unsigned int*)&bot_stat = 0;
@@ -10442,14 +10446,14 @@ break;
 
 case 18:
 
-# 2919
+# 2923
 if (!top_stat.Hold)
 StartTop(CurShot.top);
 ++CurShotState;
 break;
 case 19:
 
-# 2928
+# 2932
 if (!bot_stat.Hold)
 StartBot(CurShot.bot);
 ++CurShotState;
@@ -10481,7 +10485,7 @@ StartSweepRandom(CurShot.sweeprate, CurShot.x, CurShot.xLeft);
 else if ((CurShot.y != CurShot.yLo) && (CurShot.x != CurShot.xLeft)) {
 StartElevRandom(CurShot.sweeprate, CurShot.y, CurShot.yLo);
 
-# 2964
+# 2968
 CurShotState = 23;
 putrsDIAG("\n\rOscillate Elevation");
 break;
@@ -10588,7 +10592,7 @@ break;
 void Setup(void)
 {
 
-# 3074
+# 3078
 int ix;
 
 varinit();
@@ -10662,7 +10666,7 @@ TRISG = 0x24;
 ADCON0 = 0;
 ADCON1 = 0x0e;
 
-# 3154
+# 3158
 OpenSPI1(0b00000001, 0b00000000, 0b10000000);
 
 
@@ -10694,7 +10698,7 @@ max_count = 0;
 rbuf_init(&di_inbuf,2);
 rbuf_init(&di_outbuf,2);
 
-# 3189
+# 3193
 T3CONbits.T3CCP2 = 0;
 T3CONbits.T3CCP1 = 1;
 
@@ -10728,7 +10732,7 @@ T1CONbits.T1OSCEN=0;
 T3CONbits.T3CCP2 = 0;
 T3CONbits.T3CCP1 = 1;
 
-# 3239
+# 3243
 Open2USART (0b01111111 & 0b10111111 & 0b11111110 &
 0b11111101 & 0b11111111 & 0b11111111, 129);
 TRISGbits.TRISG1 = 0;
@@ -10740,7 +10744,7 @@ Open1USART(0b01111111 & 0b10111111 & 0b11111110 &
 TRISCbits.TRISC6 = 0;
 TRISCbits.TRISC7 = 1;
 
-# 3255
+# 3259
 ADCON2 = 0xBd;
 a2dChan = 0;
 a2dChan2Dump = 1;
@@ -10753,19 +10757,20 @@ CurSenseCt[0][ix] = 0;
 CurSenseCt[1][ix] = 0;
 }
 
-# 3275
+# 3279
 BDM_TripTime[0] = 3;
 
 
 BDM_CurSenseCt[0] = 0;
 
-
-BDM_TripPoint[1] = 393;
-BDM_TripTime[1] = 3;
-
-
-
+# 3292
+BDM_TripPoint[1] = 25;
+BDM_TripTime[1] = 30;
 BDM_CurSenseCt[1] = 0;
+
+BDM_TripPoint_H[1] = 164;
+BDM_TripTime_H[1] = 2;
+BDM_CurSenseCt_H[1] = 0;
 BDM_TripPoint[2] = 245;
 BDM_TripTime[2] = 15;
 BDM_CurSenseCt[2] = 0;
@@ -10776,7 +10781,7 @@ BAT_TripTime = 25;
 
 BAT_TripPoint = 512;
 
-# 3302
+# 3314
 TMR0L = 0xa8;
 TMR0H = 0x61;
 msec5 = 155;
@@ -10829,7 +10834,7 @@ OpenXLCD((unsigned char)(0b00111111 & 0b00111011));
 ;
 }
 
-# 3360
+# 3372
 void debounce_power_button(void)
 {
 power.current = PORTBbits.INT0;
@@ -10846,7 +10851,7 @@ power.debounced = power.current;
 
 if (dpb_thrash < 32768) dpb_thrash++;
 
-# 3380
+# 3392
 if ((power_state == 0) && (power.current == 1) && (power.count > 5) && (batt_cnt != 0)) {
 
 BatLevelDisplay = 1;
@@ -10859,7 +10864,7 @@ power.count = 0;
 power.previous = power.current;
 }
 
-# 3397
+# 3409
 void main(void)
 {
 char i;
@@ -10872,7 +10877,7 @@ unsigned long tmp1,tmp2,tmp3;
 long tmp5 = 0x30;
 long *args = &tmp5;
 
-# 3414
+# 3426
 long sweep_offset;
 
 long tmp4;
@@ -10890,7 +10895,7 @@ char sum;
 
 char startit;
 
-# 3437
+# 3449
 manual.speed = 50;
 manual.elev = 10;;
 manual.horiz = 0;;
@@ -10914,7 +10919,7 @@ preset[i].width = 0;
 
 Setup();
 
-# 3506
+# 3518
 if(PORTBbits.RB1 && PORTBbits.RB3 && PORTBbits.RB2)
 model_type = 4U;
 else if(PORTBbits.RB1 && PORTBbits.RB3 && !PORTBbits.RB2)
@@ -10929,12 +10934,12 @@ else if(!PORTBbits.RB1 && PORTBbits.RB3 && !PORTBbits.RB2)
 model_type = 1U;
 else model_type = 2U;
 
-# 3591
+# 3603
 if (model_type == 2U) {
 lob_model = " ELITE GRAND IV ";
 pp_maxloc = 0;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.230.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10950,7 +10955,7 @@ else if (model_type == 0U) {
 lob_model = " ELITE GRAND V  ";
 pp_maxloc = 6;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.230.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10966,7 +10971,7 @@ else if (model_type == 1U) {
 lob_model = "ELITE GRAND V LE";
 pp_maxloc = 18;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.230.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10979,12 +10984,12 @@ BDM_TripPoint[0] = 393;
 
 }
 
-# 3647
+# 3659
 else if (model_type == 5U) {
 lob_model = "    PHENOM 1    ";
 pp_maxloc = 0;
 lowbatt_msg = " Power Problem  ";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.230.00";
 sweep_offset = 0x12a;
 
 ELEV_CORR_MIN = -136;
@@ -10992,7 +10997,7 @@ ELEV_CORR_MIN = -136;
 
 MINPWM = 0x0d48000L;
 
-# 3663
+# 3675
 BDM_TripPoint[0] = 655;
 
 }
@@ -11000,7 +11005,7 @@ else if (model_type == 3U) {
 lob_model = "    PHENOM 2    ";
 pp_maxloc = 18;
 lowbatt_msg = " Power Problem  ";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.230.00";
 sweep_offset = 0x12a;
 
 ELEV_CORR_MIN = -136;
@@ -11008,7 +11013,7 @@ ELEV_CORR_MIN = -136;
 
 MINPWM = 0x0d48000L;
 
-# 3682
+# 3694
 BDM_TripPoint[0] = 655;
 
 }
@@ -11017,7 +11022,7 @@ else if (model_type == 4U) {
 lob_model = "ELITE GRAND V LE";
 pp_maxloc = 18;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.230.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -11084,15 +11089,15 @@ if (top_stat.Run || top_stat.Hold || feed_stat.Run || feed_stat.Hold || feed_sta
 
 if (ErrorShutDown) break;
 
-# 3778
+# 3790
 if ((feed_stat.Run) || (feed_stat.Hold && ((feed_pwm >= (long)last_feed_pwm)||(feed_pwm > 0x2800000)))
 || ((feed_stat.Cont) && (play_mode & 8) && (play_mode & 1))
 || ((feed_stat.Cont) && (preset_type <= 1U) && (play_mode & 2) && (play_mode & 1))) {
 
-# 3791
+# 3803
 if (LargeSpdDrop) {
 
-# 3812
+# 3824
 if (!((play_mode & 2) && (preset_type == 2))
 && ((BallElapsedHalfSec <= 1U) ||
 ((BallElapsedHalfSec == 2) && (BallElapsedTicks < (unsigned char)230)))) {
@@ -11103,7 +11108,7 @@ putrsDIAG("\n\r");
 dumpshort(BallElapsedHalfSec);
 dumpshort(BallElapsedTicks);
 
-# 3834
+# 3846
 if ((!(play_mode & 8)) && (!((play_mode & 2) && (preset_type <= 1U)))) {
 
 
@@ -11122,7 +11127,7 @@ BallTimerOn = 0;
 
 putrsDIAG("\n\rBallTimerOn = 0");
 
-# 3861
+# 3873
 DbgBallTime = BallElapsedHalfSec;
 
 
@@ -11154,7 +11159,7 @@ if (feed_stat.Hold && !feed_stat.Cont) {
 ulong feed_rate_hs = FeedPwm2Sec(last_feed_pwm) << 1;
 ulong StartFeedTime;
 
-# 3898
+# 3910
 switch(feed_rate_hs) {
 case 4:
 StartFeedTime = 0;
@@ -11178,7 +11183,7 @@ if (FeedTimeoutOn && (BallElapsedHalfSec >= (feed_rate_hs - 1))) {
 feed_stat.Hold = 0;
 feed_stat.Run = 1;
 
-# 3925
+# 3937
 if (!DbgFeedType) {
 DbgFeedType = 1;
 DbgFeedTime = BallElapsedHalfSec;
@@ -11187,7 +11192,7 @@ FeedTimeoutOn = 0;
 FeedEarlyOn = 0;
 } else if (FeedEarlyOn && SpeedInRange() && (BallElapsedHalfSec >= StartFeedTime)) {
 
-# 3940
+# 3952
 if (!DbgFeedType) {
 DbgFeedType = 3;
 DbgFeedTime = BallElapsedHalfSec;
@@ -11201,10 +11206,10 @@ if (tmp4 < 2) tmp4 = 2;
 }
 d_feed_per = (ulong)base_feeds[tmp4] << 16;
 
-# 3957
+# 3969
 } else if ( !top_stat.Run && !bot_stat.Run ) {
 
-# 3962
+# 3974
 TopDelta = (top_last_delta>0)?top_last_delta:(0-top_last_delta);
 BotDelta = (bot_last_delta>0)?bot_last_delta:(0-bot_last_delta);
 if (( top_stat.Hold || (TopDelta < (top_drift<<5 )) ||
@@ -11218,7 +11223,7 @@ if (FeedTimeoutOn) {
 
 } else if (BallTimerOn) {
 
-# 3980
+# 3992
 if (feed_rate_hs < BallElapsedHalfSec)
 tmp4 = 2;
 else {
@@ -11245,7 +11250,7 @@ feed_stat.Ok2Updt = 1;
 FeedTimeoutOn = 0;
 FeedEarlyOn = 0;
 
-# 4010
+# 4022
 DbgFeedPwm_d = d_feed_per;
 if (!DbgFeedType) {
 DbgFeedType = 4;
@@ -11255,7 +11260,7 @@ DbgFeedTime = BallElapsedHalfSec;
 }
 }
 
-# 4025
+# 4037
 break;
 case 1:
 if (CurShotState != (ushort)0U) {
@@ -11281,7 +11286,7 @@ if (++msec5 == 0U) {
 msec5 = 155;
 ++seconds;
 
-# 4058
+# 4070
 if (DoDebug && start_count) {
 INTCONbits.GIE = 0;
 tmp1 = start_count;
@@ -11384,11 +11389,11 @@ val = (unsigned int)(a2dValue[a2dChan] = ((((int)ADRESH) & 0xff) << 8) | (((int)
 ADCON0 = 0;
 if (a2dChan == 0) {
 
-# 4164
+# 4176
 if (BatAvgCnt < 20) {
 CheckBattery(val);
 
-# 4182
+# 4194
 }
 BAT_lastval = val;
 
@@ -11440,10 +11445,23 @@ CurSenseCt[chan][j] = 0;
 } else if ((a2dChan == 3) || (a2dChan == 4) || (a2dChan == 5)) {
 
 chan = a2dChan - 3;
-if (val < BDM_TripPoint[chan]) {
+if (chan == 1 && val > BDM_TripPoint_H[1])
+{
+if(++BDM_CurSenseCt_H[1] > BDM_TripTime_H[1])
+{
+stop_all(0,(long *)0);
+ErrorStat.ElevCurSense_H = 1;
+if (ErrorShutDown == 0) ErrorShutDown = 1;
+}
+else
+{
+BDM_CurSenseCt_H[1] = 0;
+}
+}
+
+else if (val < BDM_TripPoint[chan]) {
 BDM_CurSenseCt[chan] = 0;
 } else if (++BDM_CurSenseCt[chan] > BDM_TripTime[chan]) {
-
 ;
 stop_all(0,(long *)0);
 ;
@@ -11467,7 +11485,7 @@ asm(" clrwdt");
 stat.TickInt = 0;
 }
 
-# 4266
+# 4291
 if ((stat.WaitResp == 0U) && SlaveResOfs) {
 if (SlaveResOfs == 1) {
 ;
@@ -11504,11 +11522,11 @@ play_mode & ((8)|(2)|(4));
 
 stop_all(0,(long*)0);
 
-# 4311
+# 4336
 CurShot.x = home_loc.sweep;
 CurShot.y = home_loc.elev;
 
-# 4318
+# 4343
 CurShot.top = 0;
 CurShot.bot = 0;
 strcpy(&lcd_line[0][0], lob_model);
@@ -11517,7 +11535,7 @@ strcpy(&lcd_line[1][0], lob_version);
 lcd_line[1][14] = flash_header.vers[5];
 lcd_line[1][15] = flash_header.vers[6];
 
-# 4334
+# 4359
 strcpy(&lcd_line[2][0], homingmsg);
 strcpy(&lcd_line[3][0], waitmsg);
 
@@ -11538,11 +11556,11 @@ home_ticks = 0;
 batt_ticks = 0;
 ;
 
-# 4365
+# 4390
 CurShot.x = home_loc.sweep;
 CurShot.y = home_loc.elev;
 
-# 4372
+# 4397
 CurShot.top = 0x6000;
 CurShot.bot = 0x6000;
 CurShotState = 30U; home_ticks = ticks;
@@ -11642,6 +11660,12 @@ INTCONbits.INT0IF=0;
 } while (power.debounced == (unsigned char)1);
 
 Setup();
+BDM_CurSenseCt[0]=0;
+BDM_CurSenseCt[1]=0;
+BDM_CurSenseCt[2]=0;
+BDM_CurSenseCt_H[0]=0;
+BDM_CurSenseCt_H[1]=0;
+BDM_CurSenseCt_H[2]=0;
 eladj = 0;
 elev_corr.s = (ushort)(SEERead((long)&flash_header.elev_correction - (long)&flash_header) & 0xff);
 elev_corr.s |= (((ushort)SEERead(((long)&flash_header.elev_correction - (long)&flash_header) + 1)) << 8)& 0xff00;
@@ -11655,7 +11679,7 @@ putrsDIAG("\n\r\n\r\n\rWaking Up ...");
 putrsDIAG("\n\rWakeUp elev_corr.s = ");
 dumplong(elev_corr.s);
 
-# 4491
+# 4522
 ;
 power.count = 0;
 ;
@@ -11672,7 +11696,7 @@ batt_ticks = 0;
 cur_st = 1;
 prev_st = -1;
 
-# 4540
+# 4571
 }
 
 if (stat.HaveCmd)
@@ -11738,16 +11762,16 @@ LastBatAvg = BatteryAverage(batval);
 
 if (top_stat.BatTest) {
 
-# 4610
+# 4641
 batt_ticks = ticks + 230U;
 
-# 4615
+# 4646
 }
 
 if (top_stat.BatTest && (BatAvgCnt > 2)) {
 top_stat.BatTest = 0;
 
-# 4635
+# 4666
 strcpy(&lcd_line[2][0], battmsg);
 if (batval >= 90)
 strcpy(&lcd_line[2][11], "Full");
@@ -11774,7 +11798,7 @@ CheckBattery(batval);
 
 }
 
-# 4674
+# 4705
 rky = debounced_remote();
 rky2 = debounced_remote_USART2();
 
@@ -11792,7 +11816,7 @@ RemoteDataCnt = 0;
 
 if (rky || RemoteDataReceived) {
 
-# 4695
+# 4726
 if (rky == 0x3F) {
 strcpy (RemoteString,lob_version);
 RemoteString[14] = flash_header.vers[5];
@@ -11826,7 +11850,7 @@ Write2USART(court_locs[i][j].spin + 170);
 }
 }
 
-# 4739
+# 4770
 while((!TXSTA2bits.TRMT));
 Write2USART(0x00);
 }
@@ -11890,7 +11914,7 @@ RemoteString[0] = rky;
 RemoteString[1] = 0x00;
 }
 
-# 4806
+# 4837
 else if (RemotePgmMode == RPM_SHOTFEED) {
 
 RemotePgmFeed[RemotePgmShot] = rky;
@@ -11899,7 +11923,7 @@ RemoteString[1] = 0x00;
 RemotePgmMode = RPM_START;
 }
 
-# 4818
+# 4849
 else if (RemotePgmMode == RPM_SHOTSPIN) {
 
 RemotePgmSpin[RemotePgmShot] = rky-170;
@@ -11914,7 +11938,7 @@ RemoteDataCnt = 4;
 RemotePgmMode = RPM_SHOTFEED;
 }
 
-# 4836
+# 4867
 else if (RemotePgmMode == RPM_SHOTSPEED) {
 
 for (i=0;speed_trans[i] <= rky;i++) {
@@ -11923,7 +11947,7 @@ RemotePgmSpeed[RemotePgmShot] = i*5;
 spinmin = 3;
 spinmax = -3;
 
-# 4848
+# 4879
 for (i=0; court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed !=0; i++) {
 if (court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed == RemotePgmSpeed[RemotePgmShot]) {
 if (court_locs[RemotePgmLocn[RemotePgmShot]-1][i].spin < spinmin) {
@@ -11939,7 +11963,7 @@ spinmax = court_locs[RemotePgmLocn[RemotePgmShot]-1][i].spin;
 }
 }
 
-# 4880
+# 4911
 RemoteString[0] = rky;
 RemoteString[1] = spinmin+170;
 RemoteString[2] = spinmax+170;
@@ -11949,7 +11973,7 @@ RemoteDataCnt = 4;
 RemotePgmMode = RPM_SHOTSPIN;
 }
 
-# 4893
+# 4924
 else if (RemotePgmMode == RPM_SHOTLOCN) {
 if (rky == 0x52) {
 UDrillShots--;
@@ -11987,7 +12011,7 @@ speedmax = court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed;
 }
 }
 
-# 4943
+# 4974
 RemoteString[0] = rky;
 RemoteString[1] = speed_trans[speedmin/5];
 RemoteString[2] = speed_trans[speedmax/5];
@@ -11997,10 +12021,10 @@ RemotePgmMode = RPM_SHOTSPEED;
 }
 }
 
-# 4962
+# 4993
 else if (RemotePgmMode == RPM_SHOTNUM) {
 
-# 5023
+# 5054
 if (rky == 0x55) {
 for (i=0; i<=pp_maxloc-1; i++) {
 RemoteString[i] = i+1;
@@ -12023,7 +12047,7 @@ break;
 }
 }
 
-# 5057
+# 5088
 RemoteString[k] = 0x00;
 RemoteDataCnt = k;
 RemotePgmMode = RPM_EDITLOCN;
@@ -12047,7 +12071,7 @@ speedmax = court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed;
 }
 }
 
-# 5095
+# 5126
 RemoteString[0] = speed_trans[speedmin/5];
 RemoteString[1] = speed_trans[speedmax/5];
 RemoteString[2] = 5;
@@ -12073,7 +12097,7 @@ spinmax = court_locs[RemotePgmLocn[RemotePgmShot]-1][i].spin;
 }
 }
 
-# 5135
+# 5166
 RemoteString[0] = spinmin+170;
 RemoteString[1] = spinmax+170;
 RemoteString[2] = 1;
@@ -12093,7 +12117,7 @@ RemotePgmMode = RPM_EDITFEED;
 }
 }
 
-# 5167
+# 5198
 else if (rky == 0x4c) {
 key = 0x03;
 
@@ -12142,7 +12166,7 @@ RemotePgmFeed[i] = act_program.feed[i];
 RemoteString[i*4+3] = RemotePgmFeed[i];
 }
 
-# 5231
+# 5262
 if (i == 0) {
 
 
@@ -12198,7 +12222,7 @@ curState = 2;
 priorState = 5;
 }
 
-# 5290
+# 5321
 else if ((rky >= 0x71) && (rky < (0x71+6))) {
 strcpy (RemoteString, "Shot Selected");
 
@@ -12208,7 +12232,7 @@ RemotePgmShot = rky - 0x71;
 if ((RemotePgmShot+1) > UDrillShots)
 UDrillShots = RemotePgmShot+1;
 
-# 5309
+# 5340
 RemotePgmMode = RPM_SHOTNUM;
 }
 
@@ -12225,7 +12249,7 @@ strcpy (RemoteString, "Exit User Drills");
 
 }
 
-# 5330
+# 5361
 else if (rky == 0x57) {
 RemoteString[0] = 0x57;
 RemoteString[1] = 0x00;
@@ -12259,7 +12283,7 @@ RemoteSaveDrill();
 RemotePgmMode = RPM_DWNLDDRL;
 }
 
-# 5368
+# 5399
 else if (rky == 0x49){
 RemotePgmMode = 0;
 
@@ -12428,7 +12452,7 @@ strcpy (RemoteString, "Clear Program Mode");
 }
 }
 
-# 5541
+# 5572
 else if (rky == 0x31) {
 
 key = 0x03;
@@ -12559,7 +12583,7 @@ if ((play_mode & 2) && (preset_type == 1U)) {
 preset_ix[preset_type] = 7;
 lob_parm(0x04,(uchar *)&preset_ix[preset_type],&(preset[preset_type].value[0]),preset_mask[preset_type]);
 
-# 5675
+# 5706
 itoa(RemoteStringVar,preset[1U].row+1,10);
 
 strcpy (RemoteString, "Line: ");
@@ -12633,7 +12657,7 @@ strcpy (RemoteString,"2-Line Play");
 if (play_mode & 1)
 key = 0x03;
 
-# 5756
+# 5787
 if ((play_mode & 1) && ((play_mode & 2) && ((preset_type >= 4))))
 
 toggle_play = 1;
@@ -12654,7 +12678,7 @@ strcpy (RemoteString,"All-Courter Drill");
 
 else if (preset_type == 6 && ((model_type == 2U) || (model_type == 5U))) {
 
-# 5793
+# 5824
 preset_type = 13;
 strcpy (RemoteString,"Moonballer Drill");
 
@@ -12678,7 +12702,7 @@ strcpy (RemoteString,"Forehand Plus Drill");
 
 }
 
-# 5829
+# 5860
 else if (preset_type == 9) {
 preset_type = 10;
 
@@ -12766,7 +12790,7 @@ lob_parm(0x04,(uchar*)&man_parm,(signed char *)&manual,(ushort)(1U|(1U << 1U) |(
 
 set_serve(&manual);
 
-# 5920
+# 5951
 itoa(RemoteStringVar,speed_trans[manual.speed/5],10);
 
 strcpy (RemoteString, "Speed: ");
@@ -13046,7 +13070,7 @@ else if (preset[0].col == 3)
 strcpy (RemoteStringVar, "B");
 strcat (RemoteString, RemoteStringVar);
 
-# 6206
+# 6237
 } else if ((play_mode & 2) && (preset_type == 2)) {
 
 
@@ -13123,7 +13147,7 @@ else if (preset[0].col == 3)
 strcpy (RemoteStringVar, "B");
 strcat (RemoteString, RemoteStringVar);
 
-# 6289
+# 6320
 } else if ((play_mode & 2) && (preset_type == 2)) {
 
 
@@ -13364,24 +13388,24 @@ Write2USART(court_locs[i][j].spin + 170);
 }
 }
 
-# 6540
+# 6571
 while((!TXSTA2bits.TRMT));
 Write2USART(0x00);
 }
 
-# 6557
+# 6588
 }
 }
 
-# 6565
+# 6596
 if (power_state != 4) {
 lobmain(key);
 
-# 6573
+# 6604
 if (RemoteDataReceived) {
 RemoteDataReceived = 0;
 
-# 6582
+# 6613
 if (RemotePgmMode == RPM_SHOTTABLES) {
 
 RemotePgmMode = RPM_START;
@@ -13420,7 +13444,7 @@ puts2USART (RemoteString);
 
 strcpy (RemoteString, "\0");
 
-# 6625
+# 6656
 }
 
 
@@ -13431,7 +13455,7 @@ toggle_play = 0;
 }
 }
 
-# 6643
+# 6674
 if ((key > 6) && (key < 34) && ((model_type == 2U) || (model_type == 5U))) {
 
 startit = 0;
@@ -13443,7 +13467,7 @@ case 7:
 if ((play_mode & 1) && (play_mode & 2) && (preset_type >= 4))
 startit = 1;
 
-# 6663
+# 6694
 if (preset_type == 4)
 preset_type = 13;
 else preset_type = 4;
@@ -13461,7 +13485,7 @@ case 9:
 if ((play_mode & 1) && (play_mode & 2) && (preset_type >= 4))
 startit = 1;
 
-# 6689
+# 6720
 if (preset_type == 5)
 preset_type = 14;
 else preset_type = 5;
@@ -13479,7 +13503,7 @@ case 8:
 if ((play_mode & 1) && (play_mode & 2) && (preset_type >= 4))
 startit = 1;
 
-# 6715
+# 6746
 if (preset_type == 6)
 preset_type = 15;
 else preset_type = 6;
@@ -13500,7 +13524,7 @@ preset_type = 3;
 goto skiptwoline;
 case 19:
 
-# 6742
+# 6773
 if ((play_mode & 2) && (preset_type == 0)) {
 preset_ix[preset_type] = 6;
 lob_parm(0x04,(uchar *)&preset_ix[preset_type],&(preset[preset_type].value[0]),preset_mask[preset_type]);
@@ -13556,7 +13580,7 @@ break;
 }
 }
 
-# 6807
+# 6838
 if ((key > 6) && (key <= 0x24) && (model_type == 4U || model_type == 3U)) {
 
 
@@ -13585,7 +13609,7 @@ else if (preset_type == 8) {
 preset_type = 9;
 }
 
-# 6848
+# 6879
 else if (preset_type == 9) {
 preset_type = 10;
 }
@@ -13624,7 +13648,7 @@ preset_type = 3;
 goto skip2line;
 case 0x18:
 
-# 6893
+# 6924
 if ((play_mode & 2) && (preset_type == 0)) {
 preset_ix[preset_type] = 6;
 lob_parm(0x04,(uchar *)&preset_ix[preset_type],&(preset[preset_type].value[0]),preset_mask[preset_type]);
@@ -13752,7 +13776,7 @@ break;
 }
 }
 
-# 7028
+# 7059
 act_program.method[i] = RemotePgmMethod[i];
 }
 for (i=UDrillShots; i<6; i++) {
@@ -13765,7 +13789,7 @@ save_prog(program_ix,&act_program);
 priorState = 5;
 }
 
-# 7047
+# 7078
 void nofunc (int code, long *args)
 
 { }
@@ -13800,7 +13824,7 @@ stat.CmdErr = 1;
 }
 }
 
-# 7090
+# 7121
 unsigned char *parse_next(unsigned char *cp, unsigned char delim, unsigned long *ulp)
 {
 unsigned char *np;
@@ -13890,7 +13914,7 @@ unsigned char *cptr = (unsigned char *)args[0];
 *cptr = args[1];
 }
 
-# 7302
+# 7333
 void spitest(int code, long *args)
 {
 unsigned char data, status;
@@ -13904,7 +13928,7 @@ break;
 case 1:
 ChipSelect(args[0]);
 
-# 7319
+# 7350
 data = ReadSPI1();
 ChipDeSelect(args[0]);
 putrsDIAG(crlf);
@@ -13964,7 +13988,7 @@ break;
 }
 }
 
-# 7390
+# 7421
 void DisableSlaveSPI(void)
 {
 char c, c1;
@@ -14010,7 +14034,7 @@ data = ReadSPI1();
 PORTDbits.RD6 = 1;
 ChipDeSelect(1);
 
-# 7439
+# 7470
 return data;
 }
 
@@ -14308,7 +14332,7 @@ WriteSPI1(chan);
 ChipDeSelect(2);
 }
 
-# 7741
+# 7772
 void SlowFeedMtr(int flag)
 {
 if (flag)
@@ -14475,11 +14499,11 @@ case 6:
 CurShot.top = 0x6000;
 CurShot.bot = 0x6000;
 
-# 7916
+# 7947
 CurShot.x = home_loc.sweep;
 CurShot.y = home_loc.elev;
 
-# 7923
+# 7954
 CurShotState = 30U;
 break;
 case 7:
@@ -14512,11 +14536,11 @@ StartFeed();
 CurShot.top = args[0];
 CurShot.bot = args[0];
 
-# 7964
+# 7995
 CurShot.x = home_loc.sweep;
 CurShot.y = home_loc.elev;
 
-# 7971
+# 8002
 CurShotState = 1;
 break;
 }
@@ -14612,7 +14636,7 @@ return (rc);
 
 }
 
-# 8081
+# 8112
 void SetFeedRate(long feedpwm)
 {
 last_feed_pwm = feedpwm;
@@ -14766,7 +14790,7 @@ int ix;
 
 if (ErrorShutDown) return;
 
-# 8239
+# 8270
 if ((val > 0x6000) || (val < 0x1a00)) {
 stop_all(0,(long*)0);
 ErrorStat.TopPeriod = 1;
@@ -14857,7 +14881,7 @@ case 2:
 
 SetTopPwm();
 
-# 8336
+# 8367
 putrsDIAG((const char *)"\n\rtop_t2=");
 dumplong(last_top_t2);
 putrsDIAG((const char *)" top_t1=");
@@ -14875,7 +14899,7 @@ break;
 case 4:
 UpdTopPer();
 
-# 8360
+# 8391
 putrsDIAG((const char *)"\n\rperiod=");
 dumplong(last_top_t2 - last_top_t1);
 putrsDIAG((const char *)" delta=");
@@ -14904,7 +14928,7 @@ int ix;
 
 if (ErrorShutDown) return;
 
-# 8392
+# 8423
 if ((val > 0x6000) || (val < 0x1a00)) {
 stop_all(0,(long*)0);
 ErrorStat.BotPeriod = 1;
@@ -15158,7 +15182,7 @@ ChipSelect(0);
 WriteSPI1(*cptr++);
 ChipDeSelect(0);
 
-# 8649
+# 8680
 Delay1KTCYx(3);
 
 }
@@ -15269,7 +15293,7 @@ ADCON0 = 0;
 CloseTimer1();
 CloseTimer0();
 
-# 8765
+# 8796
 PORTA=0;
 PORTB=0;
 PORTC=0;
@@ -15342,7 +15366,7 @@ if (val <= BAT_TripPoint) {
 if (++BAT_CurSenseCt >= BAT_TripTime) {
 ;
 
-# 8841
+# 8872
 stop_all(0,(long*)0);
 ;
 ;

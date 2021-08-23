@@ -223,9 +223,10 @@ unsigned BotCnt:1;
 unsigned Reserved:1;
 unsigned SweepCnt:1;
 unsigned ElevCnt:1;
+unsigned ElevCurSense_H:1;
 };
 
-# 4 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;
@@ -238,7 +239,7 @@ extern void * memcpy(void *, const void *, size_t);
 extern void * memmove(void *, const void *, size_t);
 extern void * memset(void *, int, size_t);
 
-# 35
+# 42
 extern char * strcat(char *, const char *);
 extern char * strcpy(char *, const char *);
 extern char * strncat(char *, const char *, size_t);
@@ -282,7 +283,7 @@ void dumplong(unsigned long addr);
 void dumpshort(unsigned long addr);
 unsigned long atoh(char *cptr);
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\delays.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\delays.h"
 void Delay1TCYx(unsigned char);
 
 # 19

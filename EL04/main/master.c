@@ -678,14 +678,15 @@ char a2dChan2Dump;
 //Channel 1 = 16 (top serve motor current sense)
 //Channel 2 = 16 (bottom serve motor current sense)
 //Channel 3 = 16 (sweep motor current sense)
-//Channel 4 = 16 (elevation motor curren sense)
+//Channel 4 = 16 (elevation motor current sense)
 //Channel 5 = 8 (feed motor current sense)
 //Channel 6 = 1 (feed motor back emf)
 //Channel 7 not used
 
 // C18 to XC8 Compiler Changes Start
 //const rom char a2dGain[] = {0,6,6,6,6,4,0};
-const char a2dGain[] = {0,6,6,6,6,4,0};
+//const char a2dGain[] = {0,6,6,6,6,4,0};
+const char a2dGain[] = {0,6,6,6,5,4,0};
 // C18 to XC8 Compiler Changes End
 
 #define MAX_ACC		8
@@ -973,6 +974,9 @@ unsigned char CurSenseCt[2][23];				// serve motors a2d value/time
 unsigned char BDM_CurSenseCt[3];				// sweep, elev and feed motors' time count over trip point
 unsigned int BDM_TripPoint[3];					// sweep, elev and feed motors' trip point
 unsigned int BDM_TripTime[3];					// sweep, elev and feed motors' trip time - in .2 sec intervals
+unsigned char BDM_CurSenseCt_H[3];				// sweep, elev and feed motors' time count over trip point at higher threshold
+unsigned int BDM_TripPoint_H[3];				// sweep, elev and feed motors' trip point with higher threshold and faster trip time
+unsigned int BDM_TripTime_H[3];					// sweep, elev and feed motors' trip time - in .2 sec intervals with faster trip time and higher threshold
 unsigned char BAT_CurSenseCt;					// battery time count under trip point
 unsigned int BAT_TripPoint;						// battery trip point
 unsigned int BAT_TripTime;						// battery trip time
@@ -3276,14 +3280,24 @@ void Setup(void)
 //	BDM_TripTime[SWEEP] = 2;					// default time for SWEEP motor is .4 sec, reduced to prevent destruction when XC8 compiler testing
 // C18 to XC8 Compiler Changes End
 	BDM_CurSenseCt[SWEEP] = 0;
+
 //	BDM_TripPoint[ELEV] = 266;					// default a2d for ELEV motor is 1.3V
 // C18 to XC8 Compiler Changes Start
-	BDM_TripPoint[ELEV] = 393;					// default a2d for ELEV motor is 1.92v
-	BDM_TripTime[ELEV] = 3;						// default time for ELEV motor is .6 sec
+//	BDM_TripPoint[ELEV] = 393;					// default a2d for ELEV motor is 1.92v
+//	BDM_TripTime[ELEV] = 3;						// default time for ELEV motor is .6 sec
 //	BDM_TripPoint[ELEV] = 200;					// default a2d for ELEV motor is X.XXv, reduced to prevent destruction when XC8 compiler testing
 //	BDM_TripTime[ELEV] = 2;						// default time for ELEV motor is .4 sec, reduced to prevent destruction when XC8 compiler testing
 // C18 to XC8 Compiler Changes End
+	
+	// If lower trip threshold occurs for a longer period of time, indication of a drag on the mechanism.
+	BDM_TripPoint[ELEV] = 25;					// default a2d for ELEV motor is 0.12v. (0.12V/10gain)/0.1ohms = 0.12A New threshold for gain decrease from 16 to 10.
+	BDM_TripTime[ELEV] = 30;					// default time for ELEV motor is 6 sec
 	BDM_CurSenseCt[ELEV] = 0;
+	// If higher trip threshold occurs for a shorter period of time, indication of a more serious violation.
+	BDM_TripPoint_H[ELEV] = 164;				// default a2d for ELEV motor is 0.8v. (0.8V/10gain)/0.1ohms = 0.8A New hard over-current threshold for gain decrease from 16 to 10.
+	BDM_TripTime_H[ELEV] = 2;					// default time for ELEV motor is .4 sec
+	BDM_CurSenseCt_H[ELEV] = 0;
+
 	BDM_TripPoint[FEED] = 245;					// default a2d for FEED motor is 1.2V
 	BDM_TripTime[FEED] = 15;					// default time for SWEEP motor is 3 sec
 	BDM_CurSenseCt[FEED] = 0;
@@ -3592,7 +3606,7 @@ void main(void)
 		lob_model = " ELITE GRAND IV ";
 		pp_maxloc = 0;
 		lowbatt_msg = "Battery Depleted";
-		lob_version	= "Version 1.226.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.230.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST;
 // v1.205 start
 		ELEV_CORR_MIN = -40;			// minimum allowable adjustment during test shot calibration
@@ -3608,7 +3622,7 @@ void main(void)
 		lob_model = " ELITE GRAND V  ";
 		pp_maxloc = 6; 
 		lowbatt_msg = "Battery Depleted";
-		lob_version	= "Version 1.226.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.230.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST;
 // v1.205 start
 		ELEV_CORR_MIN = -40;			// minimum allowable adjustment during test shot calibration
@@ -3624,7 +3638,7 @@ void main(void)
 		lob_model = "ELITE GRAND V LE";
 		pp_maxloc = 18;
 		lowbatt_msg = "Battery Depleted";
-		lob_version	= "Version 1.226.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.230.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST;
 // v1.205 start
 		ELEV_CORR_MIN = -40;			// minimum allowable adjustment during test shot calibration
@@ -3648,7 +3662,7 @@ void main(void)
 		lob_model = "    PHENOM 1    ";
 		pp_maxloc = 0;
 		lowbatt_msg = " Power Problem  ";
-		lob_version	= "Version 1.226.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.230.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST_CLUB;
 // v1.205 start
 		ELEV_CORR_MIN = -136;			// minimum allowable adjustment during test shot calibration, increased low range for Clubs
@@ -3667,7 +3681,7 @@ void main(void)
 		lob_model = "    PHENOM 2    ";
 		pp_maxloc = 18;
 		lowbatt_msg = " Power Problem  ";
-		lob_version	= "Version 1.226.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.230.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST_CLUB;
 // v1.205 start
 		ELEV_CORR_MIN = -136;			// minimum allowable adjustment during test shot calibration, increased low range for Clubs
@@ -3687,7 +3701,7 @@ void main(void)
 		lob_model = "ELITE GRAND V LE";
 		pp_maxloc = 18;
 		lowbatt_msg = "Battery Depleted";
-		lob_version	= "Version 1.226.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.230.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST;
 // v1.205 start
 		ELEV_CORR_MIN = -40;			// minimum allowable adjustment during test shot calibration
@@ -4230,10 +4244,23 @@ void main(void)
 					} else if ((a2dChan == 3) || (a2dChan == 4) || (a2dChan == 5)) {
 						// checking bidirectional motors and feed motor
 						chan = a2dChan - 3;
-						if (val < BDM_TripPoint[chan]) {		// ok if less than TripPoint
+						if (chan == 1 && val > BDM_TripPoint_H[1])	// Elevation gearmotor hard over-current
+						{
+							if(++BDM_CurSenseCt_H[1] > BDM_TripTime_H[1])
+							{
+								stop_all(0,(long *)0);
+								ErrorStat.ElevCurSense_H = 1;
+								if (ErrorShutDown == 0) ErrorShutDown = 1;
+							}
+							else
+							{
+								BDM_CurSenseCt_H[1] = 0;
+							}
+						}
+//						if (val < BDM_TripPoint[chan]) {		// ok if less than TripPoint
+						else if (val < BDM_TripPoint[chan]) {	// ok if less than TripPoint
 							BDM_CurSenseCt[chan] = 0;
 						} else if (++BDM_CurSenseCt[chan] > BDM_TripTime[chan]) {
-							// more than 25 amps, shut down all motors at once
 							PUTRSDIAG("OVERCURRENT33333");
 							stop_all(0,(long *)0);
 							DUMPSHORT(a2dChan);
@@ -4468,6 +4495,12 @@ void main(void)
 			} while (power.debounced == (unsigned char)POWER_RELEASED);// go back to sleep until power was pressed
 
 			Setup();
+			BDM_CurSenseCt[0]=0;
+			BDM_CurSenseCt[1]=0;
+			BDM_CurSenseCt[2]=0;
+			BDM_CurSenseCt_H[0]=0;
+			BDM_CurSenseCt_H[1]=0;
+			BDM_CurSenseCt_H[2]=0;
 			eladj = 0;
 			elev_corr.s = (ushort)(SEERead((long)&flash_header.elev_correction - (long)&flash_header) & 0xff);
 			elev_corr.s |= (((ushort)SEERead(((long)&flash_header.elev_correction - (long)&flash_header) + 1)) << 8)& 0xff00;

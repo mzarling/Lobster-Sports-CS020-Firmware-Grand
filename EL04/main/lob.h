@@ -788,6 +788,7 @@ struct moterr {
 	unsigned Reserved:1;				// 12 - set if low battery
 	unsigned SweepCnt:1;				// 13 - set if sweep motor is not getting decoder counts
 	unsigned ElevCnt:1;					// 14 - set if elevation motor is not getting decoder counts
+	unsigned ElevCurSense_H:1;			// 15 - set if elevation motor over current
 };
 
 // 07/29/09 start

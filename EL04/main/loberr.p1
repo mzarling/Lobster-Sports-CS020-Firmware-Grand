@@ -1,18 +1,18 @@
 Version 3.2 HI-TECH Software Intermediate Code
 "775 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
-[s S724 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S724 moterr LoBat Reserved1 Reserved2 TopPeriod BotPeriod TopCurSense BotCurSense FeedCurSense SweepCurSense ElevCurSense TopCnt BotCnt Reserved SweepCnt ElevCnt ]
+[s S724 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S724 moterr LoBat Reserved1 Reserved2 TopPeriod BotPeriod TopCurSense BotCurSense FeedCurSense SweepCurSense ElevCurSense TopCnt BotCnt Reserved SweepCnt ElevCnt ElevCurSense_H ]
 "36 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\loberr.c
 [v _ErrorStat `S724 ~T0 @X0 0 e ]
 "27
 [v _stop_all `(v ~T0 @X0 0 ef2`i`*l ]
 "37
 [v _CurShotState `us ~T0 @X0 0 e ]
-"36 C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h
+"43 C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h
 [v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
-[v F6842 `uc ~T0 @X0 -> 17 `i t ]
+[v F6843 `uc ~T0 @X0 -> 17 `i t ]
 "33 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\loberr.c
-[v _lcd_line `F6842 ~T0 @X0 -> 0 `x e ]
+[v _lcd_line `F6843 ~T0 @X0 -> 0 `x e ]
 "8 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
 [v _clear_lcd `(v ~T0 @X0 0 ef1`uc ]
 "29 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\loberr.c
@@ -108,33 +108,33 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
 [; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
 [; ;string.h: 24: extern void * memset(void *, int, size_t);
-[; ;string.h: 35: extern char * strcat(char *, const char *);
-[; ;string.h: 36: extern char * strcpy(char *, const char *);
-[; ;string.h: 37: extern char * strncat(char *, const char *, size_t);
-[; ;string.h: 38: extern char * strncpy(char *, const char *, size_t);
-[; ;string.h: 39: extern char * strdup(const char *);
-[; ;string.h: 40: extern char * strtok(char *, const char *);
-[; ;string.h: 43: extern int memcmp(const void *, const void *, size_t);
-[; ;string.h: 44: extern int strcmp(const char *, const char *);
-[; ;string.h: 45: extern int stricmp(const char *, const char *);
-[; ;string.h: 46: extern int strncmp(const char *, const char *, size_t);
-[; ;string.h: 47: extern int strnicmp(const char *, const char *, size_t);
-[; ;string.h: 48: extern void * memchr(const void *, int, size_t);
-[; ;string.h: 49: extern size_t strcspn(const char *, const char *);
-[; ;string.h: 50: extern char * strpbrk(const char *, const char *);
-[; ;string.h: 51: extern size_t strspn(const char *, const char *);
-[; ;string.h: 52: extern char * strstr(const char *, const char *);
-[; ;string.h: 53: extern char * stristr(const char *, const char *);
-[; ;string.h: 54: extern char * strerror(int);
-[; ;string.h: 55: extern size_t strlen(const char *);
-[; ;string.h: 56: extern char * strchr(const char *, int);
-[; ;string.h: 57: extern char * strichr(const char *, int);
-[; ;string.h: 58: extern char * strrchr(const char *, int);
-[; ;string.h: 59: extern char * strrichr(const char *, int);
+[; ;string.h: 42: extern char * strcat(char *, const char *);
+[; ;string.h: 43: extern char * strcpy(char *, const char *);
+[; ;string.h: 44: extern char * strncat(char *, const char *, size_t);
+[; ;string.h: 45: extern char * strncpy(char *, const char *, size_t);
+[; ;string.h: 46: extern char * strdup(const char *);
+[; ;string.h: 47: extern char * strtok(char *, const char *);
+[; ;string.h: 50: extern int memcmp(const void *, const void *, size_t);
+[; ;string.h: 51: extern int strcmp(const char *, const char *);
+[; ;string.h: 52: extern int stricmp(const char *, const char *);
+[; ;string.h: 53: extern int strncmp(const char *, const char *, size_t);
+[; ;string.h: 54: extern int strnicmp(const char *, const char *, size_t);
+[; ;string.h: 55: extern void * memchr(const void *, int, size_t);
+[; ;string.h: 56: extern size_t strcspn(const char *, const char *);
+[; ;string.h: 57: extern char * strpbrk(const char *, const char *);
+[; ;string.h: 58: extern size_t strspn(const char *, const char *);
+[; ;string.h: 59: extern char * strstr(const char *, const char *);
+[; ;string.h: 60: extern char * stristr(const char *, const char *);
+[; ;string.h: 61: extern char * strerror(int);
+[; ;string.h: 62: extern size_t strlen(const char *);
+[; ;string.h: 63: extern char * strchr(const char *, int);
+[; ;string.h: 64: extern char * strichr(const char *, int);
+[; ;string.h: 65: extern char * strrchr(const char *, int);
+[; ;string.h: 66: extern char * strrichr(const char *, int);
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18f6722.h: 47: extern volatile unsigned char SSP2CON2 @ 0xF62;
-"49 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [; ;pic18f6722.h: 49: asm("SSP2CON2 equ 0F62h");
 [; <" SSP2CON2 equ 0F62h ;# ">
 [; ;pic18f6722.h: 52: typedef union {
@@ -6233,7 +6233,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lob.h: 788: unsigned Reserved:1;
 [; ;lob.h: 789: unsigned SweepCnt:1;
 [; ;lob.h: 790: unsigned ElevCnt:1;
-[; ;lob.h: 791: };
+[; ;lob.h: 791: unsigned ElevCurSense_H:1;
+[; ;lob.h: 792: };
 [; ;loberr.c: 27: void stop_all(int code, long *args);
 [; ;loberr.c: 29: extern char lcd_updated;
 [; ;loberr.c: 33: extern char lcd_line[][17];
@@ -6281,22 +6282,23 @@ Version 3.2 HI-TECH Software Intermediate Code
 :s 6C
 ]
 [; ;loberr.c: 75: const char* period_msg = "  Invalid Data  ";
-"80
+"76
+[v _overcur_h_msg `*Cuc ~T0 @X0 1 e ]
+[i _overcur_h_msg
+:s 7C
+]
+[; ;loberr.c: 76: const char* overcur_h_msg = "Hrd Over-Current";
+"81
 [v _motormsg `*Cuc ~T0 @X0 -> 0 `x e ]
 [i _motormsg
 :U ..
-"82
-:s 7C
+"83
 :s 8C
 :s 9C
 :s 10C
-"83
 :s 11C
--> -> 0 `i `*Cuc
--> -> 0 `i `*Cuc
--> -> 0 `i `*Cuc
 "84
--> -> 0 `i `*Cuc
+:s 12C
 -> -> 0 `i `*Cuc
 -> -> 0 `i `*Cuc
 -> -> 0 `i `*Cuc
@@ -6304,152 +6306,168 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 0 `i `*Cuc
 -> -> 0 `i `*Cuc
 -> -> 0 `i `*Cuc
+-> -> 0 `i `*Cuc
 "86
+-> -> 0 `i `*Cuc
+-> -> 0 `i `*Cuc
+-> -> 0 `i `*Cuc
+"87
 -> -> 0 `i `*Cuc
 ..
 ]
-[; ;loberr.c: 80: const char* motormsg[] = {
-[; ;loberr.c: 82: "Top Serve Motor ","Bot Serve Motor ","   Feed Motor   ","  Sweep Motor   ",
-[; ;loberr.c: 83: "Elevation Motor ",0,0,0,
-[; ;loberr.c: 84: 0,0,0,0,
-[; ;loberr.c: 85: 0,0,0,0
-[; ;loberr.c: 86: };
-"92
-[v _lob_error `(v ~T0 @X0 1 ef ]
+[; ;loberr.c: 81: const char* motormsg[] = {
+[; ;loberr.c: 83: "Top Serve Motor ","Bot Serve Motor ","   Feed Motor   ","  Sweep Motor   ",
+[; ;loberr.c: 84: "Elevation Motor ",0,0,0,
+[; ;loberr.c: 85: 0,0,0,0,
+[; ;loberr.c: 86: 0,0,0,0
+[; ;loberr.c: 87: };
 "93
+[v _lob_error `(v ~T0 @X0 1 ef ]
+"94
 {
-[; ;loberr.c: 92: void lob_error(void)
-[; ;loberr.c: 93: {
+[; ;loberr.c: 93: void lob_error(void)
+[; ;loberr.c: 94: {
 [e :U _lob_error ]
 [f ]
-"94
+"95
 [v _code `c ~T0 @X0 1 a ]
-[; ;loberr.c: 94: signed char code = -1;
+[; ;loberr.c: 95: signed char code = -1;
 [e = _code -> -U -> 1 `i `c ]
-[; ;loberr.c: 96: if (ErrorStat.LoBat) {
-"96
+[; ;loberr.c: 97: if (ErrorStat.LoBat) {
+"97
 [e $ ! != -> . _ErrorStat 0 `i -> -> -> 0 `i `uc `i 726  ]
 {
-[; ;loberr.c: 97: code = 0;
-"97
-[e = _code -> -> 0 `i `c ]
-[; ;loberr.c: 98: stop_all(0,(long*)0);
+[; ;loberr.c: 98: code = 0;
 "98
-[e ( _stop_all (2 , -> 0 `i -> -> 0 `i `*l ]
+[e = _code -> -> 0 `i `c ]
+[; ;loberr.c: 99: stop_all(0,(long*)0);
 "99
+[e ( _stop_all (2 , -> 0 `i -> -> 0 `i `*l ]
+"100
 }
-[; ;loberr.c: 99: } else if (ErrorStat.TopPeriod) {
+[; ;loberr.c: 100: } else if (ErrorStat.TopPeriod) {
 [e $U 727  ]
 [e :U 726 ]
 [e $ ! != -> . _ErrorStat 3 `i -> -> -> 0 `i `uc `i 728  ]
 {
-[; ;loberr.c: 100: code = 0x30;
-"100
-[e = _code -> -> 48 `i `c ]
+[; ;loberr.c: 101: code = 0x30;
 "101
+[e = _code -> -> 48 `i `c ]
+"102
 }
-[; ;loberr.c: 101: } else if (ErrorStat.BotPeriod) {
+[; ;loberr.c: 102: } else if (ErrorStat.BotPeriod) {
 [e $U 729  ]
 [e :U 728 ]
 [e $ ! != -> . _ErrorStat 4 `i -> -> -> 0 `i `uc `i 730  ]
 {
-[; ;loberr.c: 102: code = 0x31;
-"102
-[e = _code -> -> 49 `i `c ]
+[; ;loberr.c: 103: code = 0x31;
 "103
+[e = _code -> -> 49 `i `c ]
+"104
 }
-[; ;loberr.c: 103: } else if (ErrorStat.TopCurSense) {
+[; ;loberr.c: 104: } else if (ErrorStat.TopCurSense) {
 [e $U 731  ]
 [e :U 730 ]
 [e $ ! != -> . _ErrorStat 5 `i -> -> -> 0 `i `uc `i 732  ]
 {
-[; ;loberr.c: 104: code = 0x10;
-"104
-[e = _code -> -> 16 `i `c ]
+[; ;loberr.c: 105: code = 0x10;
 "105
+[e = _code -> -> 16 `i `c ]
+"106
 }
-[; ;loberr.c: 105: } else if (ErrorStat.BotCurSense) {
+[; ;loberr.c: 106: } else if (ErrorStat.BotCurSense) {
 [e $U 733  ]
 [e :U 732 ]
 [e $ ! != -> . _ErrorStat 6 `i -> -> -> 0 `i `uc `i 734  ]
 {
-[; ;loberr.c: 106: code = 0x11;
-"106
-[e = _code -> -> 17 `i `c ]
+[; ;loberr.c: 107: code = 0x11;
 "107
+[e = _code -> -> 17 `i `c ]
+"108
 }
-[; ;loberr.c: 107: } else if (ErrorStat.FeedCurSense) {
+[; ;loberr.c: 108: } else if (ErrorStat.FeedCurSense) {
 [e $U 735  ]
 [e :U 734 ]
 [e $ ! != -> . _ErrorStat 7 `i -> -> -> 0 `i `uc `i 736  ]
 {
-[; ;loberr.c: 108: code = 0x12;
-"108
-[e = _code -> -> 18 `i `c ]
+[; ;loberr.c: 109: code = 0x12;
 "109
+[e = _code -> -> 18 `i `c ]
+"110
 }
-[; ;loberr.c: 109: } else if (ErrorStat.SweepCurSense) {
+[; ;loberr.c: 110: } else if (ErrorStat.SweepCurSense) {
 [e $U 737  ]
 [e :U 736 ]
 [e $ ! != -> . _ErrorStat 8 `i -> -> -> 0 `i `uc `i 738  ]
 {
-[; ;loberr.c: 110: code = 0x13;
-"110
-[e = _code -> -> 19 `i `c ]
+[; ;loberr.c: 111: code = 0x13;
 "111
+[e = _code -> -> 19 `i `c ]
+"112
 }
-[; ;loberr.c: 111: } else if (ErrorStat.ElevCurSense) {
+[; ;loberr.c: 112: } else if (ErrorStat.ElevCurSense) {
 [e $U 739  ]
 [e :U 738 ]
 [e $ ! != -> . _ErrorStat 9 `i -> -> -> 0 `i `uc `i 740  ]
 {
-[; ;loberr.c: 112: code = 0x14;
-"112
-[e = _code -> -> 20 `i `c ]
+[; ;loberr.c: 113: code = 0x14;
 "113
+[e = _code -> -> 20 `i `c ]
+"114
 }
-[; ;loberr.c: 113: } else if (ErrorStat.TopCnt) {
+[; ;loberr.c: 114: } else if (ErrorStat.TopCnt) {
 [e $U 741  ]
 [e :U 740 ]
 [e $ ! != -> . _ErrorStat 10 `i -> -> -> 0 `i `uc `i 742  ]
 {
-[; ;loberr.c: 114: code = 0x20;
-"114
-[e = _code -> -> 32 `i `c ]
+[; ;loberr.c: 115: code = 0x20;
 "115
+[e = _code -> -> 32 `i `c ]
+"116
 }
-[; ;loberr.c: 115: } else if (ErrorStat.BotCnt) {
+[; ;loberr.c: 116: } else if (ErrorStat.BotCnt) {
 [e $U 743  ]
 [e :U 742 ]
 [e $ ! != -> . _ErrorStat 11 `i -> -> -> 0 `i `uc `i 744  ]
 {
-[; ;loberr.c: 116: code = 0x21;
-"116
-[e = _code -> -> 33 `i `c ]
+[; ;loberr.c: 117: code = 0x21;
 "117
+[e = _code -> -> 33 `i `c ]
+"118
 }
-[; ;loberr.c: 117: } else if (ErrorStat.SweepCnt) {
+[; ;loberr.c: 118: } else if (ErrorStat.SweepCnt) {
 [e $U 745  ]
 [e :U 744 ]
 [e $ ! != -> . _ErrorStat 13 `i -> -> -> 0 `i `uc `i 746  ]
 {
-[; ;loberr.c: 118: code = 0x23;
-"118
-[e = _code -> -> 35 `i `c ]
+[; ;loberr.c: 119: code = 0x23;
 "119
+[e = _code -> -> 35 `i `c ]
+"120
 }
-[; ;loberr.c: 119: } else if (ErrorStat.ElevCnt) {
+[; ;loberr.c: 120: } else if (ErrorStat.ElevCnt) {
 [e $U 747  ]
 [e :U 746 ]
 [e $ ! != -> . _ErrorStat 14 `i -> -> -> 0 `i `uc `i 748  ]
 {
-[; ;loberr.c: 120: code = 0x24;
-"120
-[e = _code -> -> 36 `i `c ]
+[; ;loberr.c: 121: code = 0x24;
 "121
-}
-[e :U 748 ]
+[e = _code -> -> 36 `i `c ]
 "122
+}
+[; ;loberr.c: 122: } else if (ErrorStat.ElevCurSense_H) {
+[e $U 749  ]
+[e :U 748 ]
+[e $ ! != -> . _ErrorStat 15 `i -> -> -> 0 `i `uc `i 750  ]
+{
+[; ;loberr.c: 123: code = 0x44;
+"123
+[e = _code -> -> 68 `i `c ]
+"124
+}
+[e :U 750 ]
+"125
+[e :U 749 ]
 [e :U 747 ]
 [e :U 745 ]
 [e :U 743 ]
@@ -6461,132 +6479,155 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 731 ]
 [e :U 729 ]
 [e :U 727 ]
-[; ;loberr.c: 121: }
-[; ;loberr.c: 122: if (code >= 0) {
-[e $ ! >= -> _code `i -> 0 `i 749  ]
+[; ;loberr.c: 124: }
+[; ;loberr.c: 125: if (code >= 0) {
+[e $ ! >= -> _code `i -> 0 `i 751  ]
 {
-[; ;loberr.c: 123: ;
-[; ;loberr.c: 124: ;
-[; ;loberr.c: 125: CurShotState = 0U;
-"125
-[e = _CurShotState -> -> 0 `ui `us ]
-"126
-}
-[e :U 749 ]
-[; ;loberr.c: 126: }
-[; ;loberr.c: 127: switch ((code >> 4) & 15) {
-"127
-[e $U 751  ]
-{
-[; ;loberr.c: 128: case 0:
+[; ;loberr.c: 126: ;
+[; ;loberr.c: 127: ;
+[; ;loberr.c: 128: CurShotState = 0U;
 "128
-[e :U 752 ]
-[; ;loberr.c: 129: strcpy(&lcd_line[0][0], lowbatt_msg);
+[e = _CurShotState -> -> 0 `ui `us ]
 "129
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _lowbatt_msg ]
-[; ;loberr.c: 130: strcpy(&lcd_line[2][0],&turnoff_msg[0]);
-"130
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux &U *U + _turnoff_msg * -> -> 0 `i `x -> -> # *U _turnoff_msg `i `x ]
-[; ;loberr.c: 131: strcpy(&lcd_line[3][0],&machine_msg[0]);
-"131
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux &U *U + _machine_msg * -> -> 0 `i `x -> -> # *U _machine_msg `i `x ]
-[; ;loberr.c: 132: clear_lcd(0x2);
-"132
-[e ( _clear_lcd (1 -> -> 2 `i `uc ]
-[; ;loberr.c: 133: lcd_updated = 1;
-"133
-[e = _lcd_updated -> -> 1 `i `uc ]
-[; ;loberr.c: 134: break;
-"134
-[e $U 750  ]
-[; ;loberr.c: 135: case 1:
-"135
-[e :U 753 ]
-[; ;loberr.c: 136: strcpy(&lcd_line[0][0],error_msg);
-"136
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _error_msg ]
-[; ;loberr.c: 137: strcpy(&lcd_line[2][0],overcur_msg);
-"137
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _overcur_msg ]
-[; ;loberr.c: 138: strcpy(&lcd_line[3][0],motormsg[code&15]);
-"138
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux *U + &U _motormsg * -> -> & -> _code `i -> 15 `i `ui `ux -> -> # *U &U _motormsg `ui `ux ]
-[; ;loberr.c: 139: clear_lcd(0x2);
-"139
-[e ( _clear_lcd (1 -> -> 2 `i `uc ]
-[; ;loberr.c: 140: lcd_updated = 1;
-"140
-[e = _lcd_updated -> -> 1 `i `uc ]
-[; ;loberr.c: 141: break;
-"141
-[e $U 750  ]
-[; ;loberr.c: 142: case 2:
-"142
-[e :U 754 ]
-[; ;loberr.c: 143: strcpy(&lcd_line[0][0],error_msg);
-"143
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _error_msg ]
-[; ;loberr.c: 144: strcpy(&lcd_line[2][0],feedbk_msg);
-"144
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _feedbk_msg ]
-[; ;loberr.c: 145: strcpy(&lcd_line[3][0],motormsg[code&15]);
-"145
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux *U + &U _motormsg * -> -> & -> _code `i -> 15 `i `ui `ux -> -> # *U &U _motormsg `ui `ux ]
-[; ;loberr.c: 146: clear_lcd(0x2);
-"146
-[e ( _clear_lcd (1 -> -> 2 `i `uc ]
-[; ;loberr.c: 147: lcd_updated = 1;
-"147
-[e = _lcd_updated -> -> 1 `i `uc ]
-[; ;loberr.c: 148: break;
-"148
-[e $U 750  ]
-[; ;loberr.c: 149: case 3:
-"149
-[e :U 755 ]
-[; ;loberr.c: 150: strcpy(&lcd_line[0][0],error_msg);
-"150
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _error_msg ]
-[; ;loberr.c: 151: strcpy(&lcd_line[2][0],period_msg);
-"151
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _period_msg ]
-[; ;loberr.c: 152: strcpy(&lcd_line[3][0],motormsg[code&15]);
-"152
-[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux *U + &U _motormsg * -> -> & -> _code `i -> 15 `i `ui `ux -> -> # *U &U _motormsg `ui `ux ]
-[; ;loberr.c: 153: clear_lcd(0x2);
-"153
-[e ( _clear_lcd (1 -> -> 2 `i `uc ]
-[; ;loberr.c: 154: lcd_updated = 1;
-"154
-[e = _lcd_updated -> -> 1 `i `uc ]
-[; ;loberr.c: 155: break;
-"155
-[e $U 750  ]
-"156
 }
-[; ;loberr.c: 156: }
-[e $U 750  ]
-"127
 [e :U 751 ]
-[e [\ & >> -> _code `i -> 4 `i -> 15 `i , $ -> 0 `i 752
- , $ -> 1 `i 753
- , $ -> 2 `i 754
- , $ -> 3 `i 755
- 750 ]
+[; ;loberr.c: 129: }
+[; ;loberr.c: 130: switch ((code >> 4) & 15) {
+"130
+[e $U 753  ]
+{
+[; ;loberr.c: 131: case 0:
+"131
+[e :U 754 ]
+[; ;loberr.c: 132: strcpy(&lcd_line[0][0], lowbatt_msg);
+"132
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _lowbatt_msg ]
+[; ;loberr.c: 133: strcpy(&lcd_line[2][0],&turnoff_msg[0]);
+"133
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux &U *U + _turnoff_msg * -> -> 0 `i `x -> -> # *U _turnoff_msg `i `x ]
+[; ;loberr.c: 134: strcpy(&lcd_line[3][0],&machine_msg[0]);
+"134
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux &U *U + _machine_msg * -> -> 0 `i `x -> -> # *U _machine_msg `i `x ]
+[; ;loberr.c: 135: clear_lcd(0x2);
+"135
+[e ( _clear_lcd (1 -> -> 2 `i `uc ]
+[; ;loberr.c: 136: lcd_updated = 1;
+"136
+[e = _lcd_updated -> -> 1 `i `uc ]
+[; ;loberr.c: 137: break;
+"137
+[e $U 752  ]
+[; ;loberr.c: 138: case 1:
+"138
+[e :U 755 ]
+[; ;loberr.c: 139: strcpy(&lcd_line[0][0],error_msg);
+"139
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _error_msg ]
+[; ;loberr.c: 140: strcpy(&lcd_line[2][0],overcur_msg);
+"140
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _overcur_msg ]
+[; ;loberr.c: 141: strcpy(&lcd_line[3][0],motormsg[code&15]);
+"141
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux *U + &U _motormsg * -> -> & -> _code `i -> 15 `i `ui `ux -> -> # *U &U _motormsg `ui `ux ]
+[; ;loberr.c: 142: clear_lcd(0x2);
+"142
+[e ( _clear_lcd (1 -> -> 2 `i `uc ]
+[; ;loberr.c: 143: lcd_updated = 1;
+"143
+[e = _lcd_updated -> -> 1 `i `uc ]
+[; ;loberr.c: 144: break;
+"144
+[e $U 752  ]
+[; ;loberr.c: 145: case 2:
+"145
+[e :U 756 ]
+[; ;loberr.c: 146: strcpy(&lcd_line[0][0],error_msg);
+"146
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _error_msg ]
+[; ;loberr.c: 147: strcpy(&lcd_line[2][0],feedbk_msg);
+"147
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _feedbk_msg ]
+[; ;loberr.c: 148: strcpy(&lcd_line[3][0],motormsg[code&15]);
+"148
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux *U + &U _motormsg * -> -> & -> _code `i -> 15 `i `ui `ux -> -> # *U &U _motormsg `ui `ux ]
+[; ;loberr.c: 149: clear_lcd(0x2);
+"149
+[e ( _clear_lcd (1 -> -> 2 `i `uc ]
+[; ;loberr.c: 150: lcd_updated = 1;
+"150
+[e = _lcd_updated -> -> 1 `i `uc ]
+[; ;loberr.c: 151: break;
+"151
+[e $U 752  ]
+[; ;loberr.c: 152: case 3:
+"152
+[e :U 757 ]
+[; ;loberr.c: 153: strcpy(&lcd_line[0][0],error_msg);
+"153
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _error_msg ]
+[; ;loberr.c: 154: strcpy(&lcd_line[2][0],period_msg);
+"154
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _period_msg ]
+[; ;loberr.c: 155: strcpy(&lcd_line[3][0],motormsg[code&15]);
+"155
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux *U + &U _motormsg * -> -> & -> _code `i -> 15 `i `ui `ux -> -> # *U &U _motormsg `ui `ux ]
+[; ;loberr.c: 156: clear_lcd(0x2);
 "156
-[e :U 750 ]
-[; ;loberr.c: 157: }
+[e ( _clear_lcd (1 -> -> 2 `i `uc ]
+[; ;loberr.c: 157: lcd_updated = 1;
 "157
+[e = _lcd_updated -> -> 1 `i `uc ]
+[; ;loberr.c: 158: break;
+"158
+[e $U 752  ]
+[; ;loberr.c: 159: case 4:
+"159
+[e :U 758 ]
+[; ;loberr.c: 160: strcpy(&lcd_line[0][0],error_msg);
+"160
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _error_msg ]
+[; ;loberr.c: 161: strcpy(&lcd_line[2][0],overcur_h_msg);
+"161
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux _overcur_h_msg ]
+[; ;loberr.c: 162: strcpy(&lcd_line[3][0],motormsg[code&15]);
+"162
+[e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux *U + &U _motormsg * -> -> & -> _code `i -> 15 `i `ui `ux -> -> # *U &U _motormsg `ui `ux ]
+[; ;loberr.c: 163: clear_lcd(0x2);
+"163
+[e ( _clear_lcd (1 -> -> 2 `i `uc ]
+[; ;loberr.c: 164: lcd_updated = 1;
+"164
+[e = _lcd_updated -> -> 1 `i `uc ]
+[; ;loberr.c: 165: break;
+"165
+[e $U 752  ]
+"166
+}
+[; ;loberr.c: 166: }
+[e $U 752  ]
+"130
+[e :U 753 ]
+[e [\ & >> -> _code `i -> 4 `i -> 15 `i , $ -> 0 `i 754
+ , $ -> 1 `i 755
+ , $ -> 2 `i 756
+ , $ -> 3 `i 757
+ , $ -> 4 `i 758
+ 752 ]
+"166
+[e :U 752 ]
+[; ;loberr.c: 167: }
+"167
 [e :UE 725 ]
 }
-[a 11C 69 108 101 118 97 116 105 111 110 32 77 111 116 111 114 32 0 ]
-[a 8C 66 111 116 32 83 101 114 118 101 32 77 111 116 111 114 32 0 ]
-[a 7C 84 111 112 32 83 101 114 118 101 32 77 111 116 111 114 32 0 ]
+[a 7C 72 114 100 32 79 118 101 114 45 67 117 114 114 101 110 116 0 ]
+[a 12C 69 108 101 118 97 116 105 111 110 32 77 111 116 111 114 32 0 ]
+[a 9C 66 111 116 32 83 101 114 118 101 32 77 111 116 111 114 32 0 ]
+[a 8C 84 111 112 32 83 101 114 118 101 32 77 111 116 111 114 32 0 ]
 [a 1C 80 108 101 97 115 101 32 84 117 114 110 32 79 102 102 32 0 ]
 [a 3C 42 42 42 42 32 69 114 114 111 114 32 42 42 42 42 32 0 ]
 [a 4C 32 32 79 118 101 114 45 67 117 114 114 101 110 116 32 32 0 ]
 [a 6C 32 32 73 110 118 97 108 105 100 32 68 97 116 97 32 32 0 ]
-[a 10C 32 32 83 119 101 101 112 32 77 111 116 111 114 32 32 32 0 ]
-[a 9C 32 32 32 70 101 101 100 32 77 111 116 111 114 32 32 32 0 ]
+[a 11C 32 32 83 119 101 101 112 32 77 111 116 111 114 32 32 32 0 ]
+[a 10C 32 32 32 70 101 101 100 32 77 111 116 111 114 32 32 32 0 ]
 [a 5C 32 32 32 32 70 101 101 100 98 97 99 107 32 32 32 32 0 ]
 [a 2C 32 32 32 32 77 97 99 104 105 110 101 32 32 32 32 32 0 ]

@@ -248,7 +248,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lob.h: 788: unsigned Reserved:1;
 [; ;lob.h: 789: unsigned SweepCnt:1;
 [; ;lob.h: 790: unsigned ElevCnt:1;
-[; ;lob.h: 791: };
+[; ;lob.h: 791: unsigned ElevCurSense_H:1;
+[; ;lob.h: 792: };
 [; ;diag.h: 8: void dumprsDIAG(unsigned long ix, const char* cp);
 [; ;diag.h: 10: void dumpsDIAG(unsigned long ix,char* cp);
 [; ;diag.h: 13: void putrsDIAG(const char *data);

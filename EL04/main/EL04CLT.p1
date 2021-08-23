@@ -241,7 +241,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lob.h: 788: unsigned Reserved:1;
 [; ;lob.h: 789: unsigned SweepCnt:1;
 [; ;lob.h: 790: unsigned ElevCnt:1;
-[; ;lob.h: 791: };
+[; ;lob.h: 791: unsigned ElevCurSense_H:1;
+[; ;lob.h: 792: };
 "6 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\EL04CLT.c
 [v _num_methods `uc ~T0 @X0 -> 18 `i e ]
 [; ;EL04CLT.c: 6: uchar num_methods[18];
@@ -336,9 +337,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;EL04CLT.c: 46: 6,
 [; ;EL04CLT.c: 47: 6
 [; ;EL04CLT.c: 49: };
-[v F169 `Cus ~T0 @X0 -> 2 `i t ]
+[v F170 `Cus ~T0 @X0 -> 2 `i t ]
 "53
-[v _base_speeds `F169 ~T0 @X0 -> 16 `i e ]
+[v _base_speeds `F170 ~T0 @X0 -> 16 `i e ]
 [i _base_speeds
 :U ..
 :U ..
@@ -597,9 +598,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 ..
 ]
 [; ;EL04CLT.c: 108: const char padthree[11];
-[v F175 `CS9 ~T0 @X0 -> 50 `i t ]
+[v F176 `CS9 ~T0 @X0 -> 50 `i t ]
 "128
-[v _court_locs `F175 ~T0 @X0 -> 0 `x e ]
+[v _court_locs `F176 ~T0 @X0 -> 0 `x e ]
 [i _court_locs
 :U ..
 :U ..

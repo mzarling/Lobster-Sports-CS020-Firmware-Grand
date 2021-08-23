@@ -242,7 +242,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lob.h: 788: unsigned Reserved:1;
 [; ;lob.h: 789: unsigned SweepCnt:1;
 [; ;lob.h: 790: unsigned ElevCnt:1;
-[; ;lob.h: 791: };
+[; ;lob.h: 791: unsigned ElevCurSense_H:1;
+[; ;lob.h: 792: };
 "34 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lobstate.c
 [v _xtbl `Cuc ~T0 @X0 -> 384 `i e ]
 [i _xtbl

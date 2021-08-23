@@ -46,7 +46,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _man1shot `uc ~T0 @X0 0 e ]
 "46
 [v _dpb_thrash `us ~T0 @X0 0 e ]
-"24 C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h
+"24 C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h
 [v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
 "738 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
 [s S15 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
@@ -69,9 +69,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _homeshown `uc ~T0 @X0 0 e ]
 "59
 [v _loop_delay `ul ~T0 @X0 0 e ]
-[v F298 `CS11 ~T0 @X0 -> 50 `i t ]
+[v F299 `CS11 ~T0 @X0 -> 50 `i t ]
 "68
-[v _court_locs `F298 ~T0 @X0 -> 0 `x e ]
+[v _court_locs `F299 ~T0 @X0 -> 0 `x e ]
 "21
 [v _num_methods `uc ~T0 @X0 -> 0 `x e ]
 "61
@@ -335,7 +335,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lob.h: 788: unsigned Reserved:1;
 [; ;lob.h: 789: unsigned SweepCnt:1;
 [; ;lob.h: 790: unsigned ElevCnt:1;
-[; ;lob.h: 791: };
+[; ;lob.h: 791: unsigned ElevCurSense_H:1;
+[; ;lob.h: 792: };
 [; ;string.h: 4: typedef int ptrdiff_t;
 [; ;string.h: 5: typedef unsigned size_t;
 [; ;string.h: 6: typedef unsigned short wchar_t;
@@ -343,29 +344,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
 [; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
 [; ;string.h: 24: extern void * memset(void *, int, size_t);
-[; ;string.h: 35: extern char * strcat(char *, const char *);
-[; ;string.h: 36: extern char * strcpy(char *, const char *);
-[; ;string.h: 37: extern char * strncat(char *, const char *, size_t);
-[; ;string.h: 38: extern char * strncpy(char *, const char *, size_t);
-[; ;string.h: 39: extern char * strdup(const char *);
-[; ;string.h: 40: extern char * strtok(char *, const char *);
-[; ;string.h: 43: extern int memcmp(const void *, const void *, size_t);
-[; ;string.h: 44: extern int strcmp(const char *, const char *);
-[; ;string.h: 45: extern int stricmp(const char *, const char *);
-[; ;string.h: 46: extern int strncmp(const char *, const char *, size_t);
-[; ;string.h: 47: extern int strnicmp(const char *, const char *, size_t);
-[; ;string.h: 48: extern void * memchr(const void *, int, size_t);
-[; ;string.h: 49: extern size_t strcspn(const char *, const char *);
-[; ;string.h: 50: extern char * strpbrk(const char *, const char *);
-[; ;string.h: 51: extern size_t strspn(const char *, const char *);
-[; ;string.h: 52: extern char * strstr(const char *, const char *);
-[; ;string.h: 53: extern char * stristr(const char *, const char *);
-[; ;string.h: 54: extern char * strerror(int);
-[; ;string.h: 55: extern size_t strlen(const char *);
-[; ;string.h: 56: extern char * strchr(const char *, int);
-[; ;string.h: 57: extern char * strichr(const char *, int);
-[; ;string.h: 58: extern char * strrchr(const char *, int);
-[; ;string.h: 59: extern char * strrichr(const char *, int);
+[; ;string.h: 42: extern char * strcat(char *, const char *);
+[; ;string.h: 43: extern char * strcpy(char *, const char *);
+[; ;string.h: 44: extern char * strncat(char *, const char *, size_t);
+[; ;string.h: 45: extern char * strncpy(char *, const char *, size_t);
+[; ;string.h: 46: extern char * strdup(const char *);
+[; ;string.h: 47: extern char * strtok(char *, const char *);
+[; ;string.h: 50: extern int memcmp(const void *, const void *, size_t);
+[; ;string.h: 51: extern int strcmp(const char *, const char *);
+[; ;string.h: 52: extern int stricmp(const char *, const char *);
+[; ;string.h: 53: extern int strncmp(const char *, const char *, size_t);
+[; ;string.h: 54: extern int strnicmp(const char *, const char *, size_t);
+[; ;string.h: 55: extern void * memchr(const void *, int, size_t);
+[; ;string.h: 56: extern size_t strcspn(const char *, const char *);
+[; ;string.h: 57: extern char * strpbrk(const char *, const char *);
+[; ;string.h: 58: extern size_t strspn(const char *, const char *);
+[; ;string.h: 59: extern char * strstr(const char *, const char *);
+[; ;string.h: 60: extern char * stristr(const char *, const char *);
+[; ;string.h: 61: extern char * strerror(int);
+[; ;string.h: 62: extern size_t strlen(const char *);
+[; ;string.h: 63: extern char * strchr(const char *, int);
+[; ;string.h: 64: extern char * strichr(const char *, int);
+[; ;string.h: 65: extern char * strrchr(const char *, int);
+[; ;string.h: 66: extern char * strrichr(const char *, int);
 [; ;varinit.c: 15: extern char dashes;
 [; ;varinit.c: 16: extern char abort_key;
 [; ;varinit.c: 17: extern char aborted_mode;

@@ -1,7 +1,7 @@
 Version 3.2 HI-TECH Software Intermediate Code
 "11 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\keypad.c
 [v _keyhold `us ~T0 @X0 0 e ]
-"3330 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"3330 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [v _PORTE `Vuc ~T0 @X0 0 e@3972 ]
 "3162
 [v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
@@ -233,11 +233,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lob.h: 788: unsigned Reserved:1;
 [; ;lob.h: 789: unsigned SweepCnt:1;
 [; ;lob.h: 790: unsigned ElevCnt:1;
-[; ;lob.h: 791: };
+[; ;lob.h: 791: unsigned ElevCurSense_H:1;
+[; ;lob.h: 792: };
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18f6722.h: 47: extern volatile unsigned char SSP2CON2 @ 0xF62;
-"49 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [; ;pic18f6722.h: 49: asm("SSP2CON2 equ 0F62h");
 [; <" SSP2CON2 equ 0F62h ;# ">
 [; ;pic18f6722.h: 52: typedef union {
@@ -6219,13 +6220,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 "29
 [v _loop `uc ~T0 @X0 1 a ]
 "30
-[v F6750 `uc ~T0 @X0 1 s odat ]
-[i F6750
+[v F6751 `uc ~T0 @X0 1 s odat ]
+[i F6751
 -> -> 0 `i `uc
 ]
 "31
-[v F6751 `us ~T0 @X0 1 s hold ]
-[i F6751
+[v F6752 `us ~T0 @X0 1 s hold ]
+[i F6752
 -> -> 0 `i `us
 ]
 [; ;keypad.c: 27: char i, j;
@@ -6238,15 +6239,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $ ! == -> _keyhold `ui -> 0 `ui 724  ]
 [; ;keypad.c: 35: hold = 0;
 "35
-[e = F6751 -> -> 0 `i `us ]
+[e = F6752 -> -> 0 `i `us ]
 [e :U 724 ]
 [; ;keypad.c: 36: if (keyhold > hold) {
 "36
-[e $ ! > -> _keyhold `ui -> F6751 `ui 725  ]
+[e $ ! > -> _keyhold `ui -> F6752 `ui 725  ]
 {
 [; ;keypad.c: 37: hold = keyhold;
 "37
-[e = F6751 _keyhold ]
+[e = F6752 _keyhold ]
 [; ;keypad.c: 38: for (i=0,j=0,col=1; (col&0xff); col<<=1,i++) {
 "38
 {
@@ -6348,17 +6349,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;keypad.c: 60: }
 [; ;keypad.c: 61: if (rc != odat) {
 "61
-[e $ ! != -> _rc `i -> F6750 `i 738  ]
+[e $ ! != -> _rc `i -> F6751 `i 738  ]
 {
 [; ;keypad.c: 62: odat = rc;
 "62
-[e = F6750 _rc ]
+[e = F6751 _rc ]
 [; ;keypad.c: 63: rc = 0;
 "63
 [e = _rc -> -> 0 `i `uc ]
 [; ;keypad.c: 64: hold = 0;
 "64
-[e = F6751 -> -> 0 `i `us ]
+[e = F6752 -> -> 0 `i `us ]
 [; ;keypad.c: 65: keyhold = 0;
 "65
 [e = _keyhold -> -> 0 `i `us ]
@@ -6370,7 +6371,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;keypad.c: 67: if (hold < 10U) {
 "67
-[e $ ! < -> F6751 `ui -> 10 `ui 740  ]
+[e $ ! < -> F6752 `ui -> 10 `ui 740  ]
 {
 [; ;keypad.c: 68: rc = 0;
 "68
@@ -6380,7 +6381,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;keypad.c: 69: } else if (hold == 10U) {
 [e $U 741  ]
 [e :U 740 ]
-[e $ ! == -> F6751 `ui -> 10 `ui 742  ]
+[e $ ! == -> F6752 `ui -> 10 `ui 742  ]
 {
 [; ;keypad.c: 70: repeat = 50U;
 "70
@@ -6397,7 +6398,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _repeat -> -> 25 `ui `ul ]
 [; ;keypad.c: 73: rc = odat;
 "73
-[e = _rc F6750 ]
+[e = _rc F6751 ]
 "74
 }
 [; ;keypad.c: 74: } else {
