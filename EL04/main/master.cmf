@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+$C:\Users\micha\AppData\Local\Temp\sjq8.obj
 end_init CODE 0 18 18 4 1
 reset_vec CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 A 1
@@ -2036,10 +2036,10 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4702 11410 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4705 11418 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4707 11424 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 1142C text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":416 1142C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4710 11432 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4714 11438 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":428 11440 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":427 11440 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4717 11444 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4718 11446 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4719 1144C text0 CODE
@@ -2064,12 +2064,12 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4772 11500 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4774 1150A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4775 1150E text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 11512 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 11512 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4779 11514 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4781 1151C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4782 11522 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4781 11530 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 11540 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 11540 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4785 11548 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4788 1154E text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4790 11556 text0 CODE
@@ -2077,14 +2077,14 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4796 11568 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4806 1157A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4808 11584 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 11590 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 11590 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4810 11590 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4818 11598 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4820 115A0 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4823 115A8 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4824 115AC text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4825 115B2 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":423 115B8 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":422 115B8 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4836 115BC text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4838 115C6 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4839 115CC text0 CODE
@@ -2103,10 +2103,10 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4880 116BA text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4881 116BE text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4882 116C6 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":422 116D2 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":421 116D2 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4893 116D6 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4894 116E0 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 116EC text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 116EC text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4912 116F8 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4913 11704 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4915 11708 text0 CODE
@@ -2125,14 +2125,14 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4945 117EE text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4946 1180C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4947 11810 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":421 11812 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":420 11812 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":4962 1181A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5023 11824 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5024 1182C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5025 11830 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5024 1183A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5027 11842 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":420 1184A text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":419 1184A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5031 11852 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5034 1185A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5035 11860 text0 CODE
@@ -2144,7 +2144,7 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5034 118F0 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5057 118FE text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5058 11900 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":424 11904 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":423 11904 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5061 1190C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5062 11916 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5063 1191C text0 CODE
@@ -2162,7 +2162,7 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5096 11A24 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5097 11A42 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5098 11A46 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":425 11A48 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":424 11A48 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5101 11A50 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5105 11A5C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5106 11A5E text0 CODE
@@ -2176,12 +2176,12 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5112 11B0A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5135 11B28 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5136 11B30 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":426 11B3C text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":425 11B3C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":5141 11B42 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5142 11B46 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5145 11B52 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5146 11B58 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":427 11B5E text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":426 11B5E text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5167 11B62 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5168 11B6A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5173 11B70 text0 CODE
@@ -2244,7 +2244,7 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5295 11E00 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5296 11E0A text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5297 11E2E text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":419 11E32 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 11E32 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5315 11E38 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5316 11E40 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5317 11E46 text0 CODE
@@ -2274,10 +2274,10 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5357 11F4E text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5349 11F64 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5359 11F70 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":431 11F74 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":430 11F74 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5368 11F7C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5369 11F86 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 11F8C text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 11F8C text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5372 11F92 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5373 11F96 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":5374 11F9C text0 CODE
@@ -2742,7 +2742,7 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6362 130EC text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6363 130F8 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6364 130FE text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 13100 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 13100 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6367 13102 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6368 13106 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6371 1310C text0 CODE
@@ -2856,9 +2856,9 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6573 133DE text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6574 133E4 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6582 133E6 text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 133EC text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 133EC text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6587 133EE text0 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 133F6 text0 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 133F6 text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":6589 133FC text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6594 133FE text0 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":6595 13404 text0 CODE
@@ -5181,7 +5181,7 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lobpre.c":375 1BE82 text12 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lobpre.c":378 1BE88 text12 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lobpre.c":379 1BE8A text12 CODE
-"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":418 1BE8E text12 CODE
+"D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h":417 1BE8E text12 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lobpre.c":383 1BE96 text12 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lobpre.c":384 1BE9A text12 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lobpre.c":385 1BE9E text12 CODE
@@ -6051,155 +6051,155 @@ $master.obj
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":1205 1EB20 intcode_body CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":1207 1EB24 intcode_body CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":1210 1EB26 intcode_body CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":23595 1EB44 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":23597 1EB44 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":23600 1EB44 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24296 1EB44 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24297 1EB48 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24298 1EB4A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24299 1EB4A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24300 1EB4C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24301 1EB4E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24304 1EB50 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24305 1EB54 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24306 1EB56 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24307 1EB56 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24308 1EB58 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24309 1EB5A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24312 1EB5C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24313 1EB60 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24314 1EB62 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24315 1EB62 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24316 1EB64 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24317 1EB66 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24320 1EB68 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24321 1EB6C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24322 1EB6E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24323 1EB6E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24324 1EB70 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24325 1EB72 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24328 1EB74 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24329 1EB78 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24330 1EB7A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24331 1EB7A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24332 1EB7C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24333 1EB7E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24336 1EB80 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24337 1EB84 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24338 1EB86 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24339 1EB86 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24340 1EB88 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24341 1EB8A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24344 1EB8C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24345 1EB90 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24346 1EB94 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24347 1EB94 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24348 1EB96 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24349 1EB98 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24350 1EB9A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24351 1EB9C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24352 1EB9E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24355 1EBA0 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24356 1EBA4 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24357 1EBA6 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24358 1EBA6 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24359 1EBA8 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24360 1EBAA cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24363 1EBAC cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24364 1EBB0 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24365 1EBB2 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24366 1EBB2 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24367 1EBB4 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24368 1EBB6 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24371 1EBB8 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24372 1EBBC cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24373 1EBBE cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24374 1EBBE cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24375 1EBC0 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24376 1EBC2 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24381 1EBC4 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24382 1EBC6 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24383 1EBC8 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24384 1EBCA cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24385 1EBCC cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24386 1EBCE cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24387 1EBD0 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24388 1EBD4 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24389 1EBD8 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24390 1EBD8 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24391 1EBDA cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24392 1EBDE cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24393 1EBE0 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24394 1EBE2 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24398 1EBE4 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24399 1EBE6 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24400 1EBE8 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24401 1EBEA cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24402 1EBEC cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24403 1EBEE cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24404 1EBF0 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24405 1EBF4 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24406 1EBF8 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24407 1EBF8 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24408 1EBFA cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24409 1EBFE cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24410 1EC00 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24411 1EC02 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24415 1EC04 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24416 1EC06 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24417 1EC08 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24418 1EC0A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24419 1EC0C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24420 1EC0E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24421 1EC10 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24422 1EC14 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24423 1EC18 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24424 1EC18 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24425 1EC1A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24426 1EC1E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24427 1EC20 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24428 1EC22 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24432 1EC24 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24433 1EC26 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24434 1EC28 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24435 1EC2A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24436 1EC2C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24437 1EC2E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24438 1EC30 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24439 1EC34 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24440 1EC38 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24441 1EC38 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24442 1EC3A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24443 1EC3E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24444 1EC40 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24445 1EC42 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24449 1EC44 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24450 1EC46 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24451 1EC48 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24452 1EC4A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24453 1EC4C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24454 1EC4E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24455 1EC50 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24456 1EC54 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24457 1EC58 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24458 1EC58 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24459 1EC5A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24460 1EC5E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24461 1EC60 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24462 1EC62 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24466 1EC64 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24467 1EC66 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24468 1EC68 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24469 1EC6A cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24470 1EC6C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24471 1EC6E cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24472 1EC70 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24473 1EC72 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24474 1EC76 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24475 1EC78 cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24481 1EC7C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24482 1EC7C cinit CODE
-"C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.":24483 1EC7E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":23595 1EB44 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":23597 1EB44 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":23600 1EB44 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24296 1EB44 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24297 1EB48 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24298 1EB4A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24299 1EB4A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24300 1EB4C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24301 1EB4E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24304 1EB50 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24305 1EB54 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24306 1EB56 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24307 1EB56 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24308 1EB58 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24309 1EB5A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24312 1EB5C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24313 1EB60 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24314 1EB62 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24315 1EB62 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24316 1EB64 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24317 1EB66 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24320 1EB68 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24321 1EB6C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24322 1EB6E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24323 1EB6E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24324 1EB70 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24325 1EB72 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24328 1EB74 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24329 1EB78 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24330 1EB7A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24331 1EB7A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24332 1EB7C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24333 1EB7E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24336 1EB80 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24337 1EB84 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24338 1EB86 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24339 1EB86 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24340 1EB88 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24341 1EB8A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24344 1EB8C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24345 1EB90 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24346 1EB94 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24347 1EB94 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24348 1EB96 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24349 1EB98 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24350 1EB9A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24351 1EB9C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24352 1EB9E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24355 1EBA0 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24356 1EBA4 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24357 1EBA6 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24358 1EBA6 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24359 1EBA8 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24360 1EBAA cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24363 1EBAC cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24364 1EBB0 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24365 1EBB2 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24366 1EBB2 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24367 1EBB4 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24368 1EBB6 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24371 1EBB8 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24372 1EBBC cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24373 1EBBE cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24374 1EBBE cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24375 1EBC0 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24376 1EBC2 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24381 1EBC4 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24382 1EBC6 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24383 1EBC8 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24384 1EBCA cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24385 1EBCC cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24386 1EBCE cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24387 1EBD0 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24388 1EBD4 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24389 1EBD8 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24390 1EBD8 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24391 1EBDA cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24392 1EBDE cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24393 1EBE0 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24394 1EBE2 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24398 1EBE4 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24399 1EBE6 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24400 1EBE8 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24401 1EBEA cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24402 1EBEC cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24403 1EBEE cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24404 1EBF0 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24405 1EBF4 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24406 1EBF8 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24407 1EBF8 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24408 1EBFA cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24409 1EBFE cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24410 1EC00 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24411 1EC02 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24415 1EC04 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24416 1EC06 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24417 1EC08 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24418 1EC0A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24419 1EC0C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24420 1EC0E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24421 1EC10 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24422 1EC14 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24423 1EC18 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24424 1EC18 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24425 1EC1A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24426 1EC1E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24427 1EC20 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24428 1EC22 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24432 1EC24 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24433 1EC26 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24434 1EC28 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24435 1EC2A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24436 1EC2C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24437 1EC2E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24438 1EC30 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24439 1EC34 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24440 1EC38 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24441 1EC38 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24442 1EC3A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24443 1EC3E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24444 1EC40 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24445 1EC42 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24449 1EC44 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24450 1EC46 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24451 1EC48 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24452 1EC4A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24453 1EC4C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24454 1EC4E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24455 1EC50 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24456 1EC54 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24457 1EC58 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24458 1EC58 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24459 1EC5A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24460 1EC5E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24461 1EC60 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24462 1EC62 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24466 1EC64 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24467 1EC66 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24468 1EC68 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24469 1EC6A cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24470 1EC6C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24471 1EC6E cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24472 1EC70 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24473 1EC72 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24474 1EC76 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24475 1EC78 cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24481 1EC7C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24482 1EC7C cinit CODE
+"C:\Users\micha\AppData\Local\Temp\sjq8.":24483 1EC7E cinit CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":8090 1EC82 text110 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":8092 1EC82 text110 CODE
 "D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c":8094 1EC88 text110 CODE
@@ -7095,11 +7095,11 @@ _atoh 1F630 0 CODE 0 text84 master.obj
 _xtbl E6DC 0 MEDIUMCONST 0 mediumconst master.obj
 _bias 24D 0 BANK2 1 bssBANK2 master.obj
 Read1USART@data 60 0 BANK0 1 cstackBANK0 master.obj
-___sp 0 0 STACK 2 stack C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+___sp 0 0 STACK 2 stack C:\Users\micha\AppData\Local\Temp\sjq8.obj
 Read2USART@data 60 0 BANK0 1 cstackBANK0 master.obj
 _stat 21 0 COMRAM 1 bssCOMRAM master.obj
 _elev_corr_tmp 144 0 BANK1 1 bssBANK1 master.obj
-start 18 0 CODE 0 init C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+start 18 0 CODE 0 init C:\Users\micha\AppData\Local\Temp\sjq8.obj
 lob_parm@k B2 0 BANK0 1 cstackBANK0 master.obj
 puts2USART@data 61 0 BANK0 1 cstackBANK0 master.obj
 __end_of_Open2USART E0E 0 CODE 0 text144 master.obj
@@ -7725,7 +7725,7 @@ __Ltext173 0 0 ABS 0 text173 master.obj
 __Ltext154 0 0 ABS 0 text154 master.obj
 __Ltext135 0 0 ABS 0 text135 master.obj
 __Ltext116 0 0 ABS 0 text116 master.obj
-stackhi F5F 0 ABS 0 - C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+stackhi F5F 0 ABS 0 - C:\Users\micha\AppData\Local\Temp\sjq8.obj
 _nofunc 1F8A 0 CODE 0 text51 master.obj
 _bot_delta1 262 0 BANK2 1 bssBANK2 master.obj
 _accel_hi_d EF55 0 MEDIUMCONST 0 mediumconst master.obj
@@ -7786,7 +7786,7 @@ _repeat 242 0 BANK2 1 bssBANK2 master.obj
 __Htemp 0 0 COMRAM 1 temp master.obj
 __Ltemp 0 0 COMRAM 1 temp master.obj
 lob_play@premode C6 0 BANK0 1 cstackBANK0 master.obj
-stacklo A37 0 ABS 0 - C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+stacklo A37 0 ABS 0 - C:\Users\micha\AppData\Local\Temp\sjq8.obj
 show_prog3@loc 87 0 BANK0 1 cstackBANK0 master.obj
 _strcat 1044 0 CODE 0 text1 master.obj
 _BatAvgCnt 163 0 BANK1 1 bssBANK1 master.obj
@@ -8600,9 +8600,9 @@ _top_pwm E8 0 BANK0 1 bssBANK0 master.obj
 ___awdiv 40C 0 CODE 0 text39 master.obj
 CalcBotPwm@rbot_last_delta 72 0 BANK0 1 cstackBANK0 master.obj
 _varinit 1DAE2 0 CODE 0 text123 master.obj
-__ramtop 1000 0 RAM 0 ramtop C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\micha\AppData\Local\Temp\sjq8.obj
 _spinmax 193 0 BANK1 1 bssBANK1 master.obj
-__mediumconst BEB2 0 MEDIUMCONST 0 mediumconst C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+__mediumconst BEB2 0 MEDIUMCONST 0 mediumconst C:\Users\micha\AppData\Local\Temp\sjq8.obj
 ___lwdiv 1308 0 CODE 0 text171 master.obj
 __size_of_SetBotPwm 0 0 ABS 0 - master.obj
 _set_serve$3500 80 0 BANK0 1 cstackBANK0 master.obj
@@ -8996,7 +8996,7 @@ __ptext53 1F82C 0 CODE 0 text53 master.obj
 __ptext72 1D924 0 CODE 0 text72 master.obj
 __ptext91 1784 0 CODE 0 text91 master.obj
 build_curshot@topval 72 0 BANK0 1 cstackBANK0 master.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\micha\AppData\Local\Temp\sjq8.obj
 __Htext92 0 0 ABS 0 text92 master.obj
 __Htext73 0 0 ABS 0 text73 master.obj
 __Htext54 0 0 ABS 0 text54 master.obj
@@ -9137,7 +9137,7 @@ __ptext76 1F5E 0 CODE 0 text76 master.obj
 __ptext95 1274 0 CODE 0 text95 master.obj
 CalcBotPwm@drift1 7C 0 BANK0 1 cstackBANK0 master.obj
 CalcTopPwm@drift1 79 0 BANK0 1 cstackBANK0 master.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\micha\AppData\Local\Temp\sjq8.obj
 lob_play@loc F5 0 BANK0 1 bssBANK0 master.obj
 __Htext96 0 0 ABS 0 text96 master.obj
 __Htext77 0 0 ABS 0 text77 master.obj
@@ -9282,7 +9282,7 @@ show_prog1@field 86 0 BANK0 1 cstackBANK0 master.obj
 _program_ix 18D 0 BANK1 1 bssBANK1 master.obj
 __size_of_varinit 0 0 ABS 0 - master.obj
 _RemoteStringVar 1AC 0 BANK1 1 bssBANK1 master.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\micha\AppData\Local\Temp\sjq8.obj
 _lastbata2d 232 0 BANK2 1 bssBANK2 master.obj
 build_curshot@stmp 77 0 BANK0 1 cstackBANK0 master.obj
 _dashes_tmr 1F4 0 BANK1 1 dataBANK1 master.obj
@@ -9342,7 +9342,7 @@ __end_ofPL546 1CB02 0 CODE 0 text23 master.obj
 __end_ofPL394 13EF0 0 CODE 0 text0 master.obj
 __end_ofPL736 1414A 0 CODE 0 text0 master.obj
 __end_ofPL584 15820 0 CODE 0 text7 master.obj
-__accesstop 60 0 ABS 0 - C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+__accesstop 60 0 ABS 0 - C:\Users\micha\AppData\Local\Temp\sjq8.obj
 __end_ofPL774 16878 0 CODE 0 text33 master.obj
 __end_of_Intermediate_locs ECF8 0 MEDIUMCONST 0 mediumconst master.obj
 __end_of_base_speeds EC44 0 MEDIUMCONST 0 mediumconst master.obj
@@ -9360,7 +9360,7 @@ _parameters 600 0 BANK6 1 dataBANK6 master.obj
 _bot_phase6_cnt 268 0 BANK2 1 bssBANK2 master.obj
 _top_phase6_cnt 276 0 BANK2 1 bssBANK2 master.obj
 lob_play@rnd C3 0 BANK0 1 cstackBANK0 master.obj
-intlevel0 0 0 CODE 0 text C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+intlevel0 0 0 CODE 0 text C:\Users\micha\AppData\Local\Temp\sjq8.obj
 _abort_shot 1AF8 0 CODE 0 text46 master.obj
 __end_of_SetBotPwm 19028 0 CODE 0 text115 master.obj
 _accel_range 300 0 BANK3 1 bssBANK3 master.obj
@@ -9370,7 +9370,7 @@ lob_play@pp_prev_loc 199 0 BANK1 1 bssBANK1 master.obj
 __size_of_lob_play 0 0 ABS 0 - master.obj
 _SSP1STAT FC7 0 ABS 0 - master.obj
 __HbssBANK8 0 0 ABS 0 bssBANK8 master.obj
-intlevel1 0 0 CODE 0 text C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+intlevel1 0 0 CODE 0 text C:\Users\micha\AppData\Local\Temp\sjq8.obj
 __LbssBANK8 0 0 ABS 0 bssBANK8 master.obj
 _line_start C3B0 0 MEDIUMCONST 0 mediumconst master.obj
 __pbssBANK8 800 0 BANK8 1 bssBANK8 master.obj
@@ -9384,13 +9384,13 @@ __end_ofPL646 1914A 0 CODE 0 text115 master.obj
 __end_ofPL494 157E4 0 CODE 0 text7 master.obj
 __end_ofPL684 1915A 0 CODE 0 text115 master.obj
 __end_of_Read2USART 1CFE 0 CODE 0 text96 master.obj
-intlevel2 0 0 CODE 0 text C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+intlevel2 0 0 CODE 0 text C:\Users\micha\AppData\Local\Temp\sjq8.obj
 main@tmp1 A00 0 BANK10 1 cstackBANK10 master.obj
 __end_ofi2_PgaGain 1746 0 CODE 0 text179 master.obj
 _FeedMtrDone D42 0 CODE 0 text88 master.obj
 _get60mph0spin 1FAF0 0 CODE 0 text20 master.obj
 _accel_range_bot 320 0 BANK3 1 bssBANK3 master.obj
-intlevel3 0 0 CODE 0 text C:\Users\MICHAE~1\AppData\Local\Temp\sb8o.obj
+intlevel3 0 0 CODE 0 text C:\Users\micha\AppData\Local\Temp\sjq8.obj
 main@tmp2 A04 0 BANK10 1 cstackBANK10 master.obj
 _CloseTimer3 1F52 0 CODE 0 text74 master.obj
 _SetFeedRate 13E2 0 CODE 0 text118 master.obj

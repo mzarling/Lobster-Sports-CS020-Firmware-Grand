@@ -466,10 +466,10 @@ void set_serve(union parm* pp)
 		stmp = (pp->spin > -1) ? pp->spin : 0 - pp->spin;			// absolute value of spin
 	
 		if (stmp == 3) {											// if max spin (+ or -)
-			topval = base_speeds[ixa][1];							//	use alternate speed table
-			botval = 0x6000;										//	and absolute minimum speed
+			topval = base_speeds[ixa][1];							// use alternate speed table
+			botval = 0x7500;										// and absolute minimum speed
 		} else {													// else (0, 1 or 2 spin (+ or -)
-			topval = base_speeds[ixa+stmp][0];						//	std speed plus spin offset
+			topval = base_speeds[ixa+stmp][0];						// std speed plus spin offset
 			botval = base_speeds[(stmp==0) ? ixa : (ixa - 1)][0];	// all but 0 spin offset by 1
 		}
 	

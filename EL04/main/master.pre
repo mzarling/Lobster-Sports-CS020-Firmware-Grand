@@ -106,13 +106,13 @@ char feed[30];
 char reserved;
 };
 
-# 21 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\htc.h"
+# 21 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 47 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h"
+# 47 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h"
 extern volatile unsigned char SSP2CON2 @ 0xF62;
 
 asm("SSP2CON2 equ 0F62h");
@@ -6733,7 +6733,7 @@ extern volatile __bit nWR @ (((unsigned) &PORTE)*8) + 1;
 
 extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
-# 2008 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\adc.h"
+# 2008 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\adc.h"
 union ADCResult
 {
 int lr;
@@ -6760,11 +6760,11 @@ void SetChanADC(unsigned char );
 # 2100
 void SelChanConvADC( unsigned char );
 
-# 38 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\ancomp.h"
+# 38 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\ancomp.h"
 void Close_ancomp( void );
 void Open_ancomp(unsigned char config);
 
-# 236 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\spi.h"
+# 236 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\spi.h"
 void OpenSPI1( unsigned char sync_mode,
 unsigned char bus_mode,
 unsigned char smp_phase );
@@ -6790,7 +6790,7 @@ void putsSPI2( unsigned char *wrptr );
 
 unsigned char ReadSPI2( void );
 
-# 414 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\can2510.h"
+# 414 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\can2510.h"
 void CAN2510Initialize(  unsigned int configuration,
  unsigned char brp,
  unsigned char interruptFlags,
@@ -6897,7 +6897,7 @@ unsigned char CAN2510DataRead(  unsigned char bufferNum,
  unsigned char *numBytes,
  unsigned char *data );
 
-# 64 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\capture.h"
+# 64 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\capture.h"
 union capstatus
 {
 
@@ -6958,7 +6958,7 @@ void OpenCapture5 ( unsigned char config);
 unsigned int ReadCapture5 (void);
 void CloseCapture5 (void);
 
-# 385 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\compare.h"
+# 385 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\compare.h"
 void OpenCompare1(unsigned char config,unsigned int period);
 void CloseCompare1(void);
 
@@ -6978,12 +6978,12 @@ void CloseCompare4(void);
 void OpenCompare5(unsigned char config,unsigned int period);
 void CloseCompare5(void);
 
-# 36 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\EEP.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\EEP.h"
 void Busy_eep ( void );
 unsigned char Read_b_eep( unsigned int badd );
 void Write_b_eep( unsigned int badd, unsigned char bdat );
 
-# 2 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\stddef.h"
+# 2 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\stddef.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;
@@ -6991,7 +6991,7 @@ typedef unsigned short wchar_t;
 # 13
 extern int errno;
 
-# 65 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\GenericTypeDefs.h"
+# 65 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\GenericTypeDefs.h"
 typedef enum _BOOL { FALSE = 0, TRUE } BOOL;
 
 
@@ -7426,7 +7426,7 @@ struct
 } bits;
 } QWORD_VAL;
 
-# 113 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\flash.h"
+# 113 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\flash.h"
 extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
 # 120
@@ -7436,7 +7436,7 @@ extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, u
 
 extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
-# 244 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\i2c.h"
+# 244 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\i2c.h"
 void OpenI2C1( unsigned char sync_mode, unsigned char slew );
 
 # 264
@@ -7510,7 +7510,7 @@ unsigned char address,
 unsigned char *rdptr,
 unsigned char length );
 
-# 200 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\mwire.h"
+# 200 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\mwire.h"
 void OpenMwire1( unsigned char sync_mode );
 
 
@@ -7535,7 +7535,7 @@ signed char WriteMwire2( unsigned char data_out );
 # 286
 void getsMwire2( unsigned char *rdptr, unsigned char length );
 
-# 126 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\portb.h"
+# 126 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\portb.h"
 void OpenPORTB( unsigned char config);
 
 # 176
@@ -7550,7 +7550,7 @@ void OpenRB2INT( unsigned char config);
 # 230
 void OpenRB3INT( unsigned char config);
 
-# 85 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\pwm.h"
+# 85 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\pwm.h"
 union PWMDC
 {
 unsigned int lpwm;
@@ -7595,7 +7595,7 @@ void OpenPWM5 ( char period);
 void SetDCPWM5 ( unsigned int duty_cycle);
 void ClosePWM5 (void);
 
-# 16 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\reset.h"
+# 16 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\reset.h"
 char isMCLR(void);
 void StatusReset(void);
 char isPOR(void);
@@ -7613,12 +7613,12 @@ char isWDTWU(void);
 
 char isLVD(void);
 
-# 687 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\rtcc.h"
+# 687 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\rtcc.h"
 void Open_RTCC(void);
 void Close_RTCC(void);
 unsigned char update_RTCC(void);
 
-# 97 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\sw_i2c.h"
+# 97 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\sw_i2c.h"
 void SWStopI2C ( void );
 void SWStartI2C ( void );
 void SWRestartI2C ( void );
@@ -7631,7 +7631,7 @@ signed char SWWriteI2C(  unsigned char data_out );
 signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
 signed char SWPutsI2C(  unsigned char *wrptr );
 
-# 84 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\sw_spi.h"
+# 84 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\sw_spi.h"
 void OpenSWSPI(void);
 
 
@@ -7643,7 +7643,7 @@ void SetCSSWSPI(void);
 
 void ClearCSSWSPI(void);
 
-# 47 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\sw_uart.h"
+# 47 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\sw_uart.h"
 void OpenUART(void);
 
 unsigned char ReadUART(void);
@@ -7659,7 +7659,7 @@ extern void DelayRXBitUART (void);
 extern void DelayRXHalfBitUART(void);
 extern void DelayTXBitUART (void);
 
-# 36 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h"
 union Timers
 {
 unsigned int lt;
@@ -7695,7 +7695,7 @@ void CloseTimer4 (void);
 # 1179
 void SetTmrCCPSrc( unsigned char );
 
-# 200 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\usart.h"
+# 200 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h"
 union USART1
 {
 unsigned char val;
@@ -7783,7 +7783,7 @@ extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\delays.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\delays.h"
 void Delay1TCYx(unsigned char);
 
 # 19
@@ -7798,7 +7798,7 @@ void Delay1KTCYx(unsigned char);
 # 37
 void Delay10KTCYx(unsigned char);
 
-# 18 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18.h"
 __attribute__((__unsupported__("The flash_write routine is no longer supported. Please use the peripheral library functions: WriteBytesFlash, WriteBlockFlash or WriteWordFlash"))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 
 
@@ -7815,7 +7815,7 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 27 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\stdlib.h"
+# 27 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\stdlib.h"
 typedef struct {
 int rem;
 int quot;
@@ -7883,12 +7883,12 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
 
-# 22 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h"
+# 22 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h"
 extern void * memcpy(void *, const void *, size_t);
 extern void * memmove(void *, const void *, size_t);
 extern void * memset(void *, int, size_t);
 
-# 35
+# 42
 extern char * strcat(char *, const char *);
 extern char * strcpy(char *, const char *);
 extern char * strncat(char *, const char *, size_t);
@@ -7915,7 +7915,7 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 4 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\ctype.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\ctype.h"
 extern __bit isalpha(char);
 extern __bit isupper(char);
 extern __bit islower(char);
@@ -7965,7 +7965,7 @@ void SEEWrite(unsigned int addr, char data);
 
 char save_prog(signed char progno, struct persprog* ppers);
 
-# 417
+# 416
 static const unsigned int RPM_NONE = 0x0000;
 static const unsigned int RPM_START = 0x0001;
 static const unsigned int RPM_SHOTNUM = 0x0002;
@@ -7982,7 +7982,7 @@ static const unsigned int RPM_SHOTTABLES = 0x0400;
 
 static const unsigned int RPM_DWNLDDRL = 0x0800;
 
-# 543
+# 542
 struct t_parm {
 const struct limit limits;
 const char** prompt;
@@ -8002,7 +8002,7 @@ signed short sweep;
 signed char spin;
 };
 
-# 588
+# 587
 struct ee_hdr {
 char vers[8];
 ushort ops_size;
@@ -8045,7 +8045,7 @@ char start;
 char max;
 };
 
-# 738
+# 737
 struct power_button {
 uchar count;
 uchar previous;
@@ -8054,7 +8054,7 @@ uchar previous_debounced;
 uchar debounced;
 };
 
-# 775
+# 774
 struct moterr {
 unsigned LoBat:1;
 unsigned Reserved1:1;
@@ -8797,7 +8797,7 @@ unsigned int BAT_lastval;
 # 993
 const ulong FeedStartTbl[][3] = {
 
-0x6000, 0x6750, 0x5250,
+0x5000, 0x6750, 0x5250,
 0x4500, 0x5250, 0x4250,
 0x4000, 0x4250, 0x3800,
 0x3600, 0x3800, 0x3400,
@@ -10931,10 +10931,10 @@ else model_type = 2U;
 
 # 3591
 if (model_type == 2U) {
-lob_model = " ELITE GRAND IV ";
+lob_model = "PICKLE3 GRAND IV";
 pp_maxloc = 0;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.227.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10947,10 +10947,10 @@ BDM_TripPoint[0] = 393;
 
 }
 else if (model_type == 0U) {
-lob_model = " ELITE GRAND V  ";
+lob_model = "PICKLE3 GRAND V ";
 pp_maxloc = 6;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.227.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10963,10 +10963,10 @@ BDM_TripPoint[0] = 393;
 
 }
 else if (model_type == 1U) {
-lob_model = "ELITE GRAND V LE";
+lob_model = "PICKLE3 GRANDVLE";
 pp_maxloc = 18;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.227.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10981,10 +10981,10 @@ BDM_TripPoint[0] = 393;
 
 # 3647
 else if (model_type == 5U) {
-lob_model = "    PHENOM 1    ";
+lob_model = "PICKLE3 PHENOM 1";
 pp_maxloc = 0;
 lowbatt_msg = " Power Problem  ";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.227.00";
 sweep_offset = 0x12a;
 
 ELEV_CORR_MIN = -136;
@@ -10997,10 +10997,10 @@ BDM_TripPoint[0] = 655;
 
 }
 else if (model_type == 3U) {
-lob_model = "    PHENOM 2    ";
+lob_model = "PICKLE3 PHENOM 2";
 pp_maxloc = 18;
 lowbatt_msg = " Power Problem  ";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.227.00";
 sweep_offset = 0x12a;
 
 ELEV_CORR_MIN = -136;
@@ -11014,10 +11014,10 @@ BDM_TripPoint[0] = 655;
 }
 
 else if (model_type == 4U) {
-lob_model = "ELITE GRAND V LE";
+lob_model = "PICKLE3 GRANDVLE";
 pp_maxloc = 18;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.226.00";
+lob_version = "Version 1.227.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -11543,8 +11543,8 @@ CurShot.x = home_loc.sweep;
 CurShot.y = home_loc.elev;
 
 # 4372
-CurShot.top = 0x6000;
-CurShot.bot = 0x6000;
+CurShot.top = 0x7500;
+CurShot.bot = 0x7500;
 CurShotState = 30U; home_ticks = ticks;
 power_state = 1;
 break;
@@ -11973,8 +11973,8 @@ strcpy (RemoteString, "Shot Deleted");
 }
 else {
 RemotePgmLocn[RemotePgmShot] = rky - 0x01+1;
-speedmin = 70;
-speedmax = 25;
+speedmin = 55;
+speedmax = 10;
 
 for (i=0; court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed !=0; i++) {
 if (court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed < speedmin) {
@@ -12029,8 +12029,8 @@ RemoteDataCnt = k;
 RemotePgmMode = RPM_EDITLOCN;
 }
 else if (rky == 0x4e) {
-speedmin = 70;
-speedmax = 25;
+speedmin = 55;
+speedmax = 10;
 
 for (i=0; court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed !=0; i++) {
 if (court_locs[RemotePgmLocn[RemotePgmShot]-1][i].spin == RemotePgmSpin[RemotePgmShot]) {
@@ -13194,8 +13194,8 @@ else if (rky == 0x49) {
 if ((model_type == 2U) || (model_type == 5U)) {
 strcpy (RemoteString, "Upgrade Available Contact\rLobster Sports");
 } else {
-CurShot.top = 0x6000;
-CurShot.bot = 0x6000;
+CurShot.top = 0x7500;
+CurShot.bot = 0x7500;
 StartTop(CurShot.top);
 StartBot(CurShot.bot);
 RemotePgmMode = 0;
@@ -14767,7 +14767,7 @@ int ix;
 if (ErrorShutDown) return;
 
 # 8239
-if ((val > 0x6000) || (val < 0x1a00)) {
+if ((val > 0x7500) || (val < 0x1a00)) {
 stop_all(0,(long*)0);
 ErrorStat.TopPeriod = 1;
 ErrorShutDown = 1;
@@ -14905,7 +14905,7 @@ int ix;
 if (ErrorShutDown) return;
 
 # 8392
-if ((val > 0x6000) || (val < 0x1a00)) {
+if ((val > 0x7500) || (val < 0x1a00)) {
 stop_all(0,(long*)0);
 ErrorStat.BotPeriod = 1;
 ErrorShutDown = 1;

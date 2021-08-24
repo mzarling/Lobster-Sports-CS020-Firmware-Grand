@@ -110,9 +110,8 @@ char save_prog(signed char progno, struct persprog* ppers);
 // v1.186 end
 
 // Parameter Definitions
-//#define P_SPEEDMIN	30			// mjz 11/04/08, commented
-#define P_SPEEDMIN	25				// mjz 11/04/08
-#define P_SPEEDMAX	70
+#define P_SPEEDMIN	10		// speed_trans[] translates to 20mph displayed
+#define P_SPEEDMAX	55		// speed_trans[] translates to 65mph displayed
 #define P_SPEEDINC	 5
 #define P_SPINMIN		-3
 #define P_SPINMAX		 3
@@ -745,10 +744,10 @@ struct power_button {
 
 // Serve Motor Speeds
 #define SRV_00MPH 0x7000		// extrapolated - do NOT use
-#define SRV_05MPH 0x7000		// extrapolated - do NOT use
-#define SRV_10MPH 0x7000		// extrapolated - do NOT use
-#define SRV_15MPH 0x7000		// extrapolated - do NOT use
-#define SRV_20MPH 0x6000
+#define SRV_05MPH 0x6500		// extrapolated - do NOT use
+#define SRV_10MPH 0x6000		// extrapolated - do NOT use
+#define SRV_15MPH 0x5500		// extrapolated - do NOT use
+#define SRV_20MPH 0x5000
 #define SRV_25MPH 0x4500
 #define SRV_30MPH 0x4000
 #define SRV_35MPH 0x3600
@@ -763,7 +762,7 @@ struct power_button {
 #define SRV_70MPH 0x1a00
 #define SRV_75MPH 0x1a00
 // Minimum speed while waiting for user
-#define SRV_MINIMUM SRV_20MPH
+#define SRV_MINIMUM 0x7500	// Used for +/-3 spin
 #define SRV_MAXIMUM SRV_75MPH
 
 // SPI Device Selection

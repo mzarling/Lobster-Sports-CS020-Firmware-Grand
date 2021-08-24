@@ -117,7 +117,7 @@ void SEEWrite(unsigned int addr, char data);
 
 char save_prog(signed char progno, struct persprog* ppers);
 
-# 417
+# 416
 static const unsigned int RPM_NONE = 0x0000;
 static const unsigned int RPM_START = 0x0001;
 static const unsigned int RPM_SHOTNUM = 0x0002;
@@ -134,7 +134,7 @@ static const unsigned int RPM_SHOTTABLES = 0x0400;
 
 static const unsigned int RPM_DWNLDDRL = 0x0800;
 
-# 543
+# 542
 struct t_parm {
 const struct limit limits;
 const char** prompt;
@@ -154,7 +154,7 @@ signed short sweep;
 signed char spin;
 };
 
-# 588
+# 587
 struct ee_hdr {
 char vers[8];
 ushort ops_size;
@@ -197,7 +197,7 @@ char start;
 char max;
 };
 
-# 738
+# 737
 struct power_button {
 uchar count;
 uchar previous;
@@ -206,7 +206,7 @@ uchar previous_debounced;
 uchar debounced;
 };
 
-# 775
+# 774
 struct moterr {
 unsigned LoBat:1;
 unsigned Reserved1:1;
@@ -225,7 +225,7 @@ unsigned SweepCnt:1;
 unsigned ElevCnt:1;
 };
 
-# 4 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;
@@ -238,7 +238,7 @@ extern void * memcpy(void *, const void *, size_t);
 extern void * memmove(void *, const void *, size_t);
 extern void * memset(void *, int, size_t);
 
-# 35
+# 42
 extern char * strcat(char *, const char *);
 extern char * strcpy(char *, const char *);
 extern char * strncat(char *, const char *, size_t);
@@ -282,7 +282,7 @@ void dumplong(unsigned long addr);
 void dumpshort(unsigned long addr);
 unsigned long atoh(char *cptr);
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\delays.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\delays.h"
 void Delay1TCYx(unsigned char);
 
 # 19
@@ -458,7 +458,7 @@ const char *pp_fmt[][2] = {
 
 struct t_parm ppparams[] = {
 
-{ { 25, 70, 5 }, &parm_fmt[0U][0], 2, 9, 16, 0, 0 },
+{ { 10, 55, 5 }, &parm_fmt[0U][0], 2, 9, 16, 0, 0 },
 { { -3, 3, 1 }, &parm_fmt[2U][0], -1, 5, 8, 0, 2 },
 { { 1, 9, 1 }, &parm_fmt[5U][0], 2, 9, 16, 0, 0 },
 { { 0, 3, 1 }, &parm_fmt[7U][0],0x10,10,16, 0, 0 },
@@ -958,9 +958,9 @@ val2 = court_locs[locno-1][method].spin;
 
 # 836
 val += 5;
-if (val > 70)
+if (val > 55)
 
-val = 70;
+val = 55;
 if (getLocAvail(locno-1,val,val2,&method)) {
 act_program.method[ppshot_ix] = method;
 pp_dashes = 0;
@@ -1027,9 +1027,9 @@ dumphex(val);
 putrsDIAG("s");
 dumphex(val2);
 val -= 5;
-if (val < 25)
+if (val < 10)
 
-val = 25;
+val = 10;
 putrsDIAG("New");
 dumphex(val);
 if (getLocAvail(locno-1,val,val2,&method)) {

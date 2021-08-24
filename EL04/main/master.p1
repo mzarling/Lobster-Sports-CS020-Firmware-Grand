@@ -5,10 +5,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 "150
 [s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S6 motor_status cap1 cap2 HaveCmd InCmd CmdErr TickInt WaitResp a2dStarted ]
-"775 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
+"774 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
 [s S727 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S727 moterr LoBat Reserved1 Reserved2 TopPeriod BotPeriod TopCurSense BotCurSense FeedCurSense SweepCurSense ElevCurSense TopCnt BotCnt Reserved SweepCnt ElevCnt ]
-"738
+"737
 [s S726 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
 [n S726 power_button count previous current previous_debounced debounced ]
 [v F7332 `(v ~T0 @X0 1 tf2`i`*l ]
@@ -57,21 +57,21 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _poweroff `(v ~T0 @X0 0 ef2`i`*l ]
 "393
 [v _nofunc `(v ~T0 @X0 0 ef2`i`*l ]
-"42 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18.h
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
-"31 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\delays.h
+"31 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\delays.h
 [v _Delay1KTCYx `(v ~T0 @X0 0 ef1`uc ]
 "752 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [s S734 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S734 . Run phase1 phase2 phase3 phase4 phase5 phase6 phase7 tick Hold Slow Cont Ok2Updt BatTest ]
-"610 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
+"609 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
 [s S724 `us 1 `us 1 `us 1 `us 1 `us 1 `us 1 `us 1 `us 1 ]
 [n S724 shot top bot y x yLo xLeft feedrate sweeprate ]
 "11 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\ringbuf2.h
 [s S720 `uc -> 96 `i `Vs 1 `Vs 1 `Vs 1 `i 1 ]
 [n S720 rbuf dat rix wix ct chan ]
-"12388 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"12388 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S669 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S669 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
 "12398
@@ -98,7 +98,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "1145 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [c E5881 0 1 .. ]
 [n E5881 _BOOL FALSE TRUE  ]
-"6520 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"6520 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S325 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S325 . TMR1IF TMR2IF CCP1IF SSP1IF TX1IF RC1IF ADIF PSPIF ]
 "6530
@@ -109,9 +109,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S324 . . . ]
 "6537
 [v _PIR1bits `VS324 ~T0 @X0 0 e@3998 ]
-"475 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\capture.h
+"475 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\capture.h
 [v _ReadCapture1 `(ui ~T0 @X0 0 ef ]
-"6755 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"6755 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S334 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S334 . CCP2IF TMR3IF HLVDIF BCL1IF EEIF . CMIF OSCFIF ]
 "6765
@@ -122,9 +122,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S333 . . . ]
 "6771
 [v _PIR2bits `VS333 ~T0 @X0 0 e@4001 ]
-"485 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\capture.h
+"485 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\capture.h
 [v _ReadCapture2 `(ui ~T0 @X0 0 ef ]
-"7020 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"7020 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S349 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S349 . CCP3IF CCP4IF CCP5IF TMR4IF TX2IF RC2IF BCL2IF SSP2IF ]
 "7030
@@ -140,7 +140,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PIR3bits `VS348 ~T0 @X0 0 e@4004 ]
 "471 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _PgaGain `(v ~T0 @X0 0 ef2`i`uc ]
-"9173 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"9173 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
 "9179
 [s S445 :1 `uc 1 :1 `uc 1 ]
@@ -194,7 +194,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _preset `S3 ~T0 @X0 -> 0 `x e ]
 "13 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\diag.h
 [v _putrsDIAG `(v ~T0 @X0 0 ef1`*Cuc ]
-"515 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\pwm.h
+"515 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\pwm.h
 [v _SetDCPWM4 `(v ~T0 @X0 0 ef1`ui ]
 "519
 [v _SetDCPWM5 `(v ~T0 @X0 0 ef1`ui ]
@@ -224,7 +224,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _StopBotMtr `(v ~T0 @X0 0 ef ]
 "470
 [v _GetMtrResponse `(i ~T0 @X0 0 ef ]
-"553 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
+"552 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
 [s S722 `uc 1 `us 1 `us 1 `us 1 `s 1 `c 1 ]
 [n S722 el04_loc speed top bottom elev sweep spin ]
 "155 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
@@ -239,9 +239,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _SetFeedRate `(v ~T0 @X0 0 ef1`l ]
 "392
 [v _varinit `(v ~T0 @X0 0 ef ]
-"24 C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h
+"24 C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h
 [v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
-"11478 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"11478 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S637 :1 `uc 1 ]
 [n S637 . SWDTEN ]
 "11481
@@ -368,13 +368,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TRISG `Vuc ~T0 @X0 0 e@3992 ]
 "9083
 [v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
-"236 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\spi.h
+"236 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\spi.h
 [v _OpenSPI1 `(v ~T0 @X0 0 ef3`uc`uc`uc ]
 "255 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _set_intensity `(v ~T0 @X0 0 ef ]
 "33 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\ringbuf2.h
 [v _rbuf_init `(v ~T0 @X0 0 ef2`*S720`i ]
-"7948 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"7948 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S390 :2 `uc 1 :1 `uc 1 ]
 [n S390 . . NOT_T3SYNC ]
 "7952
@@ -400,17 +400,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S389 . . . . . . . . ]
 "7985
 [v _T3CONbits `VS389 ~T0 @X0 0 e@4017 ]
-"514 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\pwm.h
+"514 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\pwm.h
 [v _OpenPWM4 `(v ~T0 @X0 0 ef1`uc ]
 "500
 [v _OpenPWM3 `(v ~T0 @X0 0 ef1`uc ]
 "518
 [v _OpenPWM5 `(v ~T0 @X0 0 ef1`uc ]
-"541 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h
+"541 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h
 [v _OpenTimer4 `(v ~T0 @X0 0 ef1`uc ]
-"474 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\capture.h
+"474 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\capture.h
 [v _OpenCapture1 `(v ~T0 @X0 0 ef1`uc ]
-"5346 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"5346 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S289 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S289 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
 "5356
@@ -421,13 +421,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S288 . . . ]
 "5367
 [v _TRISCbits `VS288 ~T0 @X0 0 e@3988 ]
-"236 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h
+"236 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h
 [v _OpenTimer1 `(v ~T0 @X0 0 ef1`uc ]
-"484 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\capture.h
+"484 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\capture.h
 [v _OpenCapture2 `(v ~T0 @X0 0 ef1`uc ]
-"391 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h
+"391 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h
 [v _OpenTimer3 `(v ~T0 @X0 0 ef1`uc ]
-"11215 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"11215 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S622 :2 `uc 1 :1 `uc 1 ]
 [n S622 . . NOT_T1SYNC ]
 "11219
@@ -450,9 +450,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S621 . . . . . . . ]
 "11248
 [v _T1CONbits `VS621 ~T0 @X0 0 e@4045 ]
-"318 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\usart.h
+"318 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _Open2USART `(v ~T0 @X0 0 ef2`uc`ui ]
-"6230 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"6230 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S313 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S313 . TRISG0 TRISG1 TRISG2 TRISG3 TRISG4 ]
 "6237
@@ -463,13 +463,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S312 . . . ]
 "6245
 [v _TRISGbits `VS312 ~T0 @X0 0 e@3992 ]
-"214 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\usart.h
+"214 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _Open1USART `(v ~T0 @X0 0 ef2`uc`ui ]
-"9013 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"9013 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
-"118 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h
+"118 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h
 [v _OpenTimer0 `(v ~T0 @X0 0 ef1`uc ]
-"12296 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"12296 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S665 :7 `uc 1 :1 `uc 1 ]
 [n S665 . . NOT_RBPU ]
 "12300
@@ -498,7 +498,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _lob_version `*Cuc ~T0 @X0 0 e ]
 "11 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
 [v _SEERead `(uc ~T0 @X0 0 ef1`ui ]
-"588
+"587
 [s S723 `uc -> 8 `i `us 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc -> 3 `i `us 1 `us 1 `uc -> 9 `i ]
 [n S723 ee_hdr vers ops_size npresets parm_size npersprog pers_size num_methods num_locs additional_locs ndrills elev_correction sweep_correction rsrved ]
 "174 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
@@ -523,17 +523,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PlayModeBlink `l ~T0 @X0 0 e ]
 "473
 [v _ChipSelect `(v ~T0 @X0 0 ef1`i ]
-"246 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\spi.h
+"246 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\spi.h
 [v _ReadSPI1 `(uc ~T0 @X0 0 ef ]
 "475 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _ChipDeSelect `(v ~T0 @X0 0 ef1`i ]
-"9307 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"9307 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
 "9301
 [v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
 "478 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _CheckBattery `(v ~T0 @X0 0 ef1`ui ]
-"36 C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h
+"43 C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h
 [v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
 [v F7043 `uc ~T0 @X0 -> 17 `i t ]
 "203 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
@@ -576,7 +576,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _remote_enabled `uc ~T0 @X0 0 e ]
 "16 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\diag.h
 [v _dumphex `(v ~T0 @X0 0 ef1`uc ]
-"1501 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"1501 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S87 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S87 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
 "1511
@@ -602,7 +602,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S86 . . . . . . . . ]
 "1542
 [v _TXSTA2bits `VS86 ~T0 @X0 0 e@3948 ]
-"334 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\usart.h
+"334 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _Write2USART `(v ~T0 @X0 0 ef1`uc ]
 "232 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _speed_trans `Cuc ~T0 @X0 -> 0 `x e ]
@@ -620,13 +620,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _act_program `S7 ~T0 @X0 0 e ]
 "1058
 [v _RemoteSaveDrill `(v ~T0 @X0 0 ef ]
-"103 C:\Program Files (x86)\Microchip\xc8\v1.31\include\stdlib.h
+"103 C:\Program Files (x86)\Microchip\xc8\v1.33\include\stdlib.h
 [v _itoa `(*uc ~T0 @X0 0 ef3`*uc`i`i ]
 "139 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _curState `uc ~T0 @X0 0 e ]
 "251
 [v _priorState `uc ~T0 @X0 0 e ]
-"333 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\usart.h
+"333 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _Read2USART `(uc ~T0 @X0 0 ef ]
 "397 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _lobmain `(v ~T0 @X0 0 ef1`uc ]
@@ -636,7 +636,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _lob_parm `(uc ~T0 @X0 0 ef4`uc`*uc`*c`um ]
 "391
 [v _set_serve `(v ~T0 @X0 0 ef1`*S3 ]
-"35 C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h
 [v _strcat `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
 "148 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _preset_ix `uc ~T0 @X0 -> 0 `x e ]
@@ -646,11 +646,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ppparm_ix `c ~T0 @X0 0 e ]
 "226
 [v _elev_test_adjust `s ~T0 @X0 0 e ]
-"55 C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h
 [v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
-"336 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\usart.h
+"336 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _puts2USART `(v ~T0 @X0 0 ef1`*uc ]
-"7272 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"7272 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S360 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S360 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
 "7282
@@ -676,9 +676,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S359 . . . . . . . . ]
 "7314
 [v _RCSTA1bits `VS359 ~T0 @X0 0 e@4011 ]
-"244 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\usart.h
+"244 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _Read1USART `(uc ~T0 @X0 0 ef ]
-"1322 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"1322 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [s S77 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S77 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
 "1332
@@ -720,13 +720,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _rbuf_extr `(uc ~T0 @X0 0 ef1`*S720 ]
 "34
 [v _rbuf_ins `(v ~T0 @X0 0 ef2`*S720`uc ]
-"17 C:\Program Files (x86)\Microchip\xc8\v1.31\include\ctype.h
+"17 C:\Program Files (x86)\Microchip\xc8\v1.33\include\ctype.h
 [v _toupper `(uc ~T0 @X0 0 ef1`uc ]
-"56 C:\Program Files (x86)\Microchip\xc8\v1.31\include\string.h
+"63 C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h
 [v _strchr `(*uc ~T0 @X0 0 ef2`*Cuc`i ]
 "22 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\diag.h
 [v _atoh `(ul ~T0 @X0 0 ef1`*uc ]
-"240 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\spi.h
+"240 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\spi.h
 [v _WriteSPI1 `(c ~T0 @X0 0 ef1`uc ]
 "474 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _ChipReserve `(v ~T0 @X0 0 ef1`i ]
@@ -740,7 +740,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S2 ulp c uc s us l ul vp cvp vvp cp ccp ucp cucp sp csp usp cusp lp clp unlp culp func ]
 "670 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\master.c
 [v _loaded_progno `uc ~T0 @X0 0 e ]
-"9756 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"9756 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [v _SSP1CON1 `Vuc ~T0 @X0 0 e@4038 ]
 "7261
 [v _RCSTA1 `Vuc ~T0 @X0 0 e@4011 ]
@@ -770,21 +770,21 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RCSTA2 `Vuc ~T0 @X0 0 e@3947 ]
 "6891
 [v _PIE3 `Vuc ~T0 @X0 0 e@4003 ]
-"516 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\pwm.h
+"516 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\pwm.h
 [v _ClosePWM4 `(v ~T0 @X0 0 ef ]
 "506
 [v _ClosePWM3 `(v ~T0 @X0 0 ef ]
 "520
 [v _ClosePWM5 `(v ~T0 @X0 0 ef ]
-"542 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h
+"542 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h
 [v _CloseTimer4 `(v ~T0 @X0 0 ef ]
-"476 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\capture.h
+"476 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\capture.h
 [v _CloseCapture1 `(v ~T0 @X0 0 ef ]
-"237 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h
+"237 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h
 [v _CloseTimer1 `(v ~T0 @X0 0 ef ]
-"486 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\capture.h
+"486 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\capture.h
 [v _CloseCapture2 `(v ~T0 @X0 0 ef ]
-"392 C:\Program Files (x86)\Microchip\xc8\v1.31\include\plib\timers.h
+"392 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\timers.h
 [v _CloseTimer3 `(v ~T0 @X0 0 ef ]
 "119
 [v _CloseTimer0 `(v ~T0 @X0 0 ef ]
@@ -861,7 +861,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18f6722.h: 47: extern volatile unsigned char SSP2CON2 @ 0xF62;
-"49 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18f6722.h
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f6722.h
 [; ;pic18f6722.h: 49: asm("SSP2CON2 equ 0F62h");
 [; <" SSP2CON2 equ 0F62h ;# ">
 [; ;pic18f6722.h: 52: typedef union {
@@ -6850,29 +6850,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
 [; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
 [; ;string.h: 24: extern void * memset(void *, int, size_t);
-[; ;string.h: 35: extern char * strcat(char *, const char *);
-[; ;string.h: 36: extern char * strcpy(char *, const char *);
-[; ;string.h: 37: extern char * strncat(char *, const char *, size_t);
-[; ;string.h: 38: extern char * strncpy(char *, const char *, size_t);
-[; ;string.h: 39: extern char * strdup(const char *);
-[; ;string.h: 40: extern char * strtok(char *, const char *);
-[; ;string.h: 43: extern int memcmp(const void *, const void *, size_t);
-[; ;string.h: 44: extern int strcmp(const char *, const char *);
-[; ;string.h: 45: extern int stricmp(const char *, const char *);
-[; ;string.h: 46: extern int strncmp(const char *, const char *, size_t);
-[; ;string.h: 47: extern int strnicmp(const char *, const char *, size_t);
-[; ;string.h: 48: extern void * memchr(const void *, int, size_t);
-[; ;string.h: 49: extern size_t strcspn(const char *, const char *);
-[; ;string.h: 50: extern char * strpbrk(const char *, const char *);
-[; ;string.h: 51: extern size_t strspn(const char *, const char *);
-[; ;string.h: 52: extern char * strstr(const char *, const char *);
-[; ;string.h: 53: extern char * stristr(const char *, const char *);
-[; ;string.h: 54: extern char * strerror(int);
-[; ;string.h: 55: extern size_t strlen(const char *);
-[; ;string.h: 56: extern char * strchr(const char *, int);
-[; ;string.h: 57: extern char * strichr(const char *, int);
-[; ;string.h: 58: extern char * strrchr(const char *, int);
-[; ;string.h: 59: extern char * strrichr(const char *, int);
+[; ;string.h: 42: extern char * strcat(char *, const char *);
+[; ;string.h: 43: extern char * strcpy(char *, const char *);
+[; ;string.h: 44: extern char * strncat(char *, const char *, size_t);
+[; ;string.h: 45: extern char * strncpy(char *, const char *, size_t);
+[; ;string.h: 46: extern char * strdup(const char *);
+[; ;string.h: 47: extern char * strtok(char *, const char *);
+[; ;string.h: 50: extern int memcmp(const void *, const void *, size_t);
+[; ;string.h: 51: extern int strcmp(const char *, const char *);
+[; ;string.h: 52: extern int stricmp(const char *, const char *);
+[; ;string.h: 53: extern int strncmp(const char *, const char *, size_t);
+[; ;string.h: 54: extern int strnicmp(const char *, const char *, size_t);
+[; ;string.h: 55: extern void * memchr(const void *, int, size_t);
+[; ;string.h: 56: extern size_t strcspn(const char *, const char *);
+[; ;string.h: 57: extern char * strpbrk(const char *, const char *);
+[; ;string.h: 58: extern size_t strspn(const char *, const char *);
+[; ;string.h: 59: extern char * strstr(const char *, const char *);
+[; ;string.h: 60: extern char * stristr(const char *, const char *);
+[; ;string.h: 61: extern char * strerror(int);
+[; ;string.h: 62: extern size_t strlen(const char *);
+[; ;string.h: 63: extern char * strchr(const char *, int);
+[; ;string.h: 64: extern char * strichr(const char *, int);
+[; ;string.h: 65: extern char * strrchr(const char *, int);
+[; ;string.h: 66: extern char * strrichr(const char *, int);
 [; ;ctype.h: 4: extern __bit isalpha(char);
 [; ;ctype.h: 5: extern __bit isupper(char);
 [; ;ctype.h: 6: extern __bit islower(char);
@@ -6908,156 +6908,156 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lob.h: 11: char SEERead(unsigned int addr);
 [; ;lob.h: 12: void SEEWrite(unsigned int addr, char data);
 [; ;lob.h: 15: char save_prog(signed char progno, struct persprog* ppers);
-"417 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
+"416 D:\Users\MichaelZarling\Documents\Lobster\cs020_sw\Master_v1p226p34-XC8\EL04\main\lob.h
 [v _RPM_NONE `Cui ~T0 @X0 1 s ]
 [i _RPM_NONE
 -> -> 0 `i `ui
 ]
-[; ;lob.h: 417: static const unsigned int RPM_NONE = 0x0000;
-"418
+[; ;lob.h: 416: static const unsigned int RPM_NONE = 0x0000;
+"417
 [v _RPM_START `Cui ~T0 @X0 1 s ]
 [i _RPM_START
 -> -> 1 `i `ui
 ]
-[; ;lob.h: 418: static const unsigned int RPM_START = 0x0001;
-"419
+[; ;lob.h: 417: static const unsigned int RPM_START = 0x0001;
+"418
 [v _RPM_SHOTNUM `Cui ~T0 @X0 1 s ]
 [i _RPM_SHOTNUM
 -> -> 2 `i `ui
 ]
-[; ;lob.h: 419: static const unsigned int RPM_SHOTNUM = 0x0002;
-"420
+[; ;lob.h: 418: static const unsigned int RPM_SHOTNUM = 0x0002;
+"419
 [v _RPM_SHOTLOCN `Cui ~T0 @X0 1 s ]
 [i _RPM_SHOTLOCN
 -> -> 4 `i `ui
 ]
-[; ;lob.h: 420: static const unsigned int RPM_SHOTLOCN = 0x0004;
-"421
+[; ;lob.h: 419: static const unsigned int RPM_SHOTLOCN = 0x0004;
+"420
 [v _RPM_SHOTSPEED `Cui ~T0 @X0 1 s ]
 [i _RPM_SHOTSPEED
 -> -> 8 `i `ui
 ]
-[; ;lob.h: 421: static const unsigned int RPM_SHOTSPEED = 0x0008;
-"422
+[; ;lob.h: 420: static const unsigned int RPM_SHOTSPEED = 0x0008;
+"421
 [v _RPM_SHOTSPIN `Cui ~T0 @X0 1 s ]
 [i _RPM_SHOTSPIN
 -> -> 16 `i `ui
 ]
-[; ;lob.h: 422: static const unsigned int RPM_SHOTSPIN = 0x0010;
-"423
+[; ;lob.h: 421: static const unsigned int RPM_SHOTSPIN = 0x0010;
+"422
 [v _RPM_SHOTFEED `Cui ~T0 @X0 1 s ]
 [i _RPM_SHOTFEED
 -> -> 32 `i `ui
 ]
-[; ;lob.h: 423: static const unsigned int RPM_SHOTFEED = 0x0020;
-"424
+[; ;lob.h: 422: static const unsigned int RPM_SHOTFEED = 0x0020;
+"423
 [v _RPM_EDITLOCN `Cui ~T0 @X0 1 s ]
 [i _RPM_EDITLOCN
 -> -> 64 `i `ui
 ]
-[; ;lob.h: 424: static const unsigned int RPM_EDITLOCN = 0x0040;
-"425
+[; ;lob.h: 423: static const unsigned int RPM_EDITLOCN = 0x0040;
+"424
 [v _RPM_EDITSPEED `Cui ~T0 @X0 1 s ]
 [i _RPM_EDITSPEED
 -> -> 128 `i `ui
 ]
-[; ;lob.h: 425: static const unsigned int RPM_EDITSPEED = 0x0080;
-"426
+[; ;lob.h: 424: static const unsigned int RPM_EDITSPEED = 0x0080;
+"425
 [v _RPM_EDITSPIN `Cui ~T0 @X0 1 s ]
 [i _RPM_EDITSPIN
 -> -> 256 `i `ui
 ]
-[; ;lob.h: 426: static const unsigned int RPM_EDITSPIN = 0x0100;
-"427
+[; ;lob.h: 425: static const unsigned int RPM_EDITSPIN = 0x0100;
+"426
 [v _RPM_EDITFEED `Cui ~T0 @X0 1 s ]
 [i _RPM_EDITFEED
 -> -> 512 `i `ui
 ]
-[; ;lob.h: 427: static const unsigned int RPM_EDITFEED = 0x0200;
-"428
+[; ;lob.h: 426: static const unsigned int RPM_EDITFEED = 0x0200;
+"427
 [v _RPM_SHOTTABLES `Cui ~T0 @X0 1 s ]
 [i _RPM_SHOTTABLES
 -> -> 1024 `i `ui
 ]
-[; ;lob.h: 428: static const unsigned int RPM_SHOTTABLES = 0x0400;
-"431
+[; ;lob.h: 427: static const unsigned int RPM_SHOTTABLES = 0x0400;
+"430
 [v _RPM_DWNLDDRL `Cui ~T0 @X0 1 s ]
 [i _RPM_DWNLDDRL
 -> -> 2048 `i `ui
 ]
-[; ;lob.h: 431: static const unsigned int RPM_DWNLDDRL = 0x0800;
-[; ;lob.h: 543: struct t_parm {
-[; ;lob.h: 544: const struct limit limits;
-[; ;lob.h: 545: const char** prompt;
-[; ;lob.h: 546: const char field_size;
-[; ;lob.h: 547: const char field_locn;
-[; ;lob.h: 548: const char text_size;
-[; ;lob.h: 549: const char text_start;
-[; ;lob.h: 550: const char line;
-[; ;lob.h: 551: };
-[; ;lob.h: 553: struct el04_loc {
-[; ;lob.h: 554: uchar speed;
-[; ;lob.h: 555: ushort top;
-[; ;lob.h: 556: ushort bottom;
-[; ;lob.h: 557: ushort elev;
-[; ;lob.h: 558: signed short sweep;
-[; ;lob.h: 559: signed char spin;
-[; ;lob.h: 560: };
-[; ;lob.h: 588: struct ee_hdr {
-[; ;lob.h: 589: char vers[8];
-[; ;lob.h: 590: ushort ops_size;
-[; ;lob.h: 591: char npresets;
-[; ;lob.h: 592: char parm_size;
-[; ;lob.h: 593: char npersprog;
-[; ;lob.h: 594: char pers_size;
-[; ;lob.h: 595: char num_methods;
-[; ;lob.h: 596: char num_locs;
-[; ;lob.h: 597: char additional_locs;
-[; ;lob.h: 598: char ndrills[3];
-[; ;lob.h: 601: ushort elev_correction;
-[; ;lob.h: 602: ushort sweep_correction;
-[; ;lob.h: 605: char rsrved[9];
-[; ;lob.h: 607: };
-[; ;lob.h: 610: struct shot {
-[; ;lob.h: 611: ushort top;
-[; ;lob.h: 612: ushort bot;
-[; ;lob.h: 613: ushort y;
-[; ;lob.h: 614: ushort x;
-[; ;lob.h: 615: ushort yLo;
-[; ;lob.h: 616: ushort xLeft;
-[; ;lob.h: 617: ushort feedrate;
-[; ;lob.h: 618: ushort sweeprate;
-[; ;lob.h: 619: };
-[; ;lob.h: 623: struct rand_info {
-[; ;lob.h: 624: char range;
-[; ;lob.h: 625: char incr;
-[; ;lob.h: 626: char start;
-[; ;lob.h: 627: char max;
-[; ;lob.h: 628: };
-[; ;lob.h: 738: struct power_button {
-[; ;lob.h: 739: uchar count;
-[; ;lob.h: 740: uchar previous;
-[; ;lob.h: 741: uchar current;
-[; ;lob.h: 742: uchar previous_debounced;
-[; ;lob.h: 743: uchar debounced;
-[; ;lob.h: 744: };
-[; ;lob.h: 775: struct moterr {
-[; ;lob.h: 776: unsigned LoBat:1;
-[; ;lob.h: 777: unsigned Reserved1:1;
-[; ;lob.h: 778: unsigned Reserved2:1;
-[; ;lob.h: 779: unsigned TopPeriod:1;
-[; ;lob.h: 780: unsigned BotPeriod:1;
-[; ;lob.h: 781: unsigned TopCurSense:1;
-[; ;lob.h: 782: unsigned BotCurSense:1;
-[; ;lob.h: 783: unsigned FeedCurSense:1;
-[; ;lob.h: 784: unsigned SweepCurSense:1;
-[; ;lob.h: 785: unsigned ElevCurSense:1;
-[; ;lob.h: 786: unsigned TopCnt:1;
-[; ;lob.h: 787: unsigned BotCnt:1;
-[; ;lob.h: 788: unsigned Reserved:1;
-[; ;lob.h: 789: unsigned SweepCnt:1;
-[; ;lob.h: 790: unsigned ElevCnt:1;
-[; ;lob.h: 791: };
+[; ;lob.h: 430: static const unsigned int RPM_DWNLDDRL = 0x0800;
+[; ;lob.h: 542: struct t_parm {
+[; ;lob.h: 543: const struct limit limits;
+[; ;lob.h: 544: const char** prompt;
+[; ;lob.h: 545: const char field_size;
+[; ;lob.h: 546: const char field_locn;
+[; ;lob.h: 547: const char text_size;
+[; ;lob.h: 548: const char text_start;
+[; ;lob.h: 549: const char line;
+[; ;lob.h: 550: };
+[; ;lob.h: 552: struct el04_loc {
+[; ;lob.h: 553: uchar speed;
+[; ;lob.h: 554: ushort top;
+[; ;lob.h: 555: ushort bottom;
+[; ;lob.h: 556: ushort elev;
+[; ;lob.h: 557: signed short sweep;
+[; ;lob.h: 558: signed char spin;
+[; ;lob.h: 559: };
+[; ;lob.h: 587: struct ee_hdr {
+[; ;lob.h: 588: char vers[8];
+[; ;lob.h: 589: ushort ops_size;
+[; ;lob.h: 590: char npresets;
+[; ;lob.h: 591: char parm_size;
+[; ;lob.h: 592: char npersprog;
+[; ;lob.h: 593: char pers_size;
+[; ;lob.h: 594: char num_methods;
+[; ;lob.h: 595: char num_locs;
+[; ;lob.h: 596: char additional_locs;
+[; ;lob.h: 597: char ndrills[3];
+[; ;lob.h: 600: ushort elev_correction;
+[; ;lob.h: 601: ushort sweep_correction;
+[; ;lob.h: 604: char rsrved[9];
+[; ;lob.h: 606: };
+[; ;lob.h: 609: struct shot {
+[; ;lob.h: 610: ushort top;
+[; ;lob.h: 611: ushort bot;
+[; ;lob.h: 612: ushort y;
+[; ;lob.h: 613: ushort x;
+[; ;lob.h: 614: ushort yLo;
+[; ;lob.h: 615: ushort xLeft;
+[; ;lob.h: 616: ushort feedrate;
+[; ;lob.h: 617: ushort sweeprate;
+[; ;lob.h: 618: };
+[; ;lob.h: 622: struct rand_info {
+[; ;lob.h: 623: char range;
+[; ;lob.h: 624: char incr;
+[; ;lob.h: 625: char start;
+[; ;lob.h: 626: char max;
+[; ;lob.h: 627: };
+[; ;lob.h: 737: struct power_button {
+[; ;lob.h: 738: uchar count;
+[; ;lob.h: 739: uchar previous;
+[; ;lob.h: 740: uchar current;
+[; ;lob.h: 741: uchar previous_debounced;
+[; ;lob.h: 742: uchar debounced;
+[; ;lob.h: 743: };
+[; ;lob.h: 774: struct moterr {
+[; ;lob.h: 775: unsigned LoBat:1;
+[; ;lob.h: 776: unsigned Reserved1:1;
+[; ;lob.h: 777: unsigned Reserved2:1;
+[; ;lob.h: 778: unsigned TopPeriod:1;
+[; ;lob.h: 779: unsigned BotPeriod:1;
+[; ;lob.h: 780: unsigned TopCurSense:1;
+[; ;lob.h: 781: unsigned BotCurSense:1;
+[; ;lob.h: 782: unsigned FeedCurSense:1;
+[; ;lob.h: 783: unsigned SweepCurSense:1;
+[; ;lob.h: 784: unsigned ElevCurSense:1;
+[; ;lob.h: 785: unsigned TopCnt:1;
+[; ;lob.h: 786: unsigned BotCnt:1;
+[; ;lob.h: 787: unsigned Reserved:1;
+[; ;lob.h: 788: unsigned SweepCnt:1;
+[; ;lob.h: 789: unsigned ElevCnt:1;
+[; ;lob.h: 790: };
 [; ;state_mach.h: 15: struct state_mach {
 [; ;state_mach.h: 16: uchar *cur_state;
 [; ;state_mach.h: 17: uchar *prev_state;
@@ -9087,7 +9087,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 :U ..
 :U ..
 "995
--> -> -> 24576 `i `l `ul
+-> -> -> 20480 `i `l `ul
 -> -> -> 26448 `i `l `ul
 -> -> -> 21072 `i `l `ul
 ..
@@ -9173,7 +9173,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 ..
 ]
 [; ;master.c: 993: const ulong FeedStartTbl[][3] = {
-[; ;master.c: 995: 0x6000, 0x6750, 0x5250,
+[; ;master.c: 995: 0x5000, 0x6750, 0x5250,
 [; ;master.c: 996: 0x4500, 0x5250, 0x4250,
 [; ;master.c: 997: 0x4000, 0x4250, 0x3800,
 [; ;master.c: 998: 0x3600, 0x3800, 0x3400,
@@ -15227,7 +15227,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "3591
 [e $ ! == -> _model_type `ui -> 2 `ui 1307  ]
 {
-[; ;master.c: 3592: lob_model = " ELITE GRAND IV ";
+[; ;master.c: 3592: lob_model = "PICKLE3 GRAND IV";
 "3592
 [e = _lob_model :s 13C ]
 [; ;master.c: 3593: pp_maxloc = 0;
@@ -15236,7 +15236,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3594: lowbatt_msg = "Battery Depleted";
 "3594
 [e = _lowbatt_msg :s 14C ]
-[; ;master.c: 3595: lob_version = "Version 1.226.00";
+[; ;master.c: 3595: lob_version = "Version 1.227.00";
 "3595
 [e = _lob_version :s 15C ]
 [; ;master.c: 3596: sweep_offset = 0xf0;
@@ -15260,7 +15260,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3607: else if (model_type == 0U) {
 [e $ ! == -> _model_type `ui -> 0 `ui 1309  ]
 {
-[; ;master.c: 3608: lob_model = " ELITE GRAND V  ";
+[; ;master.c: 3608: lob_model = "PICKLE3 GRAND V ";
 "3608
 [e = _lob_model :s 16C ]
 [; ;master.c: 3609: pp_maxloc = 6;
@@ -15269,7 +15269,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3610: lowbatt_msg = "Battery Depleted";
 "3610
 [e = _lowbatt_msg :s 17C ]
-[; ;master.c: 3611: lob_version = "Version 1.226.00";
+[; ;master.c: 3611: lob_version = "Version 1.227.00";
 "3611
 [e = _lob_version :s 18C ]
 [; ;master.c: 3612: sweep_offset = 0xf0;
@@ -15293,7 +15293,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3623: else if (model_type == 1U) {
 [e $ ! == -> _model_type `ui -> 1 `ui 1311  ]
 {
-[; ;master.c: 3624: lob_model = "ELITE GRAND V LE";
+[; ;master.c: 3624: lob_model = "PICKLE3 GRANDVLE";
 "3624
 [e = _lob_model :s 19C ]
 [; ;master.c: 3625: pp_maxloc = 18;
@@ -15302,7 +15302,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3626: lowbatt_msg = "Battery Depleted";
 "3626
 [e = _lowbatt_msg :s 20C ]
-[; ;master.c: 3627: lob_version = "Version 1.226.00";
+[; ;master.c: 3627: lob_version = "Version 1.227.00";
 "3627
 [e = _lob_version :s 21C ]
 [; ;master.c: 3628: sweep_offset = 0xf0;
@@ -15326,7 +15326,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3647: else if (model_type == 5U) {
 [e $ ! == -> _model_type `ui -> 5 `ui 1313  ]
 {
-[; ;master.c: 3648: lob_model = "    PHENOM 1    ";
+[; ;master.c: 3648: lob_model = "PICKLE3 PHENOM 1";
 "3648
 [e = _lob_model :s 22C ]
 [; ;master.c: 3649: pp_maxloc = 0;
@@ -15335,7 +15335,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3650: lowbatt_msg = " Power Problem  ";
 "3650
 [e = _lowbatt_msg :s 23C ]
-[; ;master.c: 3651: lob_version = "Version 1.226.00";
+[; ;master.c: 3651: lob_version = "Version 1.227.00";
 "3651
 [e = _lob_version :s 24C ]
 [; ;master.c: 3652: sweep_offset = 0x12a;
@@ -15359,7 +15359,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3666: else if (model_type == 3U) {
 [e $ ! == -> _model_type `ui -> 3 `ui 1315  ]
 {
-[; ;master.c: 3667: lob_model = "    PHENOM 2    ";
+[; ;master.c: 3667: lob_model = "PICKLE3 PHENOM 2";
 "3667
 [e = _lob_model :s 25C ]
 [; ;master.c: 3668: pp_maxloc = 18;
@@ -15368,7 +15368,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3669: lowbatt_msg = " Power Problem  ";
 "3669
 [e = _lowbatt_msg :s 26C ]
-[; ;master.c: 3670: lob_version = "Version 1.226.00";
+[; ;master.c: 3670: lob_version = "Version 1.227.00";
 "3670
 [e = _lob_version :s 27C ]
 [; ;master.c: 3671: sweep_offset = 0x12a;
@@ -15392,7 +15392,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3686: else if (model_type == 4U) {
 [e $ ! == -> _model_type `ui -> 4 `ui 1317  ]
 {
-[; ;master.c: 3687: lob_model = "ELITE GRAND V LE";
+[; ;master.c: 3687: lob_model = "PICKLE3 GRANDVLE";
 "3687
 [e = _lob_model :s 28C ]
 [; ;master.c: 3688: pp_maxloc = 18;
@@ -15401,7 +15401,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3689: lowbatt_msg = "Battery Depleted";
 "3689
 [e = _lowbatt_msg :s 29C ]
-[; ;master.c: 3690: lob_version = "Version 1.226.00";
+[; ;master.c: 3690: lob_version = "Version 1.227.00";
 "3690
 [e = _lob_version :s 30C ]
 [; ;master.c: 3691: sweep_offset = 0xf0;
@@ -16763,12 +16763,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 4366: CurShot.y = home_loc.elev;
 "4366
 [e = . _CurShot 2 . _home_loc 3 ]
-[; ;master.c: 4372: CurShot.top = 0x6000;
+[; ;master.c: 4372: CurShot.top = 0x7500;
 "4372
-[e = . _CurShot 0 -> -> 24576 `i `us ]
-[; ;master.c: 4373: CurShot.bot = 0x6000;
+[e = . _CurShot 0 -> -> 29952 `i `us ]
+[; ;master.c: 4373: CurShot.bot = 0x7500;
 "4373
-[e = . _CurShot 1 -> -> 24576 `i `us ]
+[e = . _CurShot 1 -> -> 29952 `i `us ]
 [; ;master.c: 4374: CurShotState = 30U; home_ticks = ticks;
 "4374
 [e = _CurShotState -> -> 30 `ui `us ]
@@ -17927,12 +17927,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 4915: RemotePgmLocn[RemotePgmShot] = rky - 0x01+1;
 "4915
 [e = *U + &U _RemotePgmLocn * -> _RemotePgmShot `ux -> -> # *U &U _RemotePgmLocn `ui `ux -> + - -> _rky `i -> 1 `i -> 1 `i `uc ]
-[; ;master.c: 4916: speedmin = 70;
+[; ;master.c: 4916: speedmin = 55;
 "4916
-[e = _speedmin -> -> 70 `i `uc ]
-[; ;master.c: 4917: speedmax = 25;
+[e = _speedmin -> -> 55 `i `uc ]
+[; ;master.c: 4917: speedmax = 10;
 "4917
-[e = _speedmax -> -> 25 `i `uc ]
+[e = _speedmax -> -> 10 `i `uc ]
 [; ;master.c: 4919: for (i=0; court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed !=0; i++) {
 "4919
 {
@@ -18129,12 +18129,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 5061: else if (rky == 0x4e) {
 [e $ ! == -> _rky `i -> 78 `i 1610  ]
 {
-[; ;master.c: 5062: speedmin = 70;
+[; ;master.c: 5062: speedmin = 55;
 "5062
-[e = _speedmin -> -> 70 `i `uc ]
-[; ;master.c: 5063: speedmax = 25;
+[e = _speedmin -> -> 55 `i `uc ]
+[; ;master.c: 5063: speedmax = 10;
 "5063
-[e = _speedmax -> -> 25 `i `uc ]
+[e = _speedmax -> -> 10 `i `uc ]
 [; ;master.c: 5065: for (i=0; court_locs[RemotePgmLocn[RemotePgmShot]-1][i].speed !=0; i++) {
 "5065
 {
@@ -21029,12 +21029,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $U 1950  ]
 [e :U 1949 ]
 {
-[; ;master.c: 6359: CurShot.top = 0x6000;
+[; ;master.c: 6359: CurShot.top = 0x7500;
 "6359
-[e = . _CurShot 0 -> -> 24576 `i `us ]
-[; ;master.c: 6360: CurShot.bot = 0x6000;
+[e = . _CurShot 0 -> -> 29952 `i `us ]
+[; ;master.c: 6360: CurShot.bot = 0x7500;
 "6360
-[e = . _CurShot 1 -> -> 24576 `i `us ]
+[e = . _CurShot 1 -> -> 29952 `i `us ]
 [; ;master.c: 6361: StartTop(CurShot.top);
 "6361
 [e ( _StartTop (1 -> . _CurShot 0 `ui ]
@@ -25950,9 +25950,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $ ! != -> _ErrorShutDown `i -> -> -> 0 `i `uc `i 2396  ]
 [e $UE 2395  ]
 [e :U 2396 ]
-[; ;master.c: 8239: if ((val > 0x6000) || (val < 0x1a00)) {
+[; ;master.c: 8239: if ((val > 0x7500) || (val < 0x1a00)) {
 "8239
-[e $ ! || > _val -> -> 24576 `i `ui < _val -> -> 6656 `i `ui 2397  ]
+[e $ ! || > _val -> -> 29952 `i `ui < _val -> -> 6656 `i `ui 2397  ]
 {
 [; ;master.c: 8240: stop_all(0,(long*)0);
 "8240
@@ -26430,9 +26430,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $ ! != -> _ErrorShutDown `i -> -> -> 0 `i `uc `i 2443  ]
 [e $UE 2442  ]
 [e :U 2443 ]
-[; ;master.c: 8392: if ((val > 0x6000) || (val < 0x1a00)) {
+[; ;master.c: 8392: if ((val > 0x7500) || (val < 0x1a00)) {
 "8392
-[e $ ! || > _val -> -> 24576 `i `ui < _val -> -> 6656 `i `ui 2444  ]
+[e $ ! || > _val -> -> 29952 `i `ui < _val -> -> 6656 `i `ui 2444  ]
 {
 [; ;master.c: 8393: stop_all(0,(long*)0);
 "8393
@@ -28140,9 +28140,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [a 42C 83 104 111 116 32 68 101 108 101 116 101 100 0 ]
 [a 45C 83 104 111 116 32 83 101 108 101 99 116 101 100 0 ]
 [a 144C 10 13 83 116 97 114 116 70 101 101 100 0 ]
+[a 13C 80 73 67 75 76 69 51 32 71 82 65 78 68 32 73 86 0 ]
 [a 142C 10 78 65 75 0 ]
-[a 19C 69 76 73 84 69 32 71 82 65 78 68 32 86 32 76 69 0 ]
-[a 28C 69 76 73 84 69 32 71 82 65 78 68 32 86 32 76 69 0 ]
+[a 19C 80 73 67 75 76 69 51 32 71 82 65 78 68 86 76 69 0 ]
+[a 28C 80 73 67 75 76 69 51 32 71 82 65 78 68 86 76 69 0 ]
 [a 58C 67 0 ]
 [a 108C 67 0 ]
 [a 113C 67 0 ]
@@ -28168,13 +28169,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [a 152C 32 116 111 112 95 116 49 61 0 ]
 [a 9C 10 13 83 72 79 84 95 83 84 82 84 84 79 80 58 0 ]
 [a 10C 10 13 83 72 79 84 95 68 79 78 69 58 0 ]
+[a 25C 80 73 67 75 76 69 51 32 80 72 69 78 79 77 32 50 0 ]
+[a 22C 80 73 67 75 76 69 51 32 80 72 69 78 79 77 32 49 0 ]
 [a 6C 10 13 66 97 108 108 84 105 109 101 114 79 110 32 61 32 49 0 ]
-[a 15C 86 101 114 115 105 111 110 32 49 46 50 50 54 46 48 48 0 ]
-[a 18C 86 101 114 115 105 111 110 32 49 46 50 50 54 46 48 48 0 ]
-[a 21C 86 101 114 115 105 111 110 32 49 46 50 50 54 46 48 48 0 ]
-[a 24C 86 101 114 115 105 111 110 32 49 46 50 50 54 46 48 48 0 ]
-[a 27C 86 101 114 115 105 111 110 32 49 46 50 50 54 46 48 48 0 ]
-[a 30C 86 101 114 115 105 111 110 32 49 46 50 50 54 46 48 48 0 ]
+[a 15C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
+[a 18C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
+[a 21C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
+[a 24C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
+[a 27C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
+[a 30C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
 [a 33C 10 13 66 97 108 108 84 105 109 101 114 79 110 32 61 32 48 0 ]
 [a 34C 10 13 76 97 114 103 101 83 112 100 68 114 111 112 95 67 32 61 32 48 0 ]
 [a 32C 10 13 76 97 114 103 101 83 112 100 68 114 111 112 95 66 32 61 32 48 0 ]
@@ -28193,7 +28196,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [a 5C 10 13 66 117 105 108 100 67 109 100 40 83 67 95 88 49 41 0 ]
 [a 40C 76 111 119 33 0 ]
 [a 44C 67 117 115 116 111 109 32 68 114 105 108 108 32 0 ]
-[a 13C 32 69 76 73 84 69 32 71 82 65 78 68 32 73 86 32 0 ]
+[a 16C 80 73 67 75 76 69 51 32 71 82 65 78 68 32 86 32 0 ]
 [a 36C 10 13 87 97 107 101 85 112 32 101 108 101 118 95 99 111 114 114 46 115 32 61 32 0 ]
 [a 8C 10 13 97 114 103 32 61 32 0 ]
 [a 145C 10 13 98 97 108 108 95 102 101 101 100 32 61 32 0 ]
@@ -28223,9 +28226,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [a 103C 70 101 101 100 58 32 0 ]
 [a 23C 32 80 111 119 101 114 32 80 114 111 98 108 101 109 32 32 0 ]
 [a 26C 32 80 111 119 101 114 32 80 114 111 98 108 101 109 32 32 0 ]
-[a 16C 32 69 76 73 84 69 32 71 82 65 78 68 32 86 32 32 0 ]
-[a 25C 32 32 32 32 80 72 69 78 79 77 32 50 32 32 32 32 0 ]
-[a 22C 32 32 32 32 80 72 69 78 79 77 32 49 32 32 32 32 0 ]
 [a 141C 10 13 87 82 73 84 69 32 67 79 76 76 73 83 73 79 78 10 13 0 ]
 [a 31C 10 13 0 ]
 [a 139C 79 118 101 114 114 117 110 32 101 114 114 111 114 32 99 108 101 97 114 101 100 46 10 0 ]
