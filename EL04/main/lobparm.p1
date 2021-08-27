@@ -1441,156 +1441,145 @@ Version 3.2 HI-TECH Software Intermediate Code
 "425
 }
 [e :U 59 ]
-"428
+"432
 }
 [; ;lobparm.c: 424: }
 [; ;lobparm.c: 425: }
-[; ;lobparm.c: 428: } else if ((play_mode & 8) && (*pix == 2U) && (pparm[0U] == 55)) {
+[; ;lobparm.c: 432: } else {
 [e $U 77  ]
 [e :U 58 ]
-[e $ ! && && != & _play_mode -> -> 8 `i `l -> -> 0 `i `l == -> *U _pix `ui -> 2 `ui == -> *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux `i -> 55 `i 78  ]
-{
-[; ;lobparm.c: 429: dashes = 1 << (*pix);
-"429
-[e = _dashes -> << -> 1 `i *U _pix `uc ]
-"432
-}
-[; ;lobparm.c: 432: } else {
-[e $U 79  ]
-[e :U 78 ]
 {
 [; ;lobparm.c: 433: dec1:
 "433
-[e :U 80 ]
+[e :U 78 ]
 [; ;lobparm.c: 435: pparm[*pix] -= parameters[*pix].limits.incr;
 "435
 [e =- *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 2 ]
 [; ;lobparm.c: 437: if ((*pix <= 5U) && (*pix != 4U)) {
 "437
-[e $ ! && <= -> *U _pix `ui -> 5 `ui != -> *U _pix `ui -> 4 `ui 81  ]
+[e $ ! && <= -> *U _pix `ui -> 5 `ui != -> *U _pix `ui -> 4 `ui 79  ]
 {
 [; ;lobparm.c: 447: if (pparm[*pix] < parameters[*pix].limits.minimum) {
 "447
-[e $ ! < -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 0 `i 82  ]
+[e $ ! < -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 0 `i 80  ]
 {
 [; ;lobparm.c: 448: pparm[*pix] = parameters[*pix].limits.minimum;
 "448
 [e = *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 0 ]
 "449
 }
-[e :U 82 ]
+[e :U 80 ]
 "451
 }
 [; ;lobparm.c: 449: }
 [; ;lobparm.c: 451: } else {
-[e $U 83  ]
-[e :U 81 ]
+[e $U 81  ]
+[e :U 79 ]
 {
 [; ;lobparm.c: 452: if (pparm[*pix] < parameters[*pix].limits.minimum)
 "452
-[e $ ! < -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 0 `i 84  ]
+[e $ ! < -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 0 `i 82  ]
 [; ;lobparm.c: 453: pparm[*pix] = parameters[*pix].limits.maximum;
 "453
 [e = *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 ]
-[e :U 84 ]
+[e :U 82 ]
 "454
 }
-[e :U 83 ]
+[e :U 81 ]
 [; ;lobparm.c: 454: }
 [; ;lobparm.c: 457: if (*pix == 7U && ((model_type == 2U) || (model_type == 5U))) {
 "457
-[e $ ! && == -> *U _pix `ui -> 7 `ui || == -> _model_type `ui -> 2 `ui == -> _model_type `ui -> 5 `ui 85  ]
+[e $ ! && == -> *U _pix `ui -> 7 `ui || == -> _model_type `ui -> 2 `ui == -> _model_type `ui -> 5 `ui 83  ]
 {
 [; ;lobparm.c: 460: if ((pparm[*pix] == 1) || (pparm[*pix] == 3) || (pparm[*pix] == 4)) {
 "460
-[e $ ! || || == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 1 `i == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 3 `i == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 4 `i 86  ]
+[e $ ! || || == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 1 `i == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 3 `i == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 4 `i 84  ]
 {
 [; ;lobparm.c: 462: goto dec1;
 "462
-[e $U 80  ]
+[e $U 78  ]
 "463
 }
-[e :U 86 ]
+[e :U 84 ]
 "464
 }
-[e :U 85 ]
+[e :U 83 ]
 "465
 }
-[e :U 79 ]
 [e :U 77 ]
 [; ;lobparm.c: 463: }
 [; ;lobparm.c: 464: }
 [; ;lobparm.c: 465: }
 [; ;lobparm.c: 468: if (((*pix >= 6U) && (*pix != 8U)) || (*pix == 4U)) {
 "468
-[e $ ! || && >= -> *U _pix `ui -> 6 `ui != -> *U _pix `ui -> 8 `ui == -> *U _pix `ui -> 4 `ui 87  ]
+[e $ ! || && >= -> *U _pix `ui -> 6 `ui != -> *U _pix `ui -> 8 `ui == -> *U _pix `ui -> 4 `ui 85  ]
 {
 [; ;lobparm.c: 473: if (preset_type == 0)
 "473
-[e $ ! == -> _preset_type `i -> 0 `i 88  ]
+[e $ ! == -> _preset_type `i -> 0 `i 86  ]
 [; ;lobparm.c: 474: premode = 0;
 "474
 [e = _premode -> -> 0 `i `us ]
-[e $U 89  ]
+[e $U 87  ]
 "475
-[e :U 88 ]
+[e :U 86 ]
 [; ;lobparm.c: 475: else if (preset_type == 1U)
-[e $ ! == -> _preset_type `ui -> 1 `ui 90  ]
+[e $ ! == -> _preset_type `ui -> 1 `ui 88  ]
 [; ;lobparm.c: 476: premode = 7;
 "476
 [e = _premode -> -> 7 `i `us ]
-[e $U 91  ]
+[e $U 89  ]
 "477
-[e :U 90 ]
+[e :U 88 ]
 [; ;lobparm.c: 477: else if (preset_type == 2) {
-[e $ ! == -> _preset_type `i -> 2 `i 92  ]
+[e $ ! == -> _preset_type `i -> 2 `i 90  ]
 {
 [; ;lobparm.c: 478: if (preset[2].twolnrw == 0)
 "478
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 0 `i 93  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 0 `i 91  ]
 [; ;lobparm.c: 479: premode = 13;
 "479
 [e = _premode -> -> 13 `i `us ]
-[e $U 94  ]
+[e $U 92  ]
 "480
-[e :U 93 ]
+[e :U 91 ]
 [; ;lobparm.c: 480: else if (preset[2].twolnrw == 1)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 1 `i 95  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 1 `i 93  ]
 [; ;lobparm.c: 481: premode = 16;
 "481
 [e = _premode -> -> 16 `i `us ]
-[e $U 96  ]
+[e $U 94  ]
 "482
-[e :U 95 ]
+[e :U 93 ]
 [; ;lobparm.c: 482: else if (preset[2].twolnrw == 2)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 2 `i 97  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 2 `i 95  ]
 [; ;lobparm.c: 483: premode = 19;
 "483
 [e = _premode -> -> 19 `i `us ]
-[e $U 98  ]
+[e $U 96  ]
 "484
-[e :U 97 ]
+[e :U 95 ]
 [; ;lobparm.c: 484: else if (preset[2].twolnrw == 3)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 3 `i 99  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 3 `i 97  ]
 [; ;lobparm.c: 485: premode = 22;
 "485
 [e = _premode -> -> 22 `i `us ]
-[e :U 99 ]
+[e :U 97 ]
 "486
-[e :U 98 ]
 [e :U 96 ]
 [e :U 94 ]
-}
 [e :U 92 ]
+}
+[e :U 90 ]
 "487
-[e :U 91 ]
 [e :U 89 ]
+[e :U 87 ]
 [; ;lobparm.c: 486: }
 [; ;lobparm.c: 487: premode += ((preset_type == 3) ? 0 : preset[preset_type].value[preset_type+6]);
 [e =+ _premode -> ? == -> _preset_type `i -> 3 `i : -> 0 `i -> *U + &U . *U + &U _preset * -> _preset_type `ux -> -> # *U &U _preset `ui `ux 0 * -> -> + -> _preset_type `i -> 6 `i `ui `ux -> -> # *U &U . *U + &U _preset * -> _preset_type `ux -> -> # *U &U _preset `ui `ux 0 `ui `ux `i `us ]
 [; ;lobparm.c: 488: if (!(is_available(pre_rand[premode].start, pparm[0U], pparm[2U]))) {
 "488
-[e $ ! ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 100  ]
+[e $ ! ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 98  ]
 {
 [; ;lobparm.c: 516: newval = pparm[0U];
 "516
@@ -1598,22 +1587,22 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lobparm.c: 517: while ((newval >= parameters[0U].limits.minimum)
 [; ;lobparm.c: 518: && (!(is_available(pre_rand[premode].start, newval, pparm[2U])))) {
 "518
-[e $U 101  ]
-[e :U 102 ]
+[e $U 99  ]
+[e :U 100 ]
 {
 [; ;lobparm.c: 519: newval = newval - parameters[0U].limits.incr;
 "519
 [e = _newval -> - -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 2 `i `c ]
 "520
 }
-[e :U 101 ]
+[e :U 99 ]
 "517
-[e $ && >= -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 0 `i ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> _newval `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 102  ]
-[e :U 103 ]
+[e $ && >= -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 0 `i ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> _newval `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 100  ]
+[e :U 101 ]
 [; ;lobparm.c: 520: }
 [; ;lobparm.c: 521: if (newval < parameters[0U].limits.minimum) {
 "521
-[e $ ! < -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 0 `i 104  ]
+[e $ ! < -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 0 `i 102  ]
 {
 [; ;lobparm.c: 522: newval = pparm[0U];
 "522
@@ -1621,21 +1610,21 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lobparm.c: 523: while ((newval <= parameters[0U].limits.maximum)
 [; ;lobparm.c: 524: && (!(is_available(pre_rand[premode].start, newval, pparm[2U])))) {
 "524
-[e $U 105  ]
-[e :U 106 ]
+[e $U 103  ]
+[e :U 104 ]
 {
 [; ;lobparm.c: 525: newval = newval + parameters[0U].limits.incr;
 "525
 [e = _newval -> + -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 2 `i `c ]
 "526
 }
-[e :U 105 ]
+[e :U 103 ]
 "523
-[e $ && <= -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 1 `i ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> _newval `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 106  ]
-[e :U 107 ]
+[e $ && <= -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 1 `i ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> _newval `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 104  ]
+[e :U 105 ]
 "527
 }
-[e :U 104 ]
+[e :U 102 ]
 [; ;lobparm.c: 526: }
 [; ;lobparm.c: 527: }
 [; ;lobparm.c: 528: pparm[0U] = newval;
@@ -1643,7 +1632,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux _newval ]
 "529
 }
-[e :U 100 ]
+[e :U 98 ]
 [; ;lobparm.c: 529: }
 [; ;lobparm.c: 531: abort_shot();
 "531
@@ -1653,109 +1642,109 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _play_state -> -> 2 `ui `uc ]
 "533
 }
-[e :U 87 ]
+[e :U 85 ]
 "534
 }
 [; ;lobparm.c: 533: }
 [; ;lobparm.c: 534: } else if (cmd == 0x04) {
-[e $U 108  ]
+[e $U 106  ]
 [e :U 57 ]
-[e $ ! == -> _cmd `i -> 4 `i 109  ]
+[e $ ! == -> _cmd `i -> 4 `i 107  ]
 {
 [; ;lobparm.c: 535: lcd_updated = 1;
 "535
 [e = _lcd_updated -> -> 1 `i `uc ]
 [; ;lobparm.c: 536: if ((play_mode & 2) && ((*pix == 0U) || (*pix == 2U))) {
 "536
-[e $ ! && != & _play_mode -> -> 2 `i `l -> -> 0 `i `l || == -> *U _pix `ui -> 0 `ui == -> *U _pix `ui -> 2 `ui 110  ]
+[e $ ! && != & _play_mode -> -> 2 `i `l -> -> 0 `i `l || == -> *U _pix `ui -> 0 `ui == -> *U _pix `ui -> 2 `ui 108  ]
 {
 [; ;lobparm.c: 537: newval = pparm[*pix] + parameters[*pix].limits.incr;
 "537
 [e = _newval -> + -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 2 `i `c ]
 [; ;lobparm.c: 538: if (newval <= parameters[*pix].limits.maximum) {
 "538
-[e $ ! <= -> _newval `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 111  ]
+[e $ ! <= -> _newval `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 109  ]
 {
 [; ;lobparm.c: 540: if (preset_type == 0)
 "540
-[e $ ! == -> _preset_type `i -> 0 `i 112  ]
+[e $ ! == -> _preset_type `i -> 0 `i 110  ]
 [; ;lobparm.c: 541: premode = 0;
 "541
 [e = _premode -> -> 0 `i `us ]
-[e $U 113  ]
+[e $U 111  ]
 "542
-[e :U 112 ]
+[e :U 110 ]
 [; ;lobparm.c: 542: else if (preset_type == 1U)
-[e $ ! == -> _preset_type `ui -> 1 `ui 114  ]
+[e $ ! == -> _preset_type `ui -> 1 `ui 112  ]
 [; ;lobparm.c: 543: premode = 7;
 "543
 [e = _premode -> -> 7 `i `us ]
-[e $U 115  ]
+[e $U 113  ]
 "544
-[e :U 114 ]
+[e :U 112 ]
 [; ;lobparm.c: 544: else if (preset_type == 2) {
-[e $ ! == -> _preset_type `i -> 2 `i 116  ]
+[e $ ! == -> _preset_type `i -> 2 `i 114  ]
 {
 [; ;lobparm.c: 545: if (preset[2].twolnrw == 0)
 "545
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 0 `i 117  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 0 `i 115  ]
 [; ;lobparm.c: 546: premode = 13;
 "546
 [e = _premode -> -> 13 `i `us ]
-[e $U 118  ]
+[e $U 116  ]
 "547
-[e :U 117 ]
+[e :U 115 ]
 [; ;lobparm.c: 547: else if (preset[2].twolnrw == 1)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 1 `i 119  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 1 `i 117  ]
 [; ;lobparm.c: 548: premode = 16;
 "548
 [e = _premode -> -> 16 `i `us ]
-[e $U 120  ]
+[e $U 118  ]
 "549
-[e :U 119 ]
+[e :U 117 ]
 [; ;lobparm.c: 549: else if (preset[2].twolnrw == 2)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 2 `i 121  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 2 `i 119  ]
 [; ;lobparm.c: 550: premode = 19;
 "550
 [e = _premode -> -> 19 `i `us ]
-[e $U 122  ]
+[e $U 120  ]
 "551
-[e :U 121 ]
+[e :U 119 ]
 [; ;lobparm.c: 551: else if (preset[2].twolnrw == 3)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 3 `i 123  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 3 `i 121  ]
 [; ;lobparm.c: 552: premode = 22;
 "552
 [e = _premode -> -> 22 `i `us ]
-[e :U 123 ]
+[e :U 121 ]
 "553
-[e :U 122 ]
 [e :U 120 ]
 [e :U 118 ]
+[e :U 116 ]
 }
 [; ;lobparm.c: 553: }
-[e $U 124  ]
+[e $U 122  ]
 "554
-[e :U 116 ]
+[e :U 114 ]
 [; ;lobparm.c: 554: else if (preset_type == 3)
-[e $ ! == -> _preset_type `i -> 3 `i 125  ]
+[e $ ! == -> _preset_type `i -> 3 `i 123  ]
 [; ;lobparm.c: 555: premode = 25;
 "555
 [e = _premode -> -> 25 `i `us ]
-[e :U 125 ]
+[e :U 123 ]
 "556
-[e :U 124 ]
-[e :U 115 ]
+[e :U 122 ]
 [e :U 113 ]
+[e :U 111 ]
 [; ;lobparm.c: 556: premode += ((preset_type == 3) ? 0 : preset[preset_type].value[preset_type+6]);
 [e =+ _premode -> ? == -> _preset_type `i -> 3 `i : -> 0 `i -> *U + &U . *U + &U _preset * -> _preset_type `ux -> -> # *U &U _preset `ui `ux 0 * -> -> + -> _preset_type `i -> 6 `i `ui `ux -> -> # *U &U . *U + &U _preset * -> _preset_type `ux -> -> # *U &U _preset `ui `ux 0 `ui `ux `i `us ]
 [; ;lobparm.c: 557: if (is_available(pre_rand[premode].start, (*pix==0U)?newval:pparm[0U], (*pix==2U)?newval:pparm[2U])) {
 "557
-[e $ ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> ? == -> *U _pix `ui -> 0 `ui : -> _newval `i -> *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux `i `uc -> ? == -> *U _pix `ui -> 2 `ui : -> _newval `i -> *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i `c `i -> -> -> 0 `i `uc `i 126  ]
+[e $ ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> ? == -> *U _pix `ui -> 0 `ui : -> _newval `i -> *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux `i `uc -> ? == -> *U _pix `ui -> 2 `ui : -> _newval `i -> *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i `c `i -> -> -> 0 `i `uc `i 124  ]
 {
 [; ;lobparm.c: 560: if ((preset_type == 1U || (preset_type == 2 && preset[2].twolnrw == 1))
 [; ;lobparm.c: 561: && *pix==0U && newval >= parameters[*pix].limits.maximum) {
 "561
-[e $ ! && && || == -> _preset_type `ui -> 1 `ui && == -> _preset_type `i -> 2 `i == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 1 `i == -> *U _pix `ui -> 0 `ui >= -> _newval `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 127  ]
+[e $ ! && && || == -> _preset_type `ui -> 1 `ui && == -> _preset_type `i -> 2 `i == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 1 `i == -> *U _pix `ui -> 0 `ui >= -> _newval `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 125  ]
 {
 [; ;lobparm.c: 562: dashes = 1 << (*pix);
 "562
@@ -1763,9 +1752,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "563
 }
 [; ;lobparm.c: 563: }
-[e $U 128  ]
+[e $U 126  ]
 "564
-[e :U 127 ]
+[e :U 125 ]
 [; ;lobparm.c: 564: else {
 {
 [; ;lobparm.c: 565: pparm[*pix] = newval;
@@ -1776,7 +1765,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _dashes -> -> 0 `i `uc ]
 [; ;lobparm.c: 567: if (preset_type <= 1U) {
 "567
-[e $ ! <= -> _preset_type `ui -> 1 `ui 129  ]
+[e $ ! <= -> _preset_type `ui -> 1 `ui 127  ]
 {
 [; ;lobparm.c: 568: abort_shot();
 "568
@@ -1786,189 +1775,162 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _play_state -> -> 2 `ui `uc ]
 "570
 }
-[e :U 129 ]
+[e :U 127 ]
 "571
 }
-[e :U 128 ]
+[e :U 126 ]
 "572
 }
 [; ;lobparm.c: 570: }
 [; ;lobparm.c: 571: }
 [; ;lobparm.c: 572: } else {
-[e $U 130  ]
-[e :U 126 ]
+[e $U 128  ]
+[e :U 124 ]
 {
 [; ;lobparm.c: 573: dashes = 1 << (*pix);
 "573
 [e = _dashes -> << -> 1 `i *U _pix `uc ]
 "574
 }
-[e :U 130 ]
+[e :U 128 ]
 "575
 }
-[e :U 111 ]
-"578
+[e :U 109 ]
+"592
 }
 [; ;lobparm.c: 574: }
 [; ;lobparm.c: 575: }
-[; ;lobparm.c: 578: } else if ((play_mode & 8) && (*pix == 2U) && (pparm[0U] == 55)) {
-[e $U 131  ]
-[e :U 110 ]
-[e $ ! && && != & _play_mode -> -> 8 `i `l -> -> 0 `i `l == -> *U _pix `ui -> 2 `ui == -> *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux `i -> 55 `i 132  ]
-{
-[; ;lobparm.c: 579: dashes = 1 << (*pix);
-"579
-[e = _dashes -> << -> 1 `i *U _pix `uc ]
-"585
-}
-[; ;lobparm.c: 585: } else if ((play_mode & 8) && (*pix == 0U)
-[e $U 133  ]
-[e :U 132 ]
-[; ;lobparm.c: 586: && (pparm[*pix] + parameters[*pix].limits.incr == 55) && (pparm[2U] !=0)) {
-"586
-[e $ ! && && && != & _play_mode -> -> 8 `i `l -> -> 0 `i `l == -> *U _pix `ui -> 0 `ui == + -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 2 `i -> 55 `i != -> *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> 0 `i 134  ]
-{
-[; ;lobparm.c: 588: pparm[*pix] += parameters[*pix].limits.incr;
-"588
-[e =+ *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 2 ]
-[; ;lobparm.c: 589: pparm[2U] = 0;
-"589
-[e = *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux -> -> 0 `i `c ]
-"592
-}
 [; ;lobparm.c: 592: } else {
-[e $U 135  ]
-[e :U 134 ]
+[e $U 129  ]
+[e :U 108 ]
 {
 [; ;lobparm.c: 594: inc1:
 "594
-[e :U 136 ]
+[e :U 130 ]
 [; ;lobparm.c: 596: pparm[*pix] += parameters[*pix].limits.incr;
 "596
 [e =+ *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 2 ]
 [; ;lobparm.c: 598: if ((*pix <= 5U) && (*pix != 4U)) {
 "598
-[e $ ! && <= -> *U _pix `ui -> 5 `ui != -> *U _pix `ui -> 4 `ui 137  ]
+[e $ ! && <= -> *U _pix `ui -> 5 `ui != -> *U _pix `ui -> 4 `ui 131  ]
 {
 [; ;lobparm.c: 599: if (pparm[*pix] > parameters[*pix].limits.maximum)
 "599
-[e $ ! > -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 138  ]
+[e $ ! > -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 132  ]
 [; ;lobparm.c: 600: pparm[*pix] = parameters[*pix].limits.maximum;
 "600
 [e = *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 ]
-[e :U 138 ]
+[e :U 132 ]
 "601
 }
 [; ;lobparm.c: 601: } else {
-[e $U 139  ]
-[e :U 137 ]
+[e $U 133  ]
+[e :U 131 ]
 {
 [; ;lobparm.c: 602: if (pparm[*pix] > parameters[*pix].limits.maximum)
 "602
-[e $ ! > -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 140  ]
+[e $ ! > -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 134  ]
 [; ;lobparm.c: 603: pparm[*pix] = parameters[*pix].limits.minimum;
 "603
 [e = *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux . . *U + &U _parameters * -> *U _pix `ux -> -> # *U &U _parameters `ui `ux 0 0 ]
-[e :U 140 ]
+[e :U 134 ]
 "604
 }
-[e :U 139 ]
+[e :U 133 ]
 [; ;lobparm.c: 604: }
 [; ;lobparm.c: 607: if (*pix == 7U && ((model_type == 2U) || (model_type == 5U))){
 "607
-[e $ ! && == -> *U _pix `ui -> 7 `ui || == -> _model_type `ui -> 2 `ui == -> _model_type `ui -> 5 `ui 141  ]
+[e $ ! && == -> *U _pix `ui -> 7 `ui || == -> _model_type `ui -> 2 `ui == -> _model_type `ui -> 5 `ui 135  ]
 {
 [; ;lobparm.c: 610: if ((pparm[*pix] == 1) || (pparm[*pix] == 3) || (pparm[*pix] == 4)) {
 "610
-[e $ ! || || == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 1 `i == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 3 `i == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 4 `i 142  ]
+[e $ ! || || == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 1 `i == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 3 `i == -> *U + _pparm * -> *U _pix `ux -> -> # *U _pparm `ui `ux `i -> 4 `i 136  ]
 {
 [; ;lobparm.c: 612: goto inc1;
 "612
-[e $U 136  ]
+[e $U 130  ]
 "613
 }
-[e :U 142 ]
+[e :U 136 ]
 "614
 }
-[e :U 141 ]
+[e :U 135 ]
 "615
 }
-[e :U 135 ]
-[e :U 133 ]
-[e :U 131 ]
+[e :U 129 ]
 [; ;lobparm.c: 613: }
 [; ;lobparm.c: 614: }
 [; ;lobparm.c: 615: }
 [; ;lobparm.c: 626: if (((*pix >= 6U) && (*pix != 8U)) || (*pix == 4U)) {
 "626
-[e $ ! || && >= -> *U _pix `ui -> 6 `ui != -> *U _pix `ui -> 8 `ui == -> *U _pix `ui -> 4 `ui 143  ]
+[e $ ! || && >= -> *U _pix `ui -> 6 `ui != -> *U _pix `ui -> 8 `ui == -> *U _pix `ui -> 4 `ui 137  ]
 {
 [; ;lobparm.c: 631: if (preset_type == 0)
 "631
-[e $ ! == -> _preset_type `i -> 0 `i 144  ]
+[e $ ! == -> _preset_type `i -> 0 `i 138  ]
 [; ;lobparm.c: 632: premode = 0;
 "632
 [e = _premode -> -> 0 `i `us ]
-[e $U 145  ]
+[e $U 139  ]
 "633
-[e :U 144 ]
+[e :U 138 ]
 [; ;lobparm.c: 633: else if (preset_type == 1U)
-[e $ ! == -> _preset_type `ui -> 1 `ui 146  ]
+[e $ ! == -> _preset_type `ui -> 1 `ui 140  ]
 [; ;lobparm.c: 634: premode = 7;
 "634
 [e = _premode -> -> 7 `i `us ]
-[e $U 147  ]
+[e $U 141  ]
 "635
-[e :U 146 ]
+[e :U 140 ]
 [; ;lobparm.c: 635: else if (preset_type == 2) {
-[e $ ! == -> _preset_type `i -> 2 `i 148  ]
+[e $ ! == -> _preset_type `i -> 2 `i 142  ]
 {
 [; ;lobparm.c: 636: if (preset[2].twolnrw == 0)
 "636
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 0 `i 149  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 0 `i 143  ]
 [; ;lobparm.c: 637: premode = 13;
 "637
 [e = _premode -> -> 13 `i `us ]
-[e $U 150  ]
+[e $U 144  ]
 "638
-[e :U 149 ]
+[e :U 143 ]
 [; ;lobparm.c: 638: else if (preset[2].twolnrw == 1)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 1 `i 151  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 1 `i 145  ]
 [; ;lobparm.c: 639: premode = 16;
 "639
 [e = _premode -> -> 16 `i `us ]
-[e $U 152  ]
+[e $U 146  ]
 "640
-[e :U 151 ]
+[e :U 145 ]
 [; ;lobparm.c: 640: else if (preset[2].twolnrw == 2)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 2 `i 153  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 2 `i 147  ]
 [; ;lobparm.c: 641: premode = 19;
 "641
 [e = _premode -> -> 19 `i `us ]
-[e $U 154  ]
+[e $U 148  ]
 "642
-[e :U 153 ]
+[e :U 147 ]
 [; ;lobparm.c: 642: else if (preset[2].twolnrw == 3)
-[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 3 `i 155  ]
+[e $ ! == -> . . *U + &U _preset * -> -> -> 2 `i `ui `ux -> -> # *U &U _preset `ui `ux 1 4 `i -> 3 `i 149  ]
 [; ;lobparm.c: 643: premode = 22;
 "643
 [e = _premode -> -> 22 `i `us ]
-[e :U 155 ]
+[e :U 149 ]
 "644
-[e :U 154 ]
-[e :U 152 ]
-[e :U 150 ]
-}
 [e :U 148 ]
+[e :U 146 ]
+[e :U 144 ]
+}
+[e :U 142 ]
 "645
-[e :U 147 ]
-[e :U 145 ]
+[e :U 141 ]
+[e :U 139 ]
 [; ;lobparm.c: 644: }
 [; ;lobparm.c: 645: premode += ((preset_type == 3) ? 0 : preset[preset_type].value[preset_type+6]);
 [e =+ _premode -> ? == -> _preset_type `i -> 3 `i : -> 0 `i -> *U + &U . *U + &U _preset * -> _preset_type `ux -> -> # *U &U _preset `ui `ux 0 * -> -> + -> _preset_type `i -> 6 `i `ui `ux -> -> # *U &U . *U + &U _preset * -> _preset_type `ux -> -> # *U &U _preset `ui `ux 0 `ui `ux `i `us ]
 [; ;lobparm.c: 646: if (!(is_available(pre_rand[premode].start, pparm[0U], pparm[2U]))) {
 "646
-[e $ ! ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 156  ]
+[e $ ! ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 150  ]
 {
 [; ;lobparm.c: 674: newval = pparm[0U];
 "674
@@ -1976,22 +1938,22 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lobparm.c: 675: while ((newval <= parameters[0U].limits.maximum)
 [; ;lobparm.c: 676: && (!(is_available(pre_rand[premode].start, newval, pparm[2U])))) {
 "676
-[e $U 157  ]
-[e :U 158 ]
+[e $U 151  ]
+[e :U 152 ]
 {
 [; ;lobparm.c: 677: newval = newval + parameters[0U].limits.incr;
 "677
 [e = _newval -> + -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 2 `i `c ]
 "678
 }
-[e :U 157 ]
+[e :U 151 ]
 "675
-[e $ && <= -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 1 `i ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> _newval `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 158  ]
-[e :U 159 ]
+[e $ && <= -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 1 `i ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> _newval `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 152  ]
+[e :U 153 ]
 [; ;lobparm.c: 678: }
 [; ;lobparm.c: 679: if (newval > parameters[0U].limits.maximum) {
 "679
-[e $ ! > -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 160  ]
+[e $ ! > -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 1 `i 154  ]
 {
 [; ;lobparm.c: 680: newval = pparm[0U];
 "680
@@ -1999,21 +1961,21 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lobparm.c: 681: while ((newval >= parameters[0U].limits.minimum)
 [; ;lobparm.c: 682: && (!(is_available(pre_rand[premode].start, newval, pparm[2U])))) {
 "682
-[e $U 161  ]
-[e :U 162 ]
+[e $U 155  ]
+[e :U 156 ]
 {
 [; ;lobparm.c: 683: newval = newval - parameters[0U].limits.incr;
 "683
 [e = _newval -> - -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 2 `i `c ]
 "684
 }
-[e :U 161 ]
+[e :U 155 ]
 "681
-[e $ && >= -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 0 `i ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> _newval `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 162  ]
-[e :U 163 ]
+[e $ && >= -> _newval `i -> . . *U + &U _parameters * -> -> 0 `ui `ux -> -> # *U &U _parameters `ui `ux 0 0 `i ! != -> ( _is_available (3 , , . *U + &U _pre_rand * -> _premode `ux -> -> # *U &U _pre_rand `ui `ux 2 -> _newval `uc *U + _pparm * -> -> 2 `ui `ux -> -> # *U _pparm `ui `ux `i -> -> -> 0 `i `uc `i 156  ]
+[e :U 157 ]
 "685
 }
-[e :U 160 ]
+[e :U 154 ]
 [; ;lobparm.c: 684: }
 [; ;lobparm.c: 685: }
 [; ;lobparm.c: 686: pparm[0U] = newval;
@@ -2021,7 +1983,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = *U + _pparm * -> -> 0 `ui `ux -> -> # *U _pparm `ui `ux _newval ]
 "687
 }
-[e :U 156 ]
+[e :U 150 ]
 [; ;lobparm.c: 687: }
 [; ;lobparm.c: 688: abort_shot();
 "688
@@ -2031,114 +1993,114 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _play_state -> -> 2 `ui `uc ]
 "690
 }
-[e :U 143 ]
+[e :U 137 ]
 "691
 }
-[e :U 109 ]
+[e :U 107 ]
 "692
-[e :U 108 ]
+[e :U 106 ]
 [e :U 56 ]
 [e :U 44 ]
 [; ;lobparm.c: 690: }
 [; ;lobparm.c: 691: }
 [; ;lobparm.c: 692: if (mask & (((1U << 6U)|(1U << 7U)|0x100|0x200)|(0x400|0x800|0x1000|0x2000|0x4000|0x8000|0x10000|0x20000|0x40000|0x80000|0x100000|0x200000))) {
-[e $ ! != & -> _mask `l | -> | | | << -> 1 `ui -> 6 `ui << -> 1 `ui -> 7 `ui -> -> 256 `i `ui -> -> 512 `i `ui `l | | | | | | -> | -> | | | | -> 1024 `i -> 2048 `i -> 4096 `i -> 8192 `i -> 16384 `i `ui -> 32768 `ui `l -> 65536 `l -> 131072 `l -> 262144 `l -> 524288 `l -> 1048576 `l -> 2097152 `l -> -> 0 `i `l 164  ]
+[e $ ! != & -> _mask `l | -> | | | << -> 1 `ui -> 6 `ui << -> 1 `ui -> 7 `ui -> -> 256 `i `ui -> -> 512 `i `ui `l | | | | | | -> | -> | | | | -> 1024 `i -> 2048 `i -> 4096 `i -> 8192 `i -> 16384 `i `ui -> 32768 `ui `l -> 65536 `l -> 131072 `l -> 262144 `l -> 524288 `l -> 1048576 `l -> 2097152 `l -> -> 0 `i `l 158  ]
 {
 [; ;lobparm.c: 693: ln = 1;
 "693
 [e = _ln -> -> 1 `i `us ]
 [; ;lobparm.c: 694: if ((mask & (0x200|(0x400|0x800|0x1000|0x2000|0x4000|0x8000|0x10000|0x20000|0x40000|0x80000|0x100000|0x200000))) && lcd_updated) {
 "694
-[e $ ! && != & -> _mask `l | -> -> 512 `i `l | | | | | | -> | -> | | | | -> 1024 `i -> 2048 `i -> 4096 `i -> 8192 `i -> 16384 `i `ui -> 32768 `ui `l -> 65536 `l -> 131072 `l -> 262144 `l -> 524288 `l -> 1048576 `l -> 2097152 `l -> -> 0 `i `l != -> _lcd_updated `i -> -> -> 0 `i `uc `i 165  ]
+[e $ ! && != & -> _mask `l | -> -> 512 `i `l | | | | | | -> | -> | | | | -> 1024 `i -> 2048 `i -> 4096 `i -> 8192 `i -> 16384 `i `ui -> 32768 `ui `l -> 65536 `l -> 131072 `l -> 262144 `l -> 524288 `l -> 1048576 `l -> 2097152 `l -> -> 0 `i `l != -> _lcd_updated `i -> -> -> 0 `i `uc `i 159  ]
 {
 [; ;lobparm.c: 695: clear_lcd(0xf);
 "695
 [e ( _clear_lcd (1 -> -> 15 `i `uc ]
 "696
 }
-[e :U 165 ]
+[e :U 159 ]
 "697
 }
 [; ;lobparm.c: 696: }
 [; ;lobparm.c: 697: } else {
-[e $U 166  ]
-[e :U 164 ]
+[e $U 160  ]
+[e :U 158 ]
 {
 [; ;lobparm.c: 698: ln = 0;
 "698
 [e = _ln -> -> 0 `i `us ]
 "699
 }
-[e :U 166 ]
+[e :U 160 ]
 [; ;lobparm.c: 699: }
 [; ;lobparm.c: 701: for (i=0,cmsk=1; i<=(ushort)(16+5); i++) {
 "701
 {
 [e ; = _i -> -> 0 `i `us = _cmsk -> -> -> 1 `i `m `um ]
-[e $ <= -> _i `ui -> -> + -> 16 `i -> 5 `i `us `ui 167  ]
-[e $U 168  ]
-[e :U 167 ]
+[e $ <= -> _i `ui -> -> + -> 16 `i -> 5 `i `us `ui 161  ]
+[e $U 162  ]
+[e :U 161 ]
 {
 [; ;lobparm.c: 702: if (tmsk & cmsk) {
 "702
-[e $ ! != & _tmsk _cmsk -> -> 0 `i `um 170  ]
+[e $ ! != & _tmsk _cmsk -> -> 0 `i `um 164  ]
 {
 [; ;lobparm.c: 703: if (cmsk & (0x200|(0x400|0x800|0x1000|0x2000|0x4000|0x8000|0x10000|0x20000|0x40000|0x80000|0x100000|0x200000))) {
 "703
-[e $ ! != & -> _cmsk `l | -> -> 512 `i `l | | | | | | -> | -> | | | | -> 1024 `i -> 2048 `i -> 4096 `i -> 8192 `i -> 16384 `i `ui -> 32768 `ui `l -> 65536 `l -> 131072 `l -> 262144 `l -> 524288 `l -> 1048576 `l -> 2097152 `l -> -> 0 `i `l 171  ]
+[e $ ! != & -> _cmsk `l | -> -> 512 `i `l | | | | | | -> | -> | | | | -> 1024 `i -> 2048 `i -> 4096 `i -> 8192 `i -> 16384 `i `ui -> 32768 `ui `l -> 65536 `l -> 131072 `l -> 262144 `l -> 524288 `l -> 1048576 `l -> 2097152 `l -> -> 0 `i `l 165  ]
 {
 [; ;lobparm.c: 704: ln = 0;
 "704
 [e = _ln -> -> 0 `i `us ]
 "705
 }
-[e :U 171 ]
+[e :U 165 ]
 [; ;lobparm.c: 705: }
 [; ;lobparm.c: 711: if ((play_mode & 8) || ((play_mode & 2) && (preset_type == 2))) {
 "711
-[e $ ! || != & _play_mode -> -> 8 `i `l -> -> 0 `i `l && != & _play_mode -> -> 2 `i `l -> -> 0 `i `l == -> _preset_type `i -> 2 `i 172  ]
+[e $ ! || != & _play_mode -> -> 8 `i `l -> -> 0 `i `l && != & _play_mode -> -> 2 `i `l -> -> 0 `i `l == -> _preset_type `i -> 2 `i 166  ]
 {
 [; ;lobparm.c: 712: if (i == 5U)
 "712
-[e $ ! == -> _i `ui -> 5 `ui 173  ]
+[e $ ! == -> _i `ui -> 5 `ui 167  ]
 [; ;lobparm.c: 713: k = 3;
 "713
 [e = _k -> -> 3 `i `us ]
-[e $U 174  ]
+[e $U 168  ]
 "714
-[e :U 173 ]
+[e :U 167 ]
 [; ;lobparm.c: 714: else
 [; ;lobparm.c: 715: k = (parameters[i].line != 0) ? parameters[i].line : ln & 3;
 "715
 [e = _k -> ? != -> . *U + &U _parameters * -> _i `ux -> -> # *U &U _parameters `ui `ux 6 `i -> 0 `i : -> . *U + &U _parameters * -> _i `ux -> -> # *U &U _parameters `ui `ux 6 `ui & -> _ln `ui -> -> 3 `i `ui `us ]
-[e :U 174 ]
+[e :U 168 ]
 [; ;lobparm.c: 716: if ((play_mode & 2) && (preset_type == 2)) {
 "716
-[e $ ! && != & _play_mode -> -> 2 `i `l -> -> 0 `i `l == -> _preset_type `i -> 2 `i 175  ]
+[e $ ! && != & _play_mode -> -> 2 `i `l -> -> 0 `i `l == -> _preset_type `i -> 2 `i 169  ]
 {
 [; ;lobparm.c: 717: if (i == 8U)
 "717
-[e $ ! == -> _i `ui -> 8 `ui 176  ]
+[e $ ! == -> _i `ui -> 8 `ui 170  ]
 [; ;lobparm.c: 718: k = 0;
 "718
 [e = _k -> -> 0 `i `us ]
-[e :U 176 ]
+[e :U 170 ]
 "719
 }
-[e :U 175 ]
+[e :U 169 ]
 "720
 }
 [; ;lobparm.c: 719: }
 [; ;lobparm.c: 720: } else {
-[e $U 177  ]
-[e :U 172 ]
+[e $U 171  ]
+[e :U 166 ]
 {
 [; ;lobparm.c: 721: k = ln & 3;
 "721
 [e = _k -> & -> _ln `ui -> -> 3 `i `ui `us ]
 "722
 }
-[e :U 177 ]
+[e :U 171 ]
 [; ;lobparm.c: 722: }
 [; ;lobparm.c: 723: strncpy(&lcd_line[k][parameters[i].text_start],
 [; ;lobparm.c: 727: (char*)parm_fmt[i][(*pix == i) ? 1 : 0],parameters[i].text_size);
@@ -2149,18 +2111,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ++ _ln -> -> 1 `i `us ]
 [; ;lobparm.c: 731: if (!(play_mode & 8) && (i == 2U)) {
 "731
-[e $ ! && ! != & _play_mode -> -> 8 `i `l -> -> 0 `i `l == -> _i `ui -> 2 `ui 178  ]
+[e $ ! && ! != & _play_mode -> -> 8 `i `l -> -> 0 `i `l == -> _i `ui -> 2 `ui 172  ]
 {
 [; ;lobparm.c: 732: strcpy(&lcd_line[k][8],"        ");
 "732
 [e ( _strcpy (2 , &U *U + &U *U + &U _lcd_line * -> _k `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _lcd_line * -> _k `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux :s 95C ]
 "733
 }
-[e :U 178 ]
+[e :U 172 ]
 [; ;lobparm.c: 733: }
 [; ;lobparm.c: 734: if (i == 4U) {
 "734
-[e $ ! == -> _i `ui -> 4 `ui 179  ]
+[e $ ! == -> _i `ui -> 4 `ui 173  ]
 {
 [; ;lobparm.c: 735: chartoa(preparm1base[11]+pparm[i],&lcd_line[k][parameters[i].field_locn],parameters[i].field_size);
 "735
@@ -2168,9 +2130,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "736
 }
 [; ;lobparm.c: 736: } else if (i > 5U) {
-[e $U 180  ]
-[e :U 179 ]
-[e $ ! > -> _i `ui -> 5 `ui 181  ]
+[e $U 174  ]
+[e :U 173 ]
+[e $ ! > -> _i `ui -> 5 `ui 175  ]
 {
 [; ;lobparm.c: 738: chartoa(preparm1base[i-5U]+pparm[i],&lcd_line[k][parameters[i].field_locn],parameters[i].field_size);
 "738
@@ -2178,13 +2140,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 "739
 }
 [; ;lobparm.c: 739: } else if (parameters[i].field_size) {
-[e $U 182  ]
-[e :U 181 ]
-[e $ ! != -> . *U + &U _parameters * -> _i `ux -> -> # *U &U _parameters `ui `ux 2 `i -> -> -> 0 `i `Cuc `i 183  ]
+[e $U 176  ]
+[e :U 175 ]
+[e $ ! != -> . *U + &U _parameters * -> _i `ux -> -> # *U &U _parameters `ui `ux 2 `i -> -> -> 0 `i `Cuc `i 177  ]
 {
 [; ;lobparm.c: 740: if (dashes & (1<<i)) {
 "740
-[e $ ! != & -> _dashes `i << -> 1 `i _i -> 0 `i 184  ]
+[e $ ! != & -> _dashes `i << -> 1 `i _i -> 0 `i 178  ]
 {
 [; ;lobparm.c: 741: strncpy(&lcd_line[k][parameters[i].field_locn],"--",2);
 "741
@@ -2192,12 +2154,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 "742
 }
 [; ;lobparm.c: 742: } else {
-[e $U 185  ]
-[e :U 184 ]
+[e $U 179  ]
+[e :U 178 ]
 {
 [; ;lobparm.c: 743: if (i == 0U) {
 "743
-[e $ ! == -> _i `ui -> 0 `ui 186  ]
+[e $ ! == -> _i `ui -> 0 `ui 180  ]
 {
 [; ;lobparm.c: 747: chartoa(speed_trans[pparm[i]/5],&lcd_line[k][parameters[i].field_locn],parameters[i].field_size);
 "747
@@ -2205,12 +2167,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 "748
 }
 [; ;lobparm.c: 748: } else {
-[e $U 187  ]
-[e :U 186 ]
+[e $U 181  ]
+[e :U 180 ]
 {
 [; ;lobparm.c: 751: if ((i == 5U) && (pparm[i] == 1)) {
 "751
-[e $ ! && == -> _i `ui -> 5 `ui == -> *U + _pparm * -> _i `ux -> -> # *U _pparm `ui `ux `i -> 1 `i 188  ]
+[e $ ! && == -> _i `ui -> 5 `ui == -> *U + _pparm * -> _i `ux -> -> # *U _pparm `ui `ux `i -> 1 `i 182  ]
 {
 [; ;lobparm.c: 752: strncpy(&lcd_line[k][parameters[i].field_locn-1],"Random ",7);
 "752
@@ -2218,9 +2180,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "753
 }
 [; ;lobparm.c: 753: }
-[e $U 189  ]
+[e $U 183  ]
 "754
-[e :U 188 ]
+[e :U 182 ]
 [; ;lobparm.c: 754: else
 [; ;lobparm.c: 756: {
 "756
@@ -2230,21 +2192,21 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _chartoa (3 , , *U + _pparm * -> _i `ux -> -> # *U _pparm `ui `ux &U *U + &U *U + &U _lcd_line * -> _k `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux * -> . *U + &U _parameters * -> _i `ux -> -> # *U &U _parameters `ui `ux 3 `ux -> -> # *U &U *U + &U _lcd_line * -> _k `ux -> * -> # *U &U *U &U _lcd_line `ui -> -> 17 `i `ui `ux `ui `ux -> . *U + &U _parameters * -> _i `ux -> -> # *U &U _parameters `ui `ux 2 `c ]
 "758
 }
-[e :U 189 ]
+[e :U 183 ]
 "759
 }
-[e :U 187 ]
+[e :U 181 ]
 "760
 }
-[e :U 185 ]
+[e :U 179 ]
 "761
 }
-[e :U 183 ]
+[e :U 177 ]
 "762
-[e :U 182 ]
-[e :U 180 ]
+[e :U 176 ]
+[e :U 174 ]
 }
-[e :U 170 ]
+[e :U 164 ]
 [; ;lobparm.c: 758: }
 [; ;lobparm.c: 759: }
 [; ;lobparm.c: 760: }
@@ -2257,8 +2219,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 "701
 [e ++ _i -> -> 1 `i `us ]
-[e $ <= -> _i `ui -> -> + -> 16 `i -> 5 `i `us `ui 167  ]
-[e :U 168 ]
+[e $ <= -> _i `ui -> -> + -> 16 `i -> 5 `i `us `ui 161  ]
+[e :U 162 ]
 "764
 }
 [; ;lobparm.c: 764: }
@@ -2292,33 +2254,33 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _rc ( _isLocAvail (3 , , _locno _spd _spn ]
 [; ;lobparm.c: 783: if (preset_type == 1U) {
 "783
-[e $ ! == -> _preset_type `ui -> 1 `ui 191  ]
+[e $ ! == -> _preset_type `ui -> 1 `ui 185  ]
 {
 [; ;lobparm.c: 784: if (!rc)
 "784
-[e $ ! ! != -> _rc `i -> -> -> 0 `i `uc `i 192  ]
+[e $ ! ! != -> _rc `i -> -> -> 0 `i `uc `i 186  ]
 [; ;lobparm.c: 785: rc = isLocAvail(locno+6, spd, spn);
 "785
 [e = _rc ( _isLocAvail (3 , , -> + -> _locno `i -> 6 `i `uc _spd _spn ]
-[e :U 192 ]
+[e :U 186 ]
 [; ;lobparm.c: 786: if (!rc)
 "786
-[e $ ! ! != -> _rc `i -> -> -> 0 `i `uc `i 193  ]
+[e $ ! ! != -> _rc `i -> -> -> 0 `i `uc `i 187  ]
 [; ;lobparm.c: 787: rc = isLocAvail(locno+12, spd, spn);
 "787
 [e = _rc ( _isLocAvail (3 , , -> + -> _locno `i -> 12 `i `uc _spd _spn ]
-[e :U 193 ]
+[e :U 187 ]
 "788
 }
-[e :U 191 ]
+[e :U 185 ]
 [; ;lobparm.c: 788: }
 [; ;lobparm.c: 789: return rc;
 "789
 [e ) _rc ]
-[e $UE 190  ]
+[e $UE 184  ]
 [; ;lobparm.c: 790: }
 "790
-[e :UE 190 ]
+[e :UE 184 ]
 }
 "798
 [v _isLocAvail `(uc ~T0 @X0 1 ef3`uc`uc`c ]
@@ -2343,29 +2305,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 "809
 {
 [e = _method -> -> 0 `i `c ]
-[e $ < -> _method `i -> 50 `i 195  ]
-[e $U 196  ]
-[e :U 195 ]
+[e $ < -> _method `i -> 50 `i 189  ]
+[e $U 190  ]
+[e :U 189 ]
 {
 [; ;lobparm.c: 816: locp = &court_locs[locNo][method];
 "816
 [e = _locp &U *U + &U *U + &U _court_locs * -> _locNo `ux -> * -> # *U &U *U &U _court_locs `ui -> -> 50 `i `ui `ux * -> -> _method `uc `ux -> -> # *U &U *U + &U _court_locs * -> _locNo `ux -> * -> # *U &U *U &U _court_locs `ui -> -> 50 `i `ui `ux `ui `ux ]
 [; ;lobparm.c: 831: if ((spn == locp->spin) && (spd == locp->speed)) {
 "831
-[e $ ! && == -> _spn `i -> . *U _locp 5 `i == -> _spd `i -> . *U _locp 0 `i 198  ]
+[e $ ! && == -> _spn `i -> . *U _locp 5 `i == -> _spd `i -> . *U _locp 0 `i 192  ]
 {
 [; ;lobparm.c: 832: break;
 "832
-[e $U 196  ]
+[e $U 190  ]
 "833
 }
-[e :U 198 ]
+[e :U 192 ]
 "834
 }
 "809
 [e ++ _method -> -> 1 `i `c ]
-[e $ < -> _method `i -> 50 `i 195  ]
-[e :U 196 ]
+[e $ < -> _method `i -> 50 `i 189  ]
+[e :U 190 ]
 "834
 }
 [; ;lobparm.c: 833: }
@@ -2373,10 +2335,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lobparm.c: 839: return ((method < 50) ? 1 : 0);
 "839
 [e ) -> ? < -> _method `i -> 50 `i : -> 1 `i -> 0 `i `uc ]
-[e $UE 194  ]
+[e $UE 188  ]
 [; ;lobparm.c: 840: }
 "840
-[e :UE 194 ]
+[e :UE 188 ]
 }
 "850
 [v _getLocAvail `(uc ~T0 @X0 1 ef4`uc`uc`c`*uc ]
@@ -2402,32 +2364,32 @@ Version 3.2 HI-TECH Software Intermediate Code
 "862
 {
 [e = _method -> -> 0 `i `c ]
-[e $ < -> _method `i -> 50 `i 200  ]
-[e $U 201  ]
-[e :U 200 ]
+[e $ < -> _method `i -> 50 `i 194  ]
+[e $U 195  ]
+[e :U 194 ]
 {
 [; ;lobparm.c: 869: locp = &court_locs[locNo][method];
 "869
 [e = _locp &U *U + &U *U + &U _court_locs * -> _locNo `ux -> * -> # *U &U *U &U _court_locs `ui -> -> 50 `i `ui `ux * -> -> _method `uc `ux -> -> # *U &U *U + &U _court_locs * -> _locNo `ux -> * -> # *U &U *U &U _court_locs `ui -> -> 50 `i `ui `ux `ui `ux ]
 [; ;lobparm.c: 874: if ((spn == locp->spin) && (spd == locp->speed)) {
 "874
-[e $ ! && == -> _spn `i -> . *U _locp 5 `i == -> _spd `i -> . *U _locp 0 `i 203  ]
+[e $ ! && == -> _spn `i -> . *U _locp 5 `i == -> _spd `i -> . *U _locp 0 `i 197  ]
 {
 [; ;lobparm.c: 875: *pmeth = method;
 "875
 [e = *U _pmeth -> _method `uc ]
 [; ;lobparm.c: 876: break;
 "876
-[e $U 201  ]
+[e $U 195  ]
 "877
 }
-[e :U 203 ]
+[e :U 197 ]
 "878
 }
 "862
 [e ++ _method -> -> 1 `i `c ]
-[e $ < -> _method `i -> 50 `i 200  ]
-[e :U 201 ]
+[e $ < -> _method `i -> 50 `i 194  ]
+[e :U 195 ]
 "878
 }
 [; ;lobparm.c: 877: }
@@ -2435,10 +2397,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lobparm.c: 879: return ((method < 50) ? 1 : 0);
 "879
 [e ) -> ? < -> _method `i -> 50 `i : -> 1 `i -> 0 `i `uc ]
-[e $UE 199  ]
+[e $UE 193  ]
 [; ;lobparm.c: 880: }
 "880
-[e :UE 199 ]
+[e :UE 193 ]
 }
 [a 59C 78 65 82 82 79 87 0 ]
 [a 83C 78 65 82 82 79 87 0 ]

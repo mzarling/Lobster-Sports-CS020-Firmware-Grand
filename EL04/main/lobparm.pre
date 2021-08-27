@@ -616,11 +616,7 @@ dashes = 1 << (*pix);
 }
 }
 
-
-} else if ((play_mode & 8) && (*pix == 2U) && (pparm[0U] == 55)) {
-dashes = 1 << (*pix);
-
-
+# 432
 } else {
 dec1:
 
@@ -734,18 +730,7 @@ dashes = 1 << (*pix);
 }
 }
 
-
-} else if ((play_mode & 8) && (*pix == 2U) && (pparm[0U] == 55)) {
-dashes = 1 << (*pix);
-
-# 585
-} else if ((play_mode & 8) && (*pix == 0U)
-&& (pparm[*pix] + parameters[*pix].limits.incr == 55) && (pparm[2U] !=0)) {
-
-pparm[*pix] += parameters[*pix].limits.incr;
-pparm[2U] = 0;
-
-
+# 592
 } else {
 
 inc1:

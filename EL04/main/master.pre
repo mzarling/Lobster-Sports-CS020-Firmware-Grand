@@ -10934,7 +10934,7 @@ if (model_type == 2U) {
 lob_model = "PICKLE3 GRAND IV";
 pp_maxloc = 0;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.227.00";
+lob_version = "Version 1.228.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10950,7 +10950,7 @@ else if (model_type == 0U) {
 lob_model = "PICKLE3 GRAND V ";
 pp_maxloc = 6;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.227.00";
+lob_version = "Version 1.228.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10966,7 +10966,7 @@ else if (model_type == 1U) {
 lob_model = "PICKLE3 GRANDVLE";
 pp_maxloc = 18;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.227.00";
+lob_version = "Version 1.228.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;
@@ -10984,7 +10984,7 @@ else if (model_type == 5U) {
 lob_model = "PICKLE3 PHENOM 1";
 pp_maxloc = 0;
 lowbatt_msg = " Power Problem  ";
-lob_version = "Version 1.227.00";
+lob_version = "Version 1.228.00";
 sweep_offset = 0x12a;
 
 ELEV_CORR_MIN = -136;
@@ -11000,7 +11000,7 @@ else if (model_type == 3U) {
 lob_model = "PICKLE3 PHENOM 2";
 pp_maxloc = 18;
 lowbatt_msg = " Power Problem  ";
-lob_version = "Version 1.227.00";
+lob_version = "Version 1.228.00";
 sweep_offset = 0x12a;
 
 ELEV_CORR_MIN = -136;
@@ -11017,7 +11017,7 @@ else if (model_type == 4U) {
 lob_model = "PICKLE3 GRANDVLE";
 pp_maxloc = 18;
 lowbatt_msg = "Battery Depleted";
-lob_version = "Version 1.227.00";
+lob_version = "Version 1.228.00";
 sweep_offset = 0xf0;
 
 ELEV_CORR_MIN = -40;

@@ -15236,7 +15236,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3594: lowbatt_msg = "Battery Depleted";
 "3594
 [e = _lowbatt_msg :s 14C ]
-[; ;master.c: 3595: lob_version = "Version 1.227.00";
+[; ;master.c: 3595: lob_version = "Version 1.228.00";
 "3595
 [e = _lob_version :s 15C ]
 [; ;master.c: 3596: sweep_offset = 0xf0;
@@ -15269,7 +15269,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3610: lowbatt_msg = "Battery Depleted";
 "3610
 [e = _lowbatt_msg :s 17C ]
-[; ;master.c: 3611: lob_version = "Version 1.227.00";
+[; ;master.c: 3611: lob_version = "Version 1.228.00";
 "3611
 [e = _lob_version :s 18C ]
 [; ;master.c: 3612: sweep_offset = 0xf0;
@@ -15302,7 +15302,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3626: lowbatt_msg = "Battery Depleted";
 "3626
 [e = _lowbatt_msg :s 20C ]
-[; ;master.c: 3627: lob_version = "Version 1.227.00";
+[; ;master.c: 3627: lob_version = "Version 1.228.00";
 "3627
 [e = _lob_version :s 21C ]
 [; ;master.c: 3628: sweep_offset = 0xf0;
@@ -15335,7 +15335,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3650: lowbatt_msg = " Power Problem  ";
 "3650
 [e = _lowbatt_msg :s 23C ]
-[; ;master.c: 3651: lob_version = "Version 1.227.00";
+[; ;master.c: 3651: lob_version = "Version 1.228.00";
 "3651
 [e = _lob_version :s 24C ]
 [; ;master.c: 3652: sweep_offset = 0x12a;
@@ -15368,7 +15368,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3669: lowbatt_msg = " Power Problem  ";
 "3669
 [e = _lowbatt_msg :s 26C ]
-[; ;master.c: 3670: lob_version = "Version 1.227.00";
+[; ;master.c: 3670: lob_version = "Version 1.228.00";
 "3670
 [e = _lob_version :s 27C ]
 [; ;master.c: 3671: sweep_offset = 0x12a;
@@ -15401,7 +15401,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;master.c: 3689: lowbatt_msg = "Battery Depleted";
 "3689
 [e = _lowbatt_msg :s 29C ]
-[; ;master.c: 3690: lob_version = "Version 1.227.00";
+[; ;master.c: 3690: lob_version = "Version 1.228.00";
 "3690
 [e = _lob_version :s 30C ]
 [; ;master.c: 3691: sweep_offset = 0xf0;
@@ -28172,12 +28172,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [a 25C 80 73 67 75 76 69 51 32 80 72 69 78 79 77 32 50 0 ]
 [a 22C 80 73 67 75 76 69 51 32 80 72 69 78 79 77 32 49 0 ]
 [a 6C 10 13 66 97 108 108 84 105 109 101 114 79 110 32 61 32 49 0 ]
-[a 15C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
-[a 18C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
-[a 21C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
-[a 24C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
-[a 27C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
-[a 30C 86 101 114 115 105 111 110 32 49 46 50 50 55 46 48 48 0 ]
+[a 15C 86 101 114 115 105 111 110 32 49 46 50 50 56 46 48 48 0 ]
+[a 18C 86 101 114 115 105 111 110 32 49 46 50 50 56 46 48 48 0 ]
+[a 21C 86 101 114 115 105 111 110 32 49 46 50 50 56 46 48 48 0 ]
+[a 24C 86 101 114 115 105 111 110 32 49 46 50 50 56 46 48 48 0 ]
+[a 27C 86 101 114 115 105 111 110 32 49 46 50 50 56 46 48 48 0 ]
+[a 30C 86 101 114 115 105 111 110 32 49 46 50 50 56 46 48 48 0 ]
 [a 33C 10 13 66 97 108 108 84 105 109 101 114 79 110 32 61 32 48 0 ]
 [a 34C 10 13 76 97 114 103 101 83 112 100 68 114 111 112 95 67 32 61 32 48 0 ]
 [a 32C 10 13 76 97 114 103 101 83 112 100 68 114 111 112 95 66 32 61 32 48 0 ]

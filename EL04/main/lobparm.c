@@ -424,10 +424,10 @@ char lob_parm(char cmd, uchar *pix, signed char* pparm, unsigned short long mask
 				}
 			}
 
-// v1.226 start
-		} else if ((play_mode & PM_MANUAL) && (*pix == SPIN_IX) && (pparm[SPEED_IX] == P_SPEEDMAX)) {	// If decreasing Manual Mode spin and at maximum speed, don't allow
-			dashes = 1 << (*pix);																		// because can't have any spin to achieve maximum speed. 
-// v1.226 end
+//// v1.226 start
+//		} else if ((play_mode & PM_MANUAL) && (*pix == SPIN_IX) && (pparm[SPEED_IX] == P_SPEEDMAX)) {	// If decreasing Manual Mode spin and at maximum speed, don't allow
+//			dashes = 1 << (*pix);																		// because can't have any spin to achieve maximum speed. 
+//// v1.226 end
 
 		} else {			
 dec1:	// ELO4CHG #5.1 (additional)
@@ -574,21 +574,21 @@ dec1:	// ELO4CHG #5.1 (additional)
 				}
 			}
 
-// v1.226 start
-		} else if ((play_mode & PM_MANUAL) && (*pix == SPIN_IX) && (pparm[SPEED_IX] == P_SPEEDMAX)) {	// If increasing Manual Mode spin and at maximum speed, don't allow
-			dashes = 1 << (*pix);																		// because can't have any spin to achieve maximum speed. 
-		// Increasing Manual Mode speed to maximum speed, when the current spin is not zero, is not allowed because both throwing motors must be running at maximum speed,
-		// i.e. not spin. The first attempt to achieve this limitation was to display dashes when increasing speed to maximum speed and a non-zero spin was already present.
-		// This may confuse the player making them not know why the maximum speed was not allowed. So the second attempt to achieve this limitation is to automatically change
-		// the spin back to zero when the player increases the speed to maximum speed when a non-zero spin was already present. Then if the player tries to change the spin,
-		// dashes will be displayed to show spin is not allowed when the maximum speed is already present.
-		} else if ((play_mode & PM_MANUAL) && (*pix == SPEED_IX)										// If increasing Manual Mode speed to maximum speed and current spin is not
-			 && (pparm[*pix] + parameters[*pix].limits.incr == P_SPEEDMAX) && (pparm[SPIN_IX] !=0)) {	// zero, 
-//			dashes = 1 << (*pix);																		// don't allow because can't have any spin to achieve maximum speed.
-	   		pparm[*pix] += parameters[*pix].limits.incr;												// then increment speed to maximum speed,
-	   		pparm[SPIN_IX] = 0;																			// and force spin to 0, because spin not allowed at maximum speed.
-// v1.226 end
-
+//// v1.226 start
+//		} else if ((play_mode & PM_MANUAL) && (*pix == SPIN_IX) && (pparm[SPEED_IX] == P_SPEEDMAX)) {	// If increasing Manual Mode spin and at maximum speed, don't allow
+//			dashes = 1 << (*pix);																		// because can't have any spin to achieve maximum speed. 
+//		// Increasing Manual Mode speed to maximum speed, when the current spin is not zero, is not allowed because both throwing motors must be running at maximum speed,
+//		// i.e. not spin. The first attempt to achieve this limitation was to display dashes when increasing speed to maximum speed and a non-zero spin was already present.
+//		// This may confuse the player making them not know why the maximum speed was not allowed. So the second attempt to achieve this limitation is to automatically change
+//		// the spin back to zero when the player increases the speed to maximum speed when a non-zero spin was already present. Then if the player tries to change the spin,
+//		// dashes will be displayed to show spin is not allowed when the maximum speed is already present.
+//		} else if ((play_mode & PM_MANUAL) && (*pix == SPEED_IX)										// If increasing Manual Mode speed to maximum speed and current spin is not
+//			 && (pparm[*pix] + parameters[*pix].limits.incr == P_SPEEDMAX) && (pparm[SPIN_IX] !=0)) {	// zero, 
+////			dashes = 1 << (*pix);																		// don't allow because can't have any spin to achieve maximum speed.
+//	   		pparm[*pix] += parameters[*pix].limits.incr;												// then increment speed to maximum speed,
+//	   		pparm[SPIN_IX] = 0;																			// and force spin to 0, because spin not allowed at maximum speed.
+//// v1.226 end
+//
 		} else {			
 
 inc1:	// ELO4CHG #5.2 (additional)

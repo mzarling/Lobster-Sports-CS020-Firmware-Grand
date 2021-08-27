@@ -3592,7 +3592,7 @@ void main(void)
 		lob_model = "PICKLE3 GRAND IV";
 		pp_maxloc = 0;
 		lowbatt_msg = "Battery Depleted";
-		lob_version	= "Version 1.227.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.228.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST;
 // v1.205 start
 		ELEV_CORR_MIN = -40;			// minimum allowable adjustment during test shot calibration
@@ -3608,7 +3608,7 @@ void main(void)
 		lob_model = "PICKLE3 GRAND V ";
 		pp_maxloc = 6; 
 		lowbatt_msg = "Battery Depleted";
-		lob_version	= "Version 1.227.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.228.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST;
 // v1.205 start
 		ELEV_CORR_MIN = -40;			// minimum allowable adjustment during test shot calibration
@@ -3624,7 +3624,7 @@ void main(void)
 		lob_model = "PICKLE3 GRANDVLE";
 		pp_maxloc = 18;
 		lowbatt_msg = "Battery Depleted";
-		lob_version	= "Version 1.227.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.228.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST;
 // v1.205 start
 		ELEV_CORR_MIN = -40;			// minimum allowable adjustment during test shot calibration
@@ -3648,7 +3648,7 @@ void main(void)
 		lob_model = "PICKLE3 PHENOM 1";
 		pp_maxloc = 0;
 		lowbatt_msg = " Power Problem  ";
-		lob_version	= "Version 1.227.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.228.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST_CLUB;
 // v1.205 start
 		ELEV_CORR_MIN = -136;			// minimum allowable adjustment during test shot calibration, increased low range for Clubs
@@ -3667,7 +3667,7 @@ void main(void)
 		lob_model = "PICKLE3 PHENOM 2";
 		pp_maxloc = 18;
 		lowbatt_msg = " Power Problem  ";
-		lob_version	= "Version 1.227.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.228.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST_CLUB;
 // v1.205 start
 		ELEV_CORR_MIN = -136;			// minimum allowable adjustment during test shot calibration, increased low range for Clubs
@@ -3687,7 +3687,7 @@ void main(void)
 		lob_model = "PICKLE3 GRANDVLE";
 		pp_maxloc = 18;
 		lowbatt_msg = "Battery Depleted";
-		lob_version	= "Version 1.227.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
+		lob_version	= "Version 1.228.00";	// Do not change this format or smartphone apps will not receive correct machine firmware version.
 		sweep_offset = SWEEP_ADJUST;
 // v1.205 start
 		ELEV_CORR_MIN = -40;			// minimum allowable adjustment during test shot calibration
